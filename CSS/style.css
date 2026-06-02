@@ -284,7 +284,8 @@ nav a:hover {
   text-align: center;
 
   background:
-    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("IMAGEM_CTA");
+    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("../img/sobre.jpg");
 
   background-size: cover;
   background-position: center;
@@ -402,19 +403,14 @@ footer {
   scroll-margin-top: 120px;
 }
 
-.itens-cardapio {
-  display: grid;
-  grid-template-columns: repeat(3, 320px);
-  justify-content: center;
-  gap: 25px;
-  margin-top: 35px;
-}
-
 .item-cardapio {
   background: #1d1d1d;
   border-radius: 16px;
   overflow: hidden;
   transition: 0.3s;
+  max-width: 350px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .item-cardapio img {
