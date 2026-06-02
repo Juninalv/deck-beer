@@ -52,7 +52,7 @@ nav.scrolled {
 }
 
 nav.scrolled .logo {
-  transform: scale(0.85);
+  transform: scale(0.75);
 }
 
 .nav-content {
@@ -94,6 +94,8 @@ nav a:hover {
   font-weight: bold;
   letter-spacing: 2px;
   color: #d4a24a;
+
+  transition: all 0.3s ease;
 }
 
 /* HERO */

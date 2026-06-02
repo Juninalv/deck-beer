@@ -25,7 +25,7 @@
         <div class="logo">DECK BEER</div>
 
         <div class="nav-right">
-          <a href="#lanches">Cardápio</a>
+          <a href="cardapio.html">Cardápio</a>
           <a href="index.html#programacao">Programação</a>
         </div>
       </div>
@@ -436,10 +436,19 @@
     </section>
     <script>
       const navbar = document.getElementById("navbar");
+      const menuCategorias = document.querySelector(".menu-categorias");
+
+      function atualizarTop() {
+        menuCategorias.style.top = navbar.offsetHeight + "px";
+      }
 
       window.addEventListener("scroll", () => {
         navbar.classList.toggle("scrolled", window.scrollY > 50);
+        atualizarTop();
       });
+
+      window.addEventListener("load", atualizarTop);
+      window.addEventListener("resize", atualizarTop);
     </script>
   </body>
 </html>
