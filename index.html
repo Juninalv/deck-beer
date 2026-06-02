@@ -14,7 +14,7 @@
   </head>
 
   <body>
-    <nav>
+    <nav id="navbar">
       <div class="container nav-content">
         <div class="nav-left">
           <a href="#">Início</a>
@@ -203,5 +203,12 @@
         <p>© 2026 Deck Beer Bar Rústico • Todos os direitos reservados</p>
       </div>
     </footer>
+    <script>
+      const navbar = document.getElementById("navbar");
+
+      window.addEventListener("scroll", () => {
+        navbar.classList.toggle("scrolled", window.scrollY > 50);
+      });
+    </script>
   </body>
 </html>

@@ -15,7 +15,7 @@
   </head>
 
   <body>
-    <nav>
+    <nav id="navbar">
       <div class="container nav-content">
         <div class="nav-left">
           <a href="index.html">Início</a>
@@ -434,5 +434,12 @@
         </a>
       </div>
     </section>
+    <script>
+      const navbar = document.getElementById("navbar");
+
+      window.addEventListener("scroll", () => {
+        navbar.classList.toggle("scrolled", window.scrollY > 50);
+      });
+    </script>
   </body>
 </html>

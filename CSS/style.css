@@ -29,11 +29,30 @@ h3 {
 /* NAVBAR */
 
 nav {
-  position: absolute;
+  position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
-  z-index: 100;
+
+  z-index: 1000;
+
   padding: 30px 0;
+
+  background: rgba(0, 0, 0, 0.15);
+
+  transition: all 0.3s ease;
+}
+nav.scrolled {
+  padding: 12px 0;
+
+  background: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(8px);
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+nav.scrolled .logo {
+  transform: scale(0.85);
 }
 
 .nav-content {
