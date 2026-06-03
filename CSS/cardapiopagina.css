@@ -1,0 +1,148 @@
+.hero-cardapio {
+  height: 50vh;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.75)),
+    url("../img/hero.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.menu-categorias {
+  background: #161616;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.menu-categorias .container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.menu-categorias a {
+  color: #d4a24a;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.categoria-cardapio {
+  padding: 70px 0;
+}
+
+#lanches,
+#porcoes,
+#drinks,
+#sobremesas {
+  scroll-margin-top: 120px;
+}
+
+.item-cardapio {
+  background: #1d1d1d;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: 0.3s;
+  max-width: 350px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.itens-cardapio {
+  display: grid;
+  grid-template-columns: repeat(3, 320px);
+  justify-content: center;
+  gap: 25px;
+  margin-top: 35px;
+}
+
+.item-cardapio img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  display: block;
+}
+
+.item-cardapio:hover {
+  transform: translateY(-5px);
+}
+
+.item-cardapio {
+  background: #1d1d1d;
+  border-radius: 16px;
+  overflow: hidden;
+  max-width: 350px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.item-info {
+  padding: 18px;
+}
+
+.item-info h3 {
+  color: #d4a24a;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.item-info p {
+  color: #d8d8d8;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.item-info span {
+  display: block;
+  color: #d4a24a;
+  font-size: 22px;
+  font-weight: 600;
+}
+/* =========================
+   DOSES
+========================= */
+
+.categoria-doses {
+  padding: 100px 0;
+  background: #050505;
+}
+
+.lista-doses {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.dose-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.dose-nome {
+  color: #fff;
+  font-size: 15px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.dose-linha {
+  flex: 1;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.3);
+  margin: 0 12px;
+}
+
+.dose-preco {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  white-space: nowrap;
+}

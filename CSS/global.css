@@ -1,0 +1,49 @@
+/* =========================
+   VARIÁVEIS DE CORES
+========================= */
+
+:root {
+  /* Base */
+  --bg-primary: #0d0d0d;
+  --bg-secondary: #d4a24a;
+  --bg-tertiary: #202020;
+  --bg-card: #161616;
+  --text-primary: #ffffff;
+  --text-secondary: #d4a24a;
+  --text-tertiary: #000;
+
+  /* Overlay */
+  --overlay-dark: rgba(0, 0, 0, 0.45);
+}
+
+/* =========================
+   RESET BÁSICOS
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #0f0f0f;
+  color: var(--text-primary);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Cormorant Garamond", serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
