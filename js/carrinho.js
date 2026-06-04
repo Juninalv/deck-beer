@@ -134,6 +134,13 @@ function enviarPedido() {
     `https://wa.me/5512974038736?text=${encodeURIComponent(msg)}`,
     "_blank",
   );
+
+  carrinho = [];
+  localStorage.removeItem("carrinho");
+
+  setTimeout(() => {
+    location.reload();
+  }, 300);
 }
 
 atualizarCarrinho();
