@@ -144,9 +144,15 @@
       <div class="container">
         <h2 class="section-title">Cardápio</h2>
 
+        <p class="cardapio-subtitle">
+          Drinks especiais, hambúrgueres artesanais e porções preparadas para
+          acompanhar os melhores momentos.
+        </p>
+
         <div class="cards">
           <a href="cardapio.html#drinks" class="card">
             <img src="./img/drink.jpg" alt="Drinks" />
+
             <div class="card-content">
               <h3>Drinks</h3>
               <p>Combinações exclusivas para todos os gostos.</p>
@@ -155,6 +161,7 @@
 
           <a href="cardapio.html#lanches" class="card">
             <img src="./img/lanche.jpg" alt="Lanches" />
+
             <div class="card-content">
               <h3>Lanches</h3>
               <p>Hambúrgueres artesanais e sabores marcantes.</p>
@@ -163,18 +170,17 @@
 
           <a href="cardapio.html#porcoes" class="card">
             <img src="./img/porcao.jpg" alt="Porções" />
+
             <div class="card-content">
               <h3>Porções</h3>
               <p>Petiscos perfeitos para compartilhar.</p>
             </div>
           </a>
+        </div>
 
-          <a href="cardapio.html#sobremesas" class="card">
-            <img src="./img/Sobremesa.jpg" alt="Sobremesas" />
-            <div class="card-content">
-              <h3>Sobremesas</h3>
-              <p>Para adoçar a sua noite.</p>
-            </div>
+        <div class="cardapio-cta">
+          <a href="cardapio.html" class="btn-cardapio">
+            Conheça nosso cardápio completo
           </a>
         </div>
       </div>
@@ -182,28 +188,48 @@
 
     <section class="eventos" id="eventos">
       <div class="container">
-        <h2 class="section-title">Próximo Evento</h2>
+        <h2 class="section-title">Próximos Eventos</h2>
 
-        <div class="evento-card">
-          <img src="./img/cartaz-namorados.jpg" alt="Cartaz do Evento" />
+        <div class="slider">
+          <button class="slider-btn prev">&#10094;</button>
 
-          <div class="evento-info">
-            <h3>Dia dos Namorados no Deck Beer vai ser inesquecível!</h3>
+          <div class="slides">
+            <div class="slide active">
+              <img src="./img/evento1.jpg" alt="Dia dos Namorados" />
 
-            <p>
-              Preparamos uma noite completa pra você celebrar ao lado de quem
-              ama. 🥂
-            </p>
+              <div class="evento-info">
+                <span class="evento-tag">Próximo Evento</span>
 
-            <p>
-              • Fondue de queijo <br />
-              • Fondue de Ninho com Nutella <br />
-              • Música ao vivo com Emerson <br />
-              • Ambiente aconchegante e perfeito pra curtir a dois
-            </p>
+                <h3>Dia dos Namorados</h3>
 
-            <p><strong>Data:</strong> 12/06/2026</p>
+                <div class="evento-data">12 de Junho</div>
+
+                <p>
+                  Dia dos Namorados no Deck Beer, uma noite feita para celebrar
+                  o amor.
+                </p>
+              </div>
+            </div>
+
+            <div class="slide">
+              <img src="./img/evento2.jpg" alt="Evento" />
+
+              <div class="evento-info">
+                <span class="evento-tag">Próximo Evento</span>
+
+                <h3>Em Breve</h3>
+
+                <div class="evento-data">A definir</div>
+
+                <p>
+                  Novidades chegando. Acompanhe nossas redes sociais para ficar
+                  por dentro.
+                </p>
+              </div>
+            </div>
           </div>
+
+          <button class="slider-btn next">&#10095;</button>
         </div>
       </div>
     </section>
@@ -214,6 +240,7 @@
 
         <div class="gallery-grid">
           <img src="./img/local-1.jpg" alt="Externa do Deck Beer" />
+          <img src="./img/local-2.jpg" alt="Interna do Deck Beer" />
           <img src="./img/local-3.jpg" alt="Interna do Deck Beer" />
           <img src="./img/local-4.jpg" alt="Entrada do Deck Beer" />
         </div>

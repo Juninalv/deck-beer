@@ -3,17 +3,16 @@
 ========================= */
 
 :root {
-  /* Base */
-  --bg-primary: #0d0d0d;
-  --bg-secondary: #d4a24a;
-  --bg-tertiary: #202020;
-  --bg-card: #161616;
-  --text-primary: #ffffff;
-  --text-secondary: #d4a24a;
-  --text-tertiary: #000;
+  --bg-primary: #14110f;
+  --bg-secondary: #b17a3d;
+  --bg-tertiary: #1d1915;
+  --bg-card: #241f1a;
 
-  /* Overlay */
-  --overlay-dark: rgba(0, 0, 0, 0.45);
+  --text-primary: #f2f2f2;
+  --text-secondary: #d4a264;
+  --text-tertiary: #111111;
+
+  --overlay-dark: rgba(0, 0, 0, 0.55);
 }
 
 /* =========================
@@ -32,7 +31,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  background: #0f0f0f;
+  background: var(--bg-primary);
   color: var(--text-primary);
 }
 

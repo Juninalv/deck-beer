@@ -1,37 +1,114 @@
 .eventos {
-  padding: 70px 0;
-  text-align: center;
+  padding: 100px 0;
 }
 
-.evento-card {
-  max-width: 800px;
-  margin: 35px auto 0;
-  background: var(--bg-card);
-  border-radius: 20px;
-  overflow: hidden;
-  display: grid;
-  grid-template-columns: 300px 1fr;
-  align-items: center;
+.slider {
+  position: relative;
+  max-width: 700px;
+  margin: 40px auto 0;
 }
 
-.evento-card img {
-  width: 100%;
-  height: auto;
+.slides {
+  position: relative;
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
   display: block;
 }
 
+.slide img {
+  width: 100%;
+  border-radius: 24px;
+  display: block;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
 .evento-info {
-  padding: 40px;
-  text-align: left;
+  max-width: 700px;
+  margin: 24px auto 0;
+  background: var(--background-card);
+  border-radius: 20px;
+  padding: 24px;
+  text-align: center;
+}
+
+.evento-tag {
+  display: inline-block;
+  background: var(--red-primary);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 6px 12px;
+  border-radius: 999px;
+  margin-bottom: 12px;
 }
 
 .evento-info h3 {
-  color: var(--text-secondary);
-  font-size: 36px;
-  margin-bottom: 15px;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.evento-data {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--red-primary);
+  margin-bottom: 12px;
 }
 
 .evento-info p {
-  color: var(--text-primary);
-  line-height: 1.8;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 22px;
+  z-index: 10;
+}
+
+.slider-btn.prev {
+  left: 10px;
+}
+
+.slider-btn.next {
+  right: 10px;
+}
+
+.slider-btn:hover {
+  background: var(--bg-secondary);
+  color: var(--text-tertiary);
+}
+
+@media (max-width: 768px) {
+  .evento-info {
+    padding: 20px;
+  }
+
+  .evento-info h3 {
+    font-size: 1.5rem;
+  }
+
+  .evento-data {
+    font-size: 1rem;
+  }
+
+  .evento-info p {
+    font-size: 0.95rem;
+  }
 }
