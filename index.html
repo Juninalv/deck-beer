@@ -58,7 +58,8 @@
 
     <section class="hero">
       <div class="hero-content">
-        <h1>Deck Beer Bar Rústico</h1>
+        <span class="hero-tag">LAGOINHA • SP </span>
+        <h1>Bar Rústico</h1>
 
         <p>
           Cerveja gelada, boa música, gastronomia de qualidade e momentos
@@ -71,15 +72,70 @@
 
     <section class="sobre" id="sobre">
       <div class="container sobre-content">
-        <img src="./img/local-2.jpg" alt="Faixada do Deck Beer" />
+        <img src="./img/sobre.jpg" alt="Faixada do Deck Beer" />
 
         <div>
           <h2 class="section-title">Nossa História</h2>
 
           <p>
-            O Deck Beer Bar Rústico nasceu da paixão por reunir amigos,
-            compartilhar bons momentos e oferecer experiências únicas.
+            Em 1973, quando José Cursino e sua esposa Maria Aparecida (Maria
+            Freira) decidiram vir de São Luiz do Paraitinga para fundar em
+            Lagoinha o Bazar Cursino, o empresário, que apresentou ao público
+            tantas novidades, corria o município com seus tecidos no lombo do
+            seu cavalo.
           </p>
+
+          <div class="historia-completa">
+            <p>
+              Também não sabia que seus tecidos e miudezas passariam a fazer
+              parte da rotina nos lares de Lagoinha, nem que o seu espírito
+              empreendedor fizesse com que o povo de Lagoinha reconhecesse em
+              sua loja o centro da evolução do comércio da cidade. Foi ali que
+              criou seus filhos.
+            </p>
+
+            <p>
+              Um dia veio a pandemia, e o casal, que já beirava os oitenta anos,
+              teve que fechar o comércio para cuidar um do outro no sítio que
+              possuíam na localidade.
+            </p>
+
+            <p>
+              A pandemia acabou, e eles queriam que sua filha mais nova
+              continuasse tocando o bazar, pois era um negócio muito antigo.
+              Mas, ao ver que seus produtos estavam desatualizados, resolveram
+              fechar o comércio.
+            </p>
+
+            <p>
+              Foi quando sua filha e seu genro decidiram fazer algo que não
+              havia na cidade e que a cidade, sem dúvida, precisava e
+              agradeceria: um "Bar Rústico".
+            </p>
+
+            <p>
+              Esse bar é o Deck Beer porque, como o nome indica, construiu-se um
+              deck na calçada em frente à casa, onde os clientes têm uma visão
+              geral da praça.
+            </p>
+
+            <p>Por isso veio a ideia: cerveja no deck.</p>
+
+            <p>
+              Hoje, há mais de 50 anos mantendo o espírito de inovação no
+              comércio e para atender às novas demandas do mercado, a Casa
+              Cursino preserva sua tradição de pioneirismo, com a família
+              conduzindo um negócio que faz da oferta gastronômica o principal
+              atrativo para quem busca maior qualidade em seus momentos de
+              descontração e para o incansável apetite do turista que procura
+              desfrutar das coisas boas que cada lugar do planeta tem para lhe
+              oferecer.
+            </p>
+          </div>
+
+          <button class="btn-historia" id="btnHistoria">
+            Ler história completa
+          </button>
         </div>
       </div>
     </section>
@@ -245,12 +301,6 @@
         <p>© 2026 Deck Beer Bar Rústico • Todos os direitos reservados</p>
       </div>
     </footer>
-    <script>
-      const navbar = document.getElementById("navbar");
-
-      window.addEventListener("scroll", () => {
-        navbar.classList.toggle("scrolled", window.scrollY > 50);
-      });
-    </script>
+    <script src="./js/geral.js"></script>
   </body>
 </html>
