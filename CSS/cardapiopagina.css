@@ -19,6 +19,28 @@
   background-position: center;
 }
 
+.hero-cardapio .hero-content {
+  max-width: 700px;
+  padding: 0 20px;
+  margin-top: 60px;
+}
+
+.hero-cardapio .hero-content h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.1;
+  margin-bottom: 15px;
+
+  color: var(--text-primary);
+}
+
+.hero-cardapio .hero-content p {
+  max-width: 600px;
+  margin: 0 auto;
+
+  font-size: 1.1rem;
+  color: var(--text-primary);
+}
+
 /* =========================
    MENU CATEGORIAS
 ========================= */
@@ -103,7 +125,6 @@
 .item-cardapio img {
   width: 100%;
   height: 190px;
-
   object-fit: cover;
 }
 
@@ -152,33 +173,26 @@
 .dose-item {
   display: flex;
   align-items: center;
-
   margin-bottom: 24px;
 }
 
 .dose-nome {
   font-size: 15px;
   text-transform: uppercase;
-
   color: var(--text-primary);
-
   white-space: nowrap;
 }
 
 .dose-linha {
   flex: 1;
-
   margin: 0 12px;
-
   border-bottom: 1px dotted rgba(255, 255, 255, 0.3);
 }
 
 .dose-preco {
   font-size: 15px;
   font-weight: 500;
-
   color: var(--text-secondary);
-
   white-space: nowrap;
 }
 
@@ -193,6 +207,18 @@
 }
 
 @media (max-width: 768px) {
+  .hero-cardapio {
+    height: 40vh;
+  }
+
+  .hero-cardapio .hero-content h1 {
+    font-size: 2.4rem;
+  }
+
+  .hero-cardapio .hero-content p {
+    font-size: 1rem;
+  }
+
   .itens-cardapio {
     grid-template-columns: 1fr;
   }
@@ -203,9 +229,5 @@
 
   .menu-categorias a {
     font-size: 14px;
-  }
-
-  .hero-cardapio {
-    height: 40vh;
   }
 }
