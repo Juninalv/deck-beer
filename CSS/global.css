@@ -3,23 +3,20 @@
 ========================= */
 
 :root {
-  /* Fundos */
-  --bg-primary: #14110f;
-  --bg-secondary: #b17a3d;
-  --bg-tertiary: #1d1915;
-  --bg-card: #241f1a;
+  --bg-primary: #0b0b0b;
+  --bg-secondary: #d4af37;
+  --bg-tertiary: #141414;
+  --bg-card: #1d1d1d;
 
-  /* Textos */
-  --text-primary: #f2f2f2;
-  --text-secondary: #d4a264;
+  --text-primary: #f5f5f5;
+  --text-secondary: #d4af37;
   --text-tertiary: #111111;
-  --text-muted: rgba(242, 242, 242, 0.75);
+  --text-muted: rgba(245, 245, 245, 0.75);
 
-  /* Efeitos */
-  --overlay-dark: rgba(0, 0, 0, 0.55);
-  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.25);
+  --overlay-dark: rgba(0, 0, 0, 0.65);
 
-  /* Bordas */
+  --shadow-card: 0 15px 35px rgba(0, 0, 0, 0.35);
+
   --radius-sm: 12px;
   --radius-md: 20px;
 }
