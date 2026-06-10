@@ -1,7 +1,11 @@
+/* =========================
+   FOOTER
+========================= */
+
 footer {
   padding-top: 80px;
   padding-bottom: 40px;
-  background: #0a0a0a;
+  background: var(--bg-primary);
 }
 
 .footer-grid {
@@ -15,11 +19,12 @@ footer {
   width: 90px;
   height: 90px;
   margin: 0 auto 20px;
-  background: #181818;
-  border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: var(--bg-card);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-card);
 }
 
 .footer-icon img {
@@ -28,21 +33,46 @@ footer {
 }
 
 .footer-item h3 {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 34px;
-  color: #d4a24a;
+  font-size: 2rem;
   margin-bottom: 15px;
+  color: var(--text-secondary);
 }
 
 .footer-item p {
   line-height: 1.8;
-  color: #d8d8d8;
+  color: var(--text-muted);
 }
 
 .footer-bottom {
   margin-top: 50px;
   padding-top: 25px;
-  border-top: 1px solid #222;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
   text-align: center;
-  color: #888;
+  color: var(--text-muted);
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 992px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .footer-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .footer-item h3 {
+    font-size: 1.8rem;
+  }
 }

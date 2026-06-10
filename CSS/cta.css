@@ -1,14 +1,40 @@
+/* =========================
+   CTA
+========================= */
+
 .cta {
   padding: 80px 20px;
   text-align: center;
   background:
-    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    linear-gradient(var(--overlay-dark), var(--overlay-dark)),
     url("../img/sobre.jpg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .cta h2 {
-  font-size: 60px;
   margin-bottom: 20px;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  color: var(--text-primary);
+}
+
+.cta p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--text-muted);
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 768px) {
+  .cta {
+    padding: 70px 20px;
+  }
+
+  .cta h2 {
+    line-height: 1.1;
+  }
 }

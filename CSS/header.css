@@ -1,3 +1,7 @@
+/* =========================
+   NAVBAR
+========================= */
+
 nav {
   position: fixed;
   top: 0;
@@ -5,14 +9,15 @@ nav {
   width: 100%;
   z-index: 1000;
   padding: 30px 0;
-  background: rgba(0, 0, 0, 0.15);
+  background: rgba(20, 17, 15, 0.15);
   transition: all 0.3s ease;
 }
+
 nav.scrolled {
   padding: 12px 0;
-  background: rgba(0, 0, 0, 0.95);
+  background: rgba(20, 17, 15, 0.95);
   backdrop-filter: blur(8px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: var(--shadow-card);
 }
 
 nav.scrolled .logo {
@@ -20,12 +25,12 @@ nav.scrolled .logo {
 }
 
 .nav-content {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
 }
 
 .nav-left {
@@ -43,10 +48,9 @@ nav.scrolled .logo {
 }
 
 nav a {
-  text-decoration: none;
   color: var(--text-primary);
   font-weight: 500;
-  transition: 0.3s;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
@@ -55,9 +59,44 @@ nav a:hover {
 
 .logo {
   font-size: 38px;
-  font-weight: bold;
+  font-weight: 700;
   letter-spacing: 2px;
   color: var(--text-secondary);
-
   transition: all 0.3s ease;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 768px) {
+  nav {
+    padding: 18px 0;
+  }
+
+  nav.scrolled {
+    padding: 10px 0;
+  }
+
+  .nav-left {
+    gap: 15px;
+    padding-right: 20px;
+  }
+
+  .nav-right {
+    gap: 15px;
+    padding-left: 20px;
+  }
+
+  .logo {
+    font-size: 26px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  nav.scrolled .logo {
+    transform: scale(0.9);
+  }
 }

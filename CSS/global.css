@@ -3,20 +3,29 @@
 ========================= */
 
 :root {
+  /* Fundos */
   --bg-primary: #14110f;
   --bg-secondary: #b17a3d;
   --bg-tertiary: #1d1915;
   --bg-card: #241f1a;
 
+  /* Textos */
   --text-primary: #f2f2f2;
   --text-secondary: #d4a264;
   --text-tertiary: #111111;
+  --text-muted: rgba(242, 242, 242, 0.75);
 
+  /* Efeitos */
   --overlay-dark: rgba(0, 0, 0, 0.55);
+  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.25);
+
+  /* Bordas */
+  --radius-sm: 12px;
+  --radius-md: 20px;
 }
 
 /* =========================
-   RESET BÁSICOS
+   RESET
 ========================= */
 
 * {
@@ -33,16 +42,110 @@ body {
   font-family: "Poppins", sans-serif;
   background: var(--bg-primary);
   color: var(--text-primary);
+  line-height: 1.6;
 }
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  font: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+/* =========================
+   TIPOGRAFIA
+========================= */
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
   font-family: "Cormorant Garamond", serif;
+  line-height: 1.1;
 }
+
+p {
+  color: var(--text-muted);
+}
+
+/* =========================
+   LAYOUT
+========================= */
 
 .container {
   width: 90%;
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
+}
+
+/* =========================
+   TÍTULOS PADRÃO
+========================= */
+
+.section-title {
+  font-size: 3rem;
+  color: var(--text-secondary);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* =========================
+   BOTÃO PADRÃO
+========================= */
+
+.btn {
+  display: inline-block;
+  background: var(--bg-secondary);
+  color: var(--text-tertiary);
+  padding: 14px 28px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* =========================
+   SEÇÕES PADRÃO
+========================= */
+
+section {
+  padding: 100px 0;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 768px) {
+  section {
+    padding: 70px 0;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+  }
+
+  .container {
+    width: 92%;
+  }
 }

@@ -1,39 +1,61 @@
+/* =========================
+   HERO CARDÁPIO
+========================= */
+
 .hero-cardapio {
   height: 50vh;
-
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.75)),
-    url("../img/hero.jpg");
-
-  background-size: cover;
-  background-position: center;
 
   display: flex;
   align-items: center;
   justify-content: center;
+
   text-align: center;
+
+  background:
+    linear-gradient(var(--overlay-dark), rgba(0, 0, 0, 0.75)),
+    url("../img/hero.jpg");
+
+  background-size: cover;
+  background-position: center;
 }
 
+/* =========================
+   MENU CATEGORIAS
+========================= */
+
 .menu-categorias {
-  background: #161616;
-  padding: 20px 0;
   position: sticky;
   top: 0;
   z-index: 50;
+
+  padding: 20px 0;
+
+  background: var(--bg-tertiary);
+  backdrop-filter: blur(8px);
 }
 
 .menu-categorias .container {
   display: flex;
   justify-content: center;
-  gap: 30px;
   flex-wrap: wrap;
+
+  gap: 30px;
 }
 
 .menu-categorias a {
-  color: #d4a24a;
-  text-decoration: none;
+  color: var(--text-secondary);
   font-weight: 600;
+
+  transition: color 0.3s ease;
 }
+
+.menu-categorias a:hover {
+  color: var(--text-primary);
+}
+
+/* =========================
+   CATEGORIAS
+========================= */
 
 .categoria-cardapio {
   padding: 70px 0;
@@ -46,42 +68,43 @@
   scroll-margin-top: 120px;
 }
 
-.item-cardapio {
-  background: #1d1d1d;
-  border-radius: 16px;
-  overflow: hidden;
-  transition: 0.3s;
-  max-width: 350px;
-  width: 100%;
-  margin: 0 auto;
-}
+/* =========================
+   GRID DE ITENS
+========================= */
 
 .itens-cardapio {
   display: grid;
   grid-template-columns: repeat(3, 320px);
   justify-content: center;
+
   gap: 25px;
   margin-top: 35px;
 }
 
-.item-cardapio img {
+.item-cardapio {
   width: 100%;
-  height: 190px;
-  object-fit: cover;
-  display: block;
+  max-width: 350px;
+  margin: 0 auto;
+
+  overflow: hidden;
+
+  background: var(--bg-card);
+  border-radius: var(--radius-sm);
+
+  box-shadow: var(--shadow-card);
+
+  transition: transform 0.3s ease;
 }
 
 .item-cardapio:hover {
   transform: translateY(-5px);
 }
 
-.item-cardapio {
-  background: #1d1d1d;
-  border-radius: 16px;
-  overflow: hidden;
-  max-width: 350px;
+.item-cardapio img {
   width: 100%;
-  margin: 0 auto;
+  height: 190px;
+
+  object-fit: cover;
 }
 
 .item-info {
@@ -89,31 +112,36 @@
 }
 
 .item-info h3 {
-  color: #d4a24a;
-  font-size: 24px;
   margin-bottom: 8px;
+
+  font-size: 1.5rem;
+  color: var(--text-secondary);
 }
 
 .item-info p {
-  color: #d8d8d8;
-  font-size: 14px;
-  line-height: 1.5;
   margin-bottom: 12px;
+
+  font-size: 0.9rem;
+  line-height: 1.6;
+
+  color: var(--text-muted);
 }
 
 .item-info span {
   display: block;
-  color: #d4a24a;
-  font-size: 22px;
+
+  font-size: 1.4rem;
   font-weight: 600;
+
+  color: var(--text-secondary);
 }
+
 /* =========================
    DOSES
 ========================= */
 
 .categoria-doses {
-  padding: 100px 0;
-  background: #050505;
+  background: var(--bg-primary);
 }
 
 .lista-doses {
@@ -124,25 +152,60 @@
 .dose-item {
   display: flex;
   align-items: center;
+
   margin-bottom: 24px;
 }
 
 .dose-nome {
-  color: #fff;
   font-size: 15px;
   text-transform: uppercase;
+
+  color: var(--text-primary);
+
   white-space: nowrap;
 }
 
 .dose-linha {
   flex: 1;
-  border-bottom: 1px dotted rgba(255, 255, 255, 0.3);
+
   margin: 0 12px;
+
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.3);
 }
 
 .dose-preco {
-  color: #fff;
   font-size: 15px;
   font-weight: 500;
+
+  color: var(--text-secondary);
+
   white-space: nowrap;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 1100px) {
+  .itens-cardapio {
+    grid-template-columns: repeat(2, 320px);
+  }
+}
+
+@media (max-width: 768px) {
+  .itens-cardapio {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-categorias .container {
+    gap: 15px;
+  }
+
+  .menu-categorias a {
+    font-size: 14px;
+  }
+
+  .hero-cardapio {
+    height: 40vh;
+  }
 }

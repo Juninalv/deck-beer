@@ -1,11 +1,15 @@
+/* =========================
+   HERO
+========================= */
+
 .hero {
-  height: 85vh;
   position: relative;
-  overflow: hidden;
+  height: 85vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  overflow: hidden;
 }
 
 .hero::before {
@@ -13,8 +17,9 @@
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    linear-gradient(var(--overlay-dark), var(--overlay-dark)),
     url("../img/hero.jpg");
+
   background-size: cover;
   background-position: center;
   animation: heroZoom 12s ease forwards;
@@ -24,9 +29,9 @@
 .hero-content {
   position: relative;
   z-index: 1;
-  margin-top: -40px;
   max-width: 900px;
   padding: 0 20px;
+  margin-top: -40px;
 }
 
 .hero-tag {
@@ -59,37 +64,32 @@
 }
 
 .hero-content p {
-  font-size: 20px;
   max-width: 700px;
-  margin: auto;
+  margin: 0 auto;
+  font-size: 20px;
   opacity: 0;
   transform: translateY(30px);
   animation: fadeUp 1s ease forwards;
   animation-delay: 0.5s;
 }
 
-.btn {
-  display: inline-block;
+.hero .btn {
   margin-top: 30px;
-  padding: 15px 40px;
-  background: var(--bg-secondary);
-  color: var(--text-tertiary);
-  text-decoration: none;
-  font-weight: 600;
   border-radius: 40px;
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
   opacity: 0;
   transform: translateY(30px);
   animation: fadeUp 1s ease forwards;
   animation-delay: 0.8s;
 }
 
-.btn:hover {
+.hero .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--shadow-card);
 }
+
+/* =========================
+   ANIMAÇÕES
+========================= */
 
 @keyframes fadeUp {
   from {
@@ -113,11 +113,22 @@
   }
 }
 
-/* Responsivo */
+/* =========================
+   RESPONSIVO
+========================= */
 
 @media (max-width: 768px) {
   .hero {
     height: 80vh;
+  }
+
+  .hero-content {
+    margin-top: -20px;
+  }
+
+  .hero-tag {
+    font-size: 12px;
+    letter-spacing: 3px;
   }
 
   .hero-content h1 {
@@ -128,7 +139,7 @@
     font-size: 18px;
   }
 
-  .btn {
+  .hero .btn {
     padding: 14px 32px;
   }
 }
