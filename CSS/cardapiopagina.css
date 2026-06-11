@@ -3,34 +3,57 @@
 ========================= */
 
 .hero-cardapio {
-  height: 50vh;
+  position: relative;
+  height: 55vh;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
   text-align: center;
+  overflow: hidden;
+}
+
+.hero-cardapio::before {
+  content: "";
+  position: absolute;
+  inset: 0;
 
   background:
-    linear-gradient(var(--overlay-dark), rgba(0, 0, 0, 0.75)),
+    linear-gradient(var(--overlay-dark), var(--overlay-dark)),
     url("../img/hero.jpg");
 
   background-size: cover;
   background-position: center;
+
+  animation: heroZoom 12s ease forwards;
+
+  z-index: 0;
 }
 
 .hero-cardapio .hero-content {
+  position: relative;
+  z-index: 1;
+
   max-width: 700px;
   padding: 0 20px;
-  margin-top: 60px;
 }
 
 .hero-cardapio .hero-content h1 {
-  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-size: clamp(2.5rem, 5vw, 4rem);
   line-height: 1.1;
+
   margin-bottom: 15px;
 
   color: var(--text-primary);
+
+  text-shadow:
+    0 0 20px rgba(255, 255, 255, 0.1),
+    0 0 40px rgba(255, 255, 255, 0.05);
+
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1s ease forwards;
 }
 
 .hero-cardapio .hero-content p {
@@ -39,6 +62,11 @@
 
   font-size: 1.1rem;
   color: var(--text-primary);
+
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1s ease forwards;
+  animation-delay: 0.3s;
 }
 
 /* =========================
@@ -208,15 +236,25 @@
 
 @media (max-width: 768px) {
   .hero-cardapio {
-    height: 40vh;
+    height: 45vh;
+    min-height: 350px;
+  }
+
+  .hero-cardapio::before {
+    background-position: 60% center;
+  }
+
+  .hero-cardapio .hero-content {
+    padding-top: 80px;
   }
 
   .hero-cardapio .hero-content h1 {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
   }
 
   .hero-cardapio .hero-content p {
     font-size: 1rem;
+    line-height: 1.6;
   }
 
   .itens-cardapio {

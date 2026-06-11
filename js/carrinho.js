@@ -95,22 +95,19 @@ function enviarPedido() {
   }
 
   const cliente = document.getElementById("cliente").value.trim();
-
   const tipo = document.getElementById("tipoPedido").value;
-
   const mesa = document.getElementById("mesa").value.trim();
-
   const observacao = document.getElementById("observacao").value.trim();
 
   let total = 0;
 
-  let msg = " *PEDIDO DECK BEER*\n\n";
+  let msg = "*PEDIDO DECK BEER*\n\n";
 
-  msg += ` Cliente: ${cliente || "Não informado"}\n`;
-  msg += ` Tipo: ${tipo}\n`;
+  msg += `Cliente: ${cliente || "Não informado"}\n`;
+  msg += `Tipo: ${tipo}\n`;
 
   if (mesa) {
-    msg += ` Mesa: ${mesa}\n`;
+    msg += `Mesa: ${mesa}\n`;
   }
 
   msg += "\n";
@@ -124,10 +121,10 @@ function enviarPedido() {
     msg += `R$ ${subtotal.toFixed(2).replace(".", ",")}\n\n`;
   });
 
-  msg += ` Total: R$ ${total.toFixed(2).replace(".", ",")}\n`;
+  msg += `Total: R$ ${total.toFixed(2).replace(".", ",")}\n`;
 
   if (observacao) {
-    msg += `\n Observação:\n${observacao}`;
+    msg += `\nObservação:\n${observacao}`;
   }
 
   window.open(
@@ -135,12 +132,20 @@ function enviarPedido() {
     "_blank",
   );
 
+  // Limpa carrinho
   carrinho = [];
   localStorage.removeItem("carrinho");
 
-  setTimeout(() => {
-    location.reload();
-  }, 300);
-}
+  // Atualiza visualmente
+  document.getElementById("cart-items").innerHTML = "";
+  document.getElementById("cart-count").innerText = "0";
+  document.getElementById("cart-total").innerText = "R$ 0,00";
 
-atualizarCarrinho();
+  // Limpa formulário
+  document.getElementById("cliente").value = "";
+  document.getElementById("mesa").value = "";
+  document.getElementById("observacao").value = "";
+
+  // Fecha o carrinho
+  document.getElementById("cartSidebar").classList.remove("active");
+}
