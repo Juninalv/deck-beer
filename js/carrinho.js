@@ -10,6 +10,21 @@ function salvarCarrinho() {
   localStorage.setItem("carrinho", JSON.stringify(carrinho));
 }
 
+function adicionarLanche(botao, nome, preco) {
+  const itemInfo = botao.closest(".item-info");
+  const select = itemInfo.querySelector(".adicional-select");
+
+  let nomeFinal = nome;
+  let precoFinal = preco;
+
+  if (select && select.value !== "") {
+    nomeFinal += ` + ${select.value}`;
+    precoFinal += 5;
+  }
+
+  adicionarAoCarrinho(nomeFinal, precoFinal);
+}
+
 function adicionarAoCarrinho(nome, preco) {
   const item = carrinho.find((p) => p.nome === nome);
 
