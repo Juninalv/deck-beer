@@ -34,6 +34,44 @@ function adicionarLanche(botao, nome, preco) {
   adicionarAoCarrinho(nomeFinal, precoFinal);
 }
 
+function adicionarPizza(botao) {
+  const itemInfo = botao.closest(".item-info");
+
+  const sabores = itemInfo.querySelectorAll(".sabor-pizza:checked");
+
+  const extra = itemInfo.querySelector(".extra-pizza:checked");
+
+  const limite = extra ? 4 : 3;
+
+  if (sabores.length === 0) {
+    alert("Escolha pelo menos 1 sabor.");
+    return;
+  }
+
+  if (sabores.length > limite) {
+    alert(`Você pode escolher no máximo ${limite} sabores.`);
+    return;
+  }
+
+  let preco = 25;
+  let nome = "Pizza Rap 10";
+
+  const listaSabores = [];
+
+  sabores.forEach((sabor) => {
+    listaSabores.push(sabor.value);
+  });
+
+  nome += " - " + listaSabores.join(" / ");
+
+  if (extra) {
+    preco += 5;
+    nome += " + Opção Extra";
+  }
+
+  adicionarAoCarrinho(nome, preco);
+}
+
 function adicionarAoCarrinho(nome, preco) {
   const item = carrinho.find((p) => p.nome === nome);
 

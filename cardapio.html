@@ -48,7 +48,7 @@
         <a href="#porcoes">Porções</a>
         <a href="#pratosindividuais">Pratos Individuais</a>
         <a href="#pratosexecutivos">Pratos Executivos</a>
-        <a href="#drinks">Drinks</a>
+        <a href="#lanchesartesanais">Lanches Artesanais</a>
         <a href="#doses">Doses</a>
         <a href="#sobremesas">Sobremesas</a>
       </div>
@@ -1282,6 +1282,103 @@
                 class="btn-add"
                 onclick="adicionarLanche(this, 'Contra Filé', 29.9)"
               >
+                Adicionar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  PIZZA RAP 10  -->
+    <section class="categoria-cardapio" id="pizza">
+      <div class="container">
+        <h2 class="section-title">Pizza RAP10</h2>
+        <div class="itens-cardapio">
+          <div class="item-cardapio">
+            <img src="./img/sem-imagem.png" alt="Pizza Rap 10" />
+
+            <div class="item-info">
+              <h3>Monte sua Pizza Rap 10</h3>
+
+              <p>
+                Escolha até 3 sabores: Mussarela, Presunto, Calabresa, Catupiry,
+                Cheddar, Palmito, Bacon ou Tomate Seco.
+              </p>
+
+              <span>R$ 25,00</span>
+
+              <details class="adicionais">
+                <summary>Escolher sabores (máx. 3)</summary>
+
+                <label>
+                  <input
+                    type="checkbox"
+                    value="Mussarela"
+                    class="sabor-pizza"
+                  />
+                  Mussarela
+                </label>
+
+                <label>
+                  <input type="checkbox" value="Presunto" class="sabor-pizza" />
+                  Presunto
+                </label>
+
+                <label>
+                  <input
+                    type="checkbox"
+                    value="Calabresa"
+                    class="sabor-pizza"
+                  />
+                  Calabresa
+                </label>
+
+                <label>
+                  <input type="checkbox" value="Catupiry" class="sabor-pizza" />
+                  Catupiry
+                </label>
+
+                <label>
+                  <input type="checkbox" value="Cheddar" class="sabor-pizza" />
+                  Cheddar
+                </label>
+
+                <label>
+                  <input type="checkbox" value="Palmito" class="sabor-pizza" />
+                  Palmito
+                </label>
+
+                <label>
+                  <input type="checkbox" value="Bacon" class="sabor-pizza" />
+                  Bacon
+                </label>
+
+                <label>
+                  <input
+                    type="checkbox"
+                    value="Tomate Seco"
+                    class="sabor-pizza"
+                  />
+                  Tomate Seco
+                </label>
+              </details>
+
+              <details class="adicionais">
+                <summary>Opção extra (+R$ 5,00)</summary>
+
+                <label>
+                  <input
+                    type="checkbox"
+                    value="Opção Extra"
+                    data-preco="5"
+                    class="extra-pizza"
+                  />
+                  Adicionar 1 sabor extra (+R$ 5,00)
+                </label>
+              </details>
+
+              <button class="btn-add" onclick="adicionarPizza(this)">
                 Adicionar
               </button>
             </div>
