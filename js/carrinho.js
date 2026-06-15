@@ -12,14 +12,23 @@ function salvarCarrinho() {
 
 function adicionarLanche(botao, nome, preco) {
   const itemInfo = botao.closest(".item-info");
-  const select = itemInfo.querySelector(".adicional-select");
+
+  const adicionaisMarcados = itemInfo.querySelectorAll(
+    ".adicionais input[type='checkbox']:checked",
+  );
 
   let nomeFinal = nome;
   let precoFinal = preco;
 
-  if (select && select.value !== "") {
-    nomeFinal += ` + ${select.value}`;
-    precoFinal += 5;
+  const adicionais = [];
+
+  adicionaisMarcados.forEach((item) => {
+    adicionais.push(item.value);
+    precoFinal += Number(item.dataset.preco);
+  });
+
+  if (adicionais.length > 0) {
+    nomeFinal += " + " + adicionais.join(", ");
   }
 
   adicionarAoCarrinho(nomeFinal, precoFinal);
