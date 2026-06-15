@@ -124,6 +124,36 @@
   cursor: pointer;
 }
 
+.campos-obrigatorios {
+  font-size: 12px;
+  color: #888;
+  margin: 0px 0 0px;
+  text-align: left;
+}
+
+.btn-localizacao {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: 1px solid #d4af37;
+  border-radius: 8px;
+  background: transparent;
+  color: #d4af37;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-localizacao:hover {
+  background: #d4af37;
+  color: #111;
+}
+
+.btn-localizacao:active {
+  transform: scale(0.98);
+}
+
 @media (max-width: 768px) {
   .cart-sidebar {
     width: 100%;

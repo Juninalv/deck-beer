@@ -258,17 +258,55 @@
 
       <div class="cart-total">Total: <span id="cart-total">R$ 0,00</span></div>
 
-      <input type="text" id="cliente" placeholder="Seu nome" />
+      <input type="text" id="cliente" placeholder="Seu nome*" />
 
-      <select id="tipoPedido">
-        <option>Consumir no Local</option>
-        <option>Retirada</option>
+      <select id="tipoPedido" onchange="alterarTipoPedido()">
+        <option value="local">Consumir no Local</option>
+        <option value="retirada">Retirada no Balcão</option>
+        <option value="delivery">Entrega (Delivery)</option>
       </select>
 
-      <input type="text" id="mesa" placeholder="Número da Mesa" />
+      <!-- LOCAL -->
 
-      <textarea id="observacao" placeholder="Observações"></textarea>
+      <div id="campoMesa">
+        <input type="text" id="mesa" placeholder="Número da Mesa*" />
+      </div>
 
+      <!-- DELIVERY -->
+
+      <div id="camposDelivery" style="display: none">
+        <input type="text" id="endereco" placeholder="Endereço*" />
+
+        <input type="text" id="numero" placeholder="Número*" />
+
+        <input
+          type="text"
+          id="complemento"
+          placeholder="Complemento (Opcional)"
+        />
+
+        <button
+          type="button"
+          onclick="capturarLocalizacao()"
+          class="btn-localizacao"
+        >
+          Compartilhar localização (Opcional)
+        </button>
+
+        <select id="formaPagamento" onchange="alterarPagamento()">
+          <option value="">Forma de Pagamento*</option>
+          <option value="Crédito">Cartão de Crédito</option>
+          <option value="Débito">Cartão de Débito</option>
+          <option value="Dinheiro">Dinheiro</option>
+        </select>
+
+        <div id="campoTroco" style="display: none">
+          <input type="text" id="troco" placeholder="Troco para quanto?*" />
+        </div>
+      </div>
+
+      <textarea id="observacao" placeholder="Observações (Opcional)"></textarea>
+      <p class="campos-obrigatorios">* Campos obrigatórios</p>
       <button class="btn-whatsapp" onclick="enviarPedido()">
         Finalizar Pedido
       </button>

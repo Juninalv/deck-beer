@@ -1,5 +1,7 @@
 let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
 
+let localizacaoCliente = "";
+
 function toggleCarrinho() {
   document.getElementById("cartSidebar").classList.toggle("active");
 }
@@ -40,9 +42,7 @@ function alterarQtd(nome, valor) {
 
 function atualizarCarrinho() {
   const lista = document.getElementById("cart-items");
-
   const contador = document.getElementById("cart-count");
-
   const totalElemento = document.getElementById("cart-total");
 
   lista.innerHTML = "";
@@ -56,7 +56,6 @@ function atualizarCarrinho() {
 
     lista.innerHTML += `
       <div class="cart-item">
-
         <div>
           <strong>${item.nome}</strong>
           <br>
@@ -64,28 +63,58 @@ function atualizarCarrinho() {
         </div>
 
         <div class="cart-controls">
-
-          <button onclick="alterarQtd('${item.nome}', -1)">
-            -
-          </button>
+          <button onclick="alterarQtd('${item.nome}', -1)">-</button>
 
           ${item.qtd}
 
-          <button onclick="alterarQtd('${item.nome}', 1)">
-            +
-          </button>
-
+          <button onclick="alterarQtd('${item.nome}', 1)">+</button>
         </div>
-
       </div>
     `;
   });
 
   contador.innerText = quantidade;
-
   totalElemento.innerText = `R$ ${total.toFixed(2).replace(".", ",")}`;
 
   salvarCarrinho();
+}
+
+function alterarTipoPedido() {
+  const tipo = document.getElementById("tipoPedido").value;
+
+  document.getElementById("campoMesa").style.display =
+    tipo === "local" ? "block" : "none";
+
+  document.getElementById("camposDelivery").style.display =
+    tipo === "delivery" ? "block" : "none";
+}
+
+function alterarPagamento() {
+  const pagamento = document.getElementById("formaPagamento").value;
+
+  document.getElementById("campoTroco").style.display =
+    pagamento === "Dinheiro" ? "block" : "none";
+}
+
+function capturarLocalizacao() {
+  if (!navigator.geolocation) {
+    alert("Seu navegador não suporta localização.");
+    return;
+  }
+
+  navigator.geolocation.getCurrentPosition(
+    (pos) => {
+      const lat = pos.coords.latitude;
+      const lng = pos.coords.longitude;
+
+      localizacaoCliente = `https://maps.google.com/?q=${lat},${lng}`;
+
+      alert("Localização capturada com sucesso!");
+    },
+    () => {
+      alert("Não foi possível obter sua localização.");
+    },
+  );
 }
 
 function enviarPedido() {
@@ -96,18 +125,80 @@ function enviarPedido() {
 
   const cliente = document.getElementById("cliente").value.trim();
   const tipo = document.getElementById("tipoPedido").value;
-  const mesa = document.getElementById("mesa").value.trim();
   const observacao = document.getElementById("observacao").value.trim();
+
+  const mesa = document.getElementById("mesa")?.value.trim() || "";
+
+  const endereco = document.getElementById("endereco")?.value.trim() || "";
+
+  const numero = document.getElementById("numero")?.value.trim() || "";
+
+  const complemento =
+    document.getElementById("complemento")?.value.trim() || "";
+
+  const formaPagamento = document.getElementById("formaPagamento")?.value || "";
+
+  const troco = document.getElementById("troco")?.value.trim() || "";
+
+  if (tipo === "local") {
+    if (!cliente || !mesa) {
+      alert("Preencha todos os campos obrigatórios.");
+      return;
+    }
+  }
+
+  if (tipo === "retirada") {
+    if (!cliente) {
+      alert("Preencha todos os campos obrigatórios.");
+      return;
+    }
+  }
+
+  if (tipo === "delivery") {
+    if (!cliente || !endereco || !numero || !formaPagamento) {
+      alert("Preencha todos os campos obrigatórios.");
+      return;
+    }
+
+    if (formaPagamento === "Dinheiro" && !troco) {
+      alert("Informe o valor para troco.");
+      return;
+    }
+  }
 
   let total = 0;
 
   let msg = "*PEDIDO DECK BEER*\n\n";
 
-  msg += `Cliente: ${cliente || "Não informado"}\n`;
-  msg += `Tipo: ${tipo}\n`;
+  msg += `Cliente: ${cliente}\n`;
 
-  if (mesa) {
+  if (tipo === "local") {
+    msg += "Tipo: Consumir no Local\n";
     msg += `Mesa: ${mesa}\n`;
+  }
+
+  if (tipo === "retirada") {
+    msg += "Tipo: Retirada no Balcão\n";
+  }
+
+  if (tipo === "delivery") {
+    msg += "Tipo: Entrega (Delivery)\n";
+    msg += `Endereço: ${endereco}\n`;
+    msg += `Número: ${numero}\n`;
+
+    if (complemento) {
+      msg += `Complemento: ${complemento}\n`;
+    }
+
+    msg += `Forma de Pagamento: ${formaPagamento}\n`;
+
+    if (formaPagamento === "Dinheiro") {
+      msg += `Troco para: ${troco}\n`;
+    }
+
+    if (localizacaoCliente) {
+      msg += `Localização:\n${localizacaoCliente}\n`;
+    }
   }
 
   msg += "\n";
@@ -123,29 +214,42 @@ function enviarPedido() {
 
   msg += `Total: R$ ${total.toFixed(2).replace(".", ",")}\n`;
 
-  if (observacao) {
-    msg += `\nObservação:\n${observacao}`;
-  }
+  msg += `\nObservações:\n${observacao}`;
 
   window.open(
     `https://wa.me/5512974038736?text=${encodeURIComponent(msg)}`,
     "_blank",
   );
 
-  // Limpa carrinho
   carrinho = [];
   localStorage.removeItem("carrinho");
 
-  // Atualiza visualmente
   document.getElementById("cart-items").innerHTML = "";
   document.getElementById("cart-count").innerText = "0";
   document.getElementById("cart-total").innerText = "R$ 0,00";
 
-  // Limpa formulário
   document.getElementById("cliente").value = "";
-  document.getElementById("mesa").value = "";
   document.getElementById("observacao").value = "";
 
-  // Fecha o carrinho
+  if (document.getElementById("mesa"))
+    document.getElementById("mesa").value = "";
+
+  if (document.getElementById("endereco"))
+    document.getElementById("endereco").value = "";
+
+  if (document.getElementById("numero"))
+    document.getElementById("numero").value = "";
+
+  if (document.getElementById("complemento"))
+    document.getElementById("complemento").value = "";
+
+  if (document.getElementById("troco"))
+    document.getElementById("troco").value = "";
+
+  localizacaoCliente = "";
+
   document.getElementById("cartSidebar").classList.remove("active");
 }
+
+atualizarCarrinho();
+alterarTipoPedido();
