@@ -51,6 +51,8 @@
         <a href="#lanchesartesanais">Lanches Artesanais</a>
         <a href="#pizza">Pizza Rap 10</a>
         <a href="#sobremesas">Sobremesas</a>
+        <a href="#drinks">Drinks</a>
+        <a href="#bebidas">Bebidas</a>
         <a href="#doses">Doses</a>
       </div>
     </section>
@@ -1559,6 +1561,729 @@
         </div>
       </div>
     </section>
+    <!-- DRINKS -->
+    <section class="categoria-cardapio" id="drinks">
+      <div class="container">
+        <h2 class="section-title">Drinks</h2>
+
+        <div class="itens-cardapio">
+          <div class="item-cardapio">
+            <img src="./img/sem-imagem.png" alt="Caipirinha de Cachaça" />
+
+            <div class="item-info">
+              <h3>Caipirinha de Cachaça</h3>
+
+              <p>Cachaça, limão, açúcar e gelo.</p>
+
+              <span>R$ 24,90</span>
+
+              <button
+                class="btn-add"
+                onclick="adicionarAoCarrinho('Caipirinha de Cachaça', 24.9)"
+              >
+                Adicionar
+              </button>
+            </div>
+          </div>
+
+          <div class="item-cardapio">
+            <img src="./img/sem-imagem.png" alt="Caipirinha de Vodka" />
+
+            <div class="item-info">
+              <h3>Caipirinha de Vodka</h3>
+
+              <p>Vodka, limão, açúcar e gelo.</p>
+
+              <span>R$ 27,90</span>
+
+              <button
+                class="btn-add"
+                onclick="adicionarAoCarrinho('Caipirinha de Vodka', 27.9)"
+              >
+                Adicionar
+              </button>
+            </div>
+          </div>
+
+          <div class="item-cardapio">
+            <img src="./img/sem-imagem.png" alt="Caipirinha Sabores" />
+
+            <div class="item-info">
+              <h3>Caipirinha Sabores</h3>
+
+              <p>Cachaça ou vodka.</p>
+
+              <span>R$ 29,90</span>
+
+              <details class="adicionais">
+                <summary>Escolher sabor</summary>
+
+                <label>
+                  <input
+                    type="radio"
+                    name="caipirinha-sabor"
+                    value="Morango"
+                    class="sabor-sobremesa"
+                  />
+                  Morango
+                </label>
+
+                <label>
+                  <input
+                    type="radio"
+                    name="caipirinha-sabor"
+                    value="Maracujá"
+                    class="sabor-sobremesa"
+                  />
+                  Maracujá
+                </label>
+
+                <label>
+                  <input
+                    type="radio"
+                    name="caipirinha-sabor"
+                    value="Abacaxi"
+                    class="sabor-sobremesa"
+                  />
+                  Abacaxi
+                </label>
+              </details>
+
+              <button class="btn-add" onclick="adicionarSobremesa(this)">
+                Adicionar
+              </button>
+            </div>
+          </div>
+
+          <div class="item-cardapio">
+            <img src="./img/sem-imagem.png" alt="Brasileirinha" />
+
+            <div class="item-info">
+              <h3>Brasileirinha</h3>
+
+              <p>Vodka, limão e maracujá.</p>
+
+              <span>R$ 29,90</span>
+
+              <button
+                class="btn-add"
+                onclick="adicionarAoCarrinho('Brasileirinha', 29.9)"
+              >
+                Adicionar
+              </button>
+            </div>
+          </div>
+
+          <div class="item-cardapio">
+            <img src="./img/sem-imagem.png" alt="Caipirinha Deck Beer" />
+
+            <div class="item-info">
+              <h3>Caipirinha Deck Beer</h3>
+
+              <p>Vodka, maracujá e hortelã.</p>
+
+              <span>R$ 29,90</span>
+
+              <button
+                class="btn-add"
+                onclick="adicionarAoCarrinho('Caipirinha Deck Beer', 29.9)"
+              >
+                Adicionar
+              </button>
+            </div>
+          </div>
+
+          <div class="item-cardapio">
+            <img src="./img/sem-imagem.png" alt="Dry Martini" />
+
+            <div class="item-info">
+              <h3>Dry Martini</h3>
+
+              <p>Gin, vermute seco e gelo.</p>
+
+              <span>R$ 34,90</span>
+
+              <button
+                class="btn-add"
+                onclick="adicionarAoCarrinho('Dry Martini', 34.9)"
+              >
+                Adicionar
+              </button>
+            </div>
+          </div>
+
+          <div class="item-cardapio">
+            <img src="./img/sem-imagem.png" alt="Mint Julep" />
+
+            <div class="item-info">
+              <h3>Mint Julep</h3>
+
+              <p>Whisky, açúcar, gelo e hortelã.</p>
+
+              <span>R$ 38,90</span>
+
+              <button
+                class="btn-add"
+                onclick="adicionarAoCarrinho('Mint Julep', 38.9)"
+              >
+                Adicionar
+              </button>
+            </div>
+          </div>
+
+          <div class="item-cardapio">
+            <img src="./img/sem-imagem.png" alt="Sex on the Beach" />
+
+            <div class="item-info">
+              <h3>Sex on the Beach</h3>
+
+              <p>
+                Vodka, suco de laranja, licor de pêssego, xarope de groselha e
+                gelo.
+              </p>
+
+              <span>R$ 34,90</span>
+
+              <button
+                class="btn-add"
+                onclick="adicionarAoCarrinho('Sex on the Beach', 34.9)"
+              >
+                Adicionar
+              </button>
+            </div>
+          </div>
+
+          <div class="item-cardapio">
+            <img src="./img/sem-imagem.png" alt="Lagoa Azul" />
+
+            <div class="item-info">
+              <h3>Lagoa Azul</h3>
+
+              <p>Gin, curaçau blue, limão, pimenta rosa e alecrim.</p>
+
+              <span>R$ 34,90</span>
+
+              <button
+                class="btn-add"
+                onclick="adicionarAoCarrinho('Lagoa Azul', 34.9)"
+              >
+                Adicionar
+              </button>
+            </div>
+          </div>
+
+          <div class="item-cardapio">
+            <img src="./img/sem-imagem.png" alt="Russian Kiss" />
+
+            <div class="item-info">
+              <h3>Russian Kiss</h3>
+
+              <p>Vodka, cereja, água com gás e grenadine.</p>
+
+              <span>R$ 32,90</span>
+
+              <button
+                class="btn-add"
+                onclick="adicionarAoCarrinho('Russian Kiss', 32.9)"
+              >
+                Adicionar
+              </button>
+            </div>
+          </div>
+
+          <div class="item-cardapio">
+            <img src="./img/sem-imagem.png" alt="Mojito" />
+
+            <div class="item-info">
+              <h3>Mojito</h3>
+
+              <p>Rum branco, açúcar, hortelã e gelo.</p>
+
+              <span>R$ 32,90</span>
+
+              <button
+                class="btn-add"
+                onclick="adicionarAoCarrinho('Mojito', 32.9)"
+              >
+                Adicionar
+              </button>
+            </div>
+          </div>
+
+          <div class="item-cardapio">
+            <img src="./img/sem-imagem.png" alt="Deck Drink Morango" />
+
+            <div class="item-info">
+              <h3>Deck Drink Morango</h3>
+
+              <p>
+                Morango, leite condensado, leite de coco, groselha, gin e gelo.
+              </p>
+
+              <span>R$ 38,90</span>
+
+              <button
+                class="btn-add"
+                onclick="adicionarAoCarrinho('Deck Drink Morango', 38.9)"
+              >
+                Adicionar
+              </button>
+            </div>
+          </div>
+
+          <div class="item-cardapio">
+            <img src="./img/sem-imagem.png" alt="Deck Drink Abacaxi" />
+
+            <div class="item-info">
+              <h3>Deck Drink Abacaxi</h3>
+
+              <p>
+                Abacaxi, leite condensado, leite de coco, groselha, gin e gelo.
+              </p>
+
+              <span>R$ 38,90</span>
+
+              <button
+                class="btn-add"
+                onclick="adicionarAoCarrinho('Deck Drink Abacaxi', 38.9)"
+              >
+                Adicionar
+              </button>
+            </div>
+          </div>
+
+          <div class="item-cardapio">
+            <img src="./img/sem-imagem.png" alt="Deck Coco" />
+
+            <div class="item-info">
+              <h3>Deck Coco</h3>
+
+              <p>
+                Coco, leite condensado, leite de coco, groselha, gin e gelo.
+              </p>
+
+              <span>R$ 38,90</span>
+
+              <button
+                class="btn-add"
+                onclick="adicionarAoCarrinho('Deck Coco', 38.9)"
+              >
+                Adicionar
+              </button>
+            </div>
+          </div>
+
+          <div class="item-cardapio">
+            <img src="./img/sem-imagem.png" alt="Jorge Amado" />
+
+            <div class="item-info">
+              <h3>Jorge Amado</h3>
+
+              <p>Cachaça Gabriela, maracujá, limão e gelo.</p>
+
+              <span>R$ 38,90</span>
+
+              <button
+                class="btn-add"
+                onclick="adicionarAoCarrinho('Jorge Amado', 38.9)"
+              >
+                Adicionar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEBIDAS -->
+    <section class="categoria-bebidas" id="bebidas">
+      <div class="container">
+        <h2 class="section-title">Bebidas</h2>
+
+        <div class="bloco-bebidas">
+          <h3>Não Alcoólicas</h3>
+
+          <div class="bebida-item">
+            <span>Água sem gás</span>
+            <button onclick="adicionarAoCarrinho('Água sem gás', 4)">
+              R$ 4,00
+            </button>
+          </div>
+
+          <div class="bebida-item">
+            <span>Água com gás</span>
+            <button onclick="adicionarAoCarrinho('Água com gás', 5)">
+              R$ 5,00
+            </button>
+          </div>
+
+          <div class="bebida-item">
+            <span>Suco Del Valle (Lata)</span>
+            <button onclick="adicionarAoCarrinho('Suco Del Valle (Lata)', 10)">
+              R$ 10,00
+            </button>
+          </div>
+
+          <div class="bebida-item">
+            <span>Refrigerante (Lata)</span>
+            <button onclick="adicionarAoCarrinho('Refrigerante (Lata)', 8)">
+              R$ 8,00
+            </button>
+          </div>
+
+          <div class="bebida-item">
+            <span>H2O</span>
+            <button onclick="adicionarAoCarrinho('H2O', 8)">R$ 8,00</button>
+          </div>
+
+          <div class="bebida-item">
+            <span>Gatorade</span>
+            <button onclick="adicionarAoCarrinho('Gatorade', 8)">
+              R$ 8,00
+            </button>
+          </div>
+
+          <div class="bebida-item">
+            <span>Refrigerante 600ml</span>
+            <button onclick="adicionarAoCarrinho('Refrigerante 600ml', 10)">
+              R$ 10,00
+            </button>
+          </div>
+        </div>
+
+        <div class="bloco-bebidas">
+          <h3>Sucos Naturais</h3>
+
+          <div class="bebida-item">
+            <span>Morango</span>
+            <button onclick="adicionarAoCarrinho('Suco Natural - Morango', 13)">
+              R$ 13,00
+            </button>
+          </div>
+
+          <div class="bebida-item">
+            <span>Laranja</span>
+            <button onclick="adicionarAoCarrinho('Suco Natural - Laranja', 13)">
+              R$ 13,00
+            </button>
+          </div>
+
+          <div class="bebida-item">
+            <span>Abacaxi com Hortelã</span>
+            <button
+              onclick="
+                adicionarAoCarrinho('Suco Natural - Abacaxi com Hortelã', 13)
+              "
+            >
+              R$ 13,00
+            </button>
+          </div>
+
+          <div class="bebida-item">
+            <span>Maracujá</span>
+            <button
+              onclick="adicionarAoCarrinho('Suco Natural - Maracujá', 13)"
+            >
+              R$ 13,00
+            </button>
+          </div>
+
+          <div class="bebida-item">
+            <span>Limão</span>
+            <button onclick="adicionarAoCarrinho('Suco Natural - Limão', 13)">
+              R$ 13,00
+            </button>
+          </div>
+
+          <div class="bebida-item">
+            <span>Suco Misto</span>
+            <button onclick="adicionarAoCarrinho('Suco Misto', 15)">
+              R$ 15,00
+            </button>
+          </div>
+
+          <div class="bebida-item">
+            <span>Limonada Suíça</span>
+            <button onclick="adicionarAoCarrinho('Limonada Suíça', 16)">
+              R$ 16,00
+            </button>
+          </div>
+
+          <div class="bebida-item">
+            <span>Limonada com Água de Coco</span>
+            <button
+              onclick="adicionarAoCarrinho('Limonada com Água de Coco', 16)"
+            >
+              R$ 16,00
+            </button>
+          </div>
+        </div>
+
+        <div class="bloco-bebidas">
+          <h3>Cerveja 600ml</h3>
+
+          <div class="bebida-item">
+            <span>Império</span>
+            <button onclick="adicionarAoCarrinho('Império 600ml', 12.9)">
+              R$ 12,90
+            </button>
+          </div>
+
+          <div class="bebida-item">
+            <span>Amstel</span>
+            <button onclick="adicionarAoCarrinho('Amstel 600ml', 14.9)">
+              R$ 14,90
+            </button>
+          </div>
+
+          <div class="bebida-item">
+            <span>Skol</span>
+            <button onclick="adicionarAoCarrinho('Skol 600ml', 13.9)">
+              R$ 13,90
+            </button>
+          </div>
+
+          <div class="bebida-item">
+            <span>Império Lager</span>
+            <button onclick="adicionarAoCarrinho('Império Lager 600ml', 15.9)">
+              R$ 15,90
+            </button>
+          </div>
+
+          <div class="bebida-item">
+            <span>Original</span>
+            <button onclick="adicionarAoCarrinho('Original 600ml', 15.9)">
+              R$ 15,90
+            </button>
+          </div>
+
+          <div class="bebida-item">
+            <span>Heineken</span>
+            <button onclick="adicionarAoCarrinho('Heineken 600ml', 17.9)">
+              R$ 17,90
+            </button>
+          </div>
+        </div>
+
+        <div class="bloco-bebidas">
+          <h3>Long Neck</h3>
+
+          <div class="bebida-item">
+            <span>Eisenbahn</span>
+            <button onclick="adicionarAoCarrinho('Long Neck', 10)">
+              R$ 10,00
+            </button>
+          </div>
+
+          <div class="bebida-item">
+            <span>Budweiser</span>
+            <button onclick="adicionarAoCarrinho('Long Neck', 10)">
+              R$ 10,00
+            </button>
+          </div>
+
+          <div class="bebida-item">
+            <span>Stella</span>
+            <button onclick="adicionarAoCarrinho('Long Neck', 10)">
+              R$ 10,00
+            </button>
+          </div>
+
+          <div class="bebida-item">
+            <span>Spaten</span>
+            <button onclick="adicionarAoCarrinho('Long Neck', 10)">
+              R$ 10,00
+            </button>
+          </div>
+
+          <div class="bebida-item">
+            <span>Império Lager</span>
+            <button onclick="adicionarAoCarrinho('Long Neck', 10)">
+              R$ 10,00
+            </button>
+          </div>
+
+          <div class="bebida-item">
+            <span>Heineken</span>
+            <button onclick="adicionarAoCarrinho('Long Neck Premium', 12)">
+              R$ 12,00
+            </button>
+          </div>
+
+          <div class="bebida-item">
+            <span>Corona</span>
+            <button onclick="adicionarAoCarrinho('Long Neck Premium', 12)">
+              R$ 12,00
+            </button>
+          </div>
+        </div>
+
+        <div class="bloco-bebidas">
+          <h3>Chopp Brahma</h3>
+
+          <div class="bebida-item">
+            <span>300ml</span>
+            <button onclick="adicionarAoCarrinho('Chopp Brahma 300ml', 12)">
+              R$ 12,00
+            </button>
+          </div>
+
+          <div class="bebida-item">
+            <span>400ml</span>
+            <button onclick="adicionarAoCarrinho('Chopp Brahma 400ml', 15)">
+              R$ 15,00
+            </button>
+          </div>
+
+          <div class="bebida-item">
+            <span>500ml</span>
+            <button onclick="adicionarAoCarrinho('Chopp Brahma 500ml', 18)">
+              R$ 18,00
+            </button>
+          </div>
+        </div>
+
+        <div class="bloco-bebidas">
+          <h3>Artesanal 600ml</h3>
+
+          <div class="bebida-item">
+            <span>Pedra do Lobo</span>
+            <button onclick="adicionarAoCarrinho('Pedra do Lobo 600ml', 35)">
+              R$ 35,00
+            </button>
+          </div>
+        </div>
+
+        <div class="bloco-bebidas">
+          <h3>Baden Baden 600ml</h3>
+
+          <div class="bebida-item">
+            <span>IPA</span>
+            <button onclick="adicionarAoCarrinho('Baden Baden IPA 600ml', 30)">
+              R$ 30,00
+            </button>
+          </div>
+
+          <div class="bebida-item">
+            <span>Witbier</span>
+            <button
+              onclick="adicionarAoCarrinho('Baden Baden Witbier 600ml', 30)"
+            >
+              R$ 30,00
+            </button>
+          </div>
+
+          <div class="bebida-item">
+            <span>Cristal</span>
+            <button
+              onclick="adicionarAoCarrinho('Baden Baden Cristal 600ml', 30)"
+            >
+              R$ 30,00
+            </button>
+          </div>
+
+          <div class="bebida-item">
+            <span>Golden</span>
+            <button
+              onclick="adicionarAoCarrinho('Baden Baden Golden 600ml', 30)"
+            >
+              R$ 30,00
+            </button>
+          </div>
+        </div>
+
+        <div class="bloco-bebidas">
+          <h3>Chopp de Vinho</h3>
+
+          <div class="bebida-item">
+            <span>Taça</span>
+            <button onclick="adicionarAoCarrinho('Chopp de Vinho', 20)">
+              R$ 20,00
+            </button>
+          </div>
+        </div>
+
+        <div class="bloco-bebidas">
+          <h3>Long Drinks</h3>
+
+          <div class="bebida-item">
+            <span>Skol Beats</span>
+            <button onclick="adicionarAoCarrinho('Skol Beats', 15)">
+              R$ 15,00
+            </button>
+          </div>
+
+          <div class="bebida-item">
+            <span>Ice 51</span>
+            <button onclick="adicionarAoCarrinho('Ice 51', 10)">
+              R$ 10,00
+            </button>
+          </div>
+
+          <div class="bebida-item">
+            <span>Ice Smirnoff</span>
+            <button onclick="adicionarAoCarrinho('Ice Smirnoff', 15)">
+              R$ 15,00
+            </button>
+          </div>
+        </div>
+
+        <div class="bloco-bebidas">
+          <h3>Energéticos</h3>
+
+          <div class="bebida-item">
+            <span>Red Bull</span>
+            <button onclick="adicionarAoCarrinho('Red Bull', 15)">
+              R$ 15,00
+            </button>
+          </div>
+
+          <div class="bebida-item">
+            <span>TNT</span>
+            <button onclick="adicionarAoCarrinho('TNT', 10)">R$ 10,00</button>
+          </div>
+        </div>
+
+        <div class="bloco-bebidas">
+          <h3>Whisky</h3>
+
+          <div class="bebida-item">
+            <span>Ballantines</span>
+            <button onclick="adicionarAoCarrinho('Ballantines', 25)">
+              R$ 25,00
+            </button>
+          </div>
+
+          <div class="bebida-item">
+            <span>Passport</span>
+            <button onclick="adicionarAoCarrinho('Passport', 20)">
+              R$ 20,00
+            </button>
+          </div>
+
+          <div class="bebida-item">
+            <span>Red Label</span>
+            <button onclick="adicionarAoCarrinho('Red Label', 30)">
+              R$ 30,00
+            </button>
+          </div>
+
+          <div class="bebida-item">
+            <span>Jack Daniel's</span>
+            <button onclick="adicionarAoCarrinho(`Jack Daniel's`, 35)">
+              R$ 35,00
+            </button>
+          </div>
+
+          <div class="bebida-item">
+            <span>Black Label</span>
+            <button onclick="adicionarAoCarrinho('Black Label', 35)">
+              R$ 35,00
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- DOSES -->
 
@@ -1568,61 +2293,99 @@
 
         <div class="lista-doses">
           <div class="dose-item">
-            <span class="dose-nome">CACHAÇA (SELETA OU SAGATIBA)</span>
+            <span class="dose-nome">Cachaça</span>
             <span class="dose-linha"></span>
-            <span class="dose-preco">R$ 15</span>
+            <button onclick="adicionarAoCarrinho('Cachaça', 5)">R$ 5,00</button>
           </div>
 
           <div class="dose-item">
-            <span class="dose-nome">SMIRNOFF</span>
+            <span class="dose-nome">Cachaça Chocolate</span>
             <span class="dose-linha"></span>
-            <span class="dose-preco">R$ 15</span>
+            <button onclick="adicionarAoCarrinho('Cachaça Chocolate', 15)">
+              R$ 15,00
+            </button>
           </div>
 
           <div class="dose-item">
-            <span class="dose-nome">KETEL ONE</span>
+            <span class="dose-nome">Cachaça Engenho de Ouro</span>
             <span class="dose-linha"></span>
-            <span class="dose-preco">R$ 20</span>
+            <button
+              onclick="adicionarAoCarrinho('Cachaça Engenho de Ouro', 20)"
+            >
+              R$ 20,00
+            </button>
           </div>
 
           <div class="dose-item">
-            <span class="dose-nome">TANQUERAY</span>
+            <span class="dose-nome">Cachaçara São Francisco</span>
             <span class="dose-linha"></span>
-            <span class="dose-preco">R$ 30</span>
+            <button
+              onclick="adicionarAoCarrinho('Cachaçara São Francisco', 10)"
+            >
+              R$ 10,00
+            </button>
           </div>
 
           <div class="dose-item">
-            <span class="dose-nome">RED LABEL</span>
+            <span class="dose-nome">Cachaça Ypióca</span>
             <span class="dose-linha"></span>
-            <span class="dose-preco">R$ 25</span>
+            <button onclick="adicionarAoCarrinho('Cachaça Ypióca', 10)">
+              R$ 10,00
+            </button>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- SOBREMESAS -->
+          <div class="dose-item">
+            <span class="dose-nome">Campari</span>
+            <span class="dose-linha"></span>
+            <button onclick="adicionarAoCarrinho('Campari', 20)">
+              R$ 20,00
+            </button>
+          </div>
 
-    <section class="categoria-cardapio" id="sobremesas">
-      <div class="container">
-        <h2 class="section-title">Sobremesas</h2>
+          <div class="dose-item">
+            <span class="dose-nome">Aperol</span>
+            <span class="dose-linha"></span>
+            <button onclick="adicionarAoCarrinho('Aperol', 20)">
+              R$ 20,00
+            </button>
+          </div>
 
-        <div class="itens-cardapio">
-          <div class="item-cardapio">
-            <img src="./img/Sobremesa.jpg" alt="Brownie com Sorvete" />
+          <div class="dose-item">
+            <span class="dose-nome">Conhaque</span>
+            <span class="dose-linha"></span>
+            <button onclick="adicionarAoCarrinho('Conhaque', 10)">
+              R$ 10,00
+            </button>
+          </div>
 
-            <div class="item-info">
-              <h3>Taça de Brigadeiro</h3>
+          <div class="dose-item">
+            <span class="dose-nome">Vodka Absolut</span>
+            <span class="dose-linha"></span>
+            <button onclick="adicionarAoCarrinho('Vodka Absolut', 15)">
+              R$ 15,00
+            </button>
+          </div>
 
-              <p>Uma taça repleta de chocolate, com um SABOR INEXPLICÁVEL!</p>
+          <div class="dose-item">
+            <span class="dose-nome">Vodka Smirnoff</span>
+            <span class="dose-linha"></span>
+            <button onclick="adicionarAoCarrinho('Vodka Smirnoff', 10)">
+              R$ 10,00
+            </button>
+          </div>
 
-              <span>R$ 29,90</span>
-              <button
-                class="btn-add"
-                onclick="adicionarAoCarrinho('Taça de Brigadeiro', 29.9)"
-              >
-                Adicionar
-              </button>
-            </div>
+          <div class="dose-item">
+            <span class="dose-nome">Amarula</span>
+            <span class="dose-linha"></span>
+            <button onclick="adicionarAoCarrinho('Amarula', 25)">
+              R$ 25,00
+            </button>
+          </div>
+
+          <div class="dose-item">
+            <span class="dose-nome">Gin</span>
+            <span class="dose-linha"></span>
+            <button onclick="adicionarAoCarrinho('Gin', 20)">R$ 20,00</button>
           </div>
         </div>
       </div>
