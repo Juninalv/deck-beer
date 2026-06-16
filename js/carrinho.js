@@ -72,6 +72,31 @@ function adicionarPizza(botao) {
   adicionarAoCarrinho(nome, preco);
 }
 
+function adicionarSobremesa(botao) {
+  const itemInfo = botao.closest(".item-info");
+
+  const saborSelecionado = itemInfo.querySelector(".sabor-sobremesa:checked");
+
+  if (!saborSelecionado) {
+    alert("Escolha um sabor.");
+    return;
+  }
+
+  const nome = itemInfo.querySelector("h3").innerText;
+
+  const precoTexto = itemInfo.querySelector("span").innerText;
+
+  const preco = Number(
+    precoTexto.replace("R$", "").replace(".", "").replace(",", ".").trim(),
+  );
+
+  const sabor = saborSelecionado.value;
+
+  const nomeFinal = `${nome} - ${sabor}`;
+
+  adicionarAoCarrinho(nomeFinal, preco);
+}
+
 function adicionarAoCarrinho(nome, preco) {
   const item = carrinho.find((p) => p.nome === nome);
 

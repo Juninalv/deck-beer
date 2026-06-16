@@ -49,8 +49,9 @@
         <a href="#pratosindividuais">Pratos Individuais</a>
         <a href="#pratosexecutivos">Pratos Executivos</a>
         <a href="#lanchesartesanais">Lanches Artesanais</a>
-        <a href="#doses">Doses</a>
+        <a href="#pizza">Pizza Rap 10</a>
         <a href="#sobremesas">Sobremesas</a>
+        <a href="#doses">Doses</a>
       </div>
     </section>
 
@@ -1293,7 +1294,7 @@
     <!--  PIZZA RAP 10  -->
     <section class="categoria-cardapio" id="pizza">
       <div class="container">
-        <h2 class="section-title">Pizza RAP10</h2>
+        <h2 class="section-title">Pizza Rap 10</h2>
         <div class="itens-cardapio">
           <div class="item-cardapio">
             <img src="./img/sem-imagem.png" alt="Pizza Rap 10" />
@@ -1379,6 +1380,178 @@
               </details>
 
               <button class="btn-add" onclick="adicionarPizza(this)">
+                Adicionar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBREMESAS -->
+    <section class="categoria-cardapio" id="sobremesas">
+      <div class="container">
+        <h2 class="section-title">Sobremesas</h2>
+
+        <div class="itens-cardapio">
+          <div class="item-cardapio">
+            <img src="./img/sem-imagem.png" alt="Ninho Trufado" />
+
+            <div class="item-info">
+              <h3>Ninho Trufado</h3>
+
+              <p>Sorvete de ninho trufado com creme de avelã e leite ninho</p>
+
+              <span>R$ 64,90</span>
+
+              <button
+                class="btn-add"
+                onclick="adicionarAoCarrinho('Ninho Trufado', 64.9)"
+              >
+                Adicionar
+              </button>
+            </div>
+          </div>
+
+          <div class="item-cardapio">
+            <img src="./img/sem-imagem.png" alt="Kit Kat" />
+
+            <div class="item-info">
+              <h3>Kit Kat</h3>
+
+              <p>
+                Sorvete de creme com creme de avelã, calda de chocolate e Kit
+                Kat
+              </p>
+
+              <span>R$ 64,90</span>
+
+              <button
+                class="btn-add"
+                onclick="adicionarAoCarrinho('Kit Kat', 64.9)"
+              >
+                Adicionar
+              </button>
+            </div>
+          </div>
+
+          <div class="item-cardapio">
+            <img src="./img/sem-imagem.png" alt="Kinder Ovo" />
+
+            <div class="item-info">
+              <h3>Kinder Ovo</h3>
+
+              <p>
+                Sorvete de creme com creme de avelã, calda de chocolate e Kit
+                Kat
+              </p>
+
+              <span>R$ 78,90</span>
+
+              <button
+                class="btn-add"
+                onclick="adicionarAoCarrinho('Kinder Ovo', 78.9)"
+              >
+                Adicionar
+              </button>
+            </div>
+          </div>
+
+          <div class="item-cardapio">
+            <img src="./img/sem-imagem.png" alt="Nutela" />
+
+            <div class="item-info">
+              <h3>Nutela</h3>
+
+              <p>Sorvete com Nutela, calda de chocolate e ninho.</p>
+
+              <span>R$ 78,90</span>
+
+              <details class="adicionais">
+                <summary>Escolher sabor</summary>
+
+                <label>
+                  <input
+                    type="radio"
+                    name="sabor-nutela"
+                    value="Creme"
+                    class="sabor-sobremesa"
+                  />
+                  Creme
+                </label>
+
+                <label>
+                  <input
+                    type="radio"
+                    name="sabor-nutela"
+                    value="Ninho Trufado"
+                    class="sabor-sobremesa"
+                  />
+                  Ninho Trufado
+                </label>
+
+                <label>
+                  <input
+                    type="radio"
+                    name="sabor-nutela"
+                    value="Kinder Ovo"
+                    class="sabor-sobremesa"
+                  />
+                  Kinder Ovo
+                </label>
+              </details>
+
+              <button class="btn-add" onclick="adicionarSobremesa(this)">
+                Adicionar
+              </button>
+            </div>
+          </div>
+
+          <div class="item-cardapio">
+            <img src="./img/sem-imagem.png" alt="Brownie com Sorvete" />
+
+            <div class="item-info">
+              <h3>Brownie com Sorvete</h3>
+
+              <p>Brownie com sorvete.</p>
+
+              <span>R$ 42,90</span>
+
+              <details class="adicionais">
+                <summary>Escolher sabor</summary>
+
+                <label>
+                  <input
+                    type="radio"
+                    name="sabor-brownie"
+                    value="Creme de Avelã"
+                    class="sabor-sobremesa"
+                  />
+                  Creme de Avelã
+                </label>
+
+                <label>
+                  <input
+                    type="radio"
+                    name="sabor-brownie"
+                    value="Leite Ninho"
+                    class="sabor-sobremesa"
+                  />
+                  Leite Ninho
+                </label>
+
+                <label>
+                  <input
+                    type="radio"
+                    name="sabor-brownie"
+                    value="Brigadeiro"
+                    class="sabor-sobremesa"
+                  />
+                  Brigadeiro
+                </label>
+              </details>
+
+              <button class="btn-add" onclick="adicionarSobremesa(this)">
                 Adicionar
               </button>
             </div>
