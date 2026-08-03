@@ -47,10 +47,16 @@
       <div class="container">
         <a href="#porcoes">Porções</a>
         <a href="#pratosindividuais">Pratos Individuais</a>
+        <a href="#parmegianas">Parmegiana</a>
+        <a href="#carnes">Carnes</a>
+        <a href="#espaguetes">Espaguetes</a>
+        <a href="#kids">Kids</a>
         <a href="#pratosexecutivos">Pratos Executivos</a>
         <a href="#lanchesartesanais">Lanches Artesanais</a>
         <a href="#pizza">Pizza Rap 10</a>
         <a href="#sobremesas">Sobremesas</a>
+        <a href="#sorvetes">Taças de Sorvete</a>
+        <a href="#brownie">Brownie</a>
         <a href="#drinks">Drinks</a>
         <a href="#bebidas">Bebidas</a>
         <a href="#doses">Doses</a>
@@ -524,6 +530,7 @@
     <section class="categoria-cardapio" id="pratosindividuais">
       <div class="container">
         <h2 class="section-title">Pratos Individuais</h2>
+        <h2 class="section-title" id="parmegianas">Parmegianas</h2>
         <div class="itens-cardapio">
           <div class="item-cardapio">
             <img src="./img/sem-imagem.png" alt="Parmegiana de Carne" />
@@ -575,7 +582,12 @@
               </button>
             </div>
           </div>
+        </div>
+      </div>
 
+      <div class="container">
+        <h2 class="section-title" id="carnes">Carnes e frango</h2>
+        <div class="itens-cardapio">
           <div class="item-cardapio">
             <img src="./img/sem-imagem.png" alt="Contra Filé Acebolado" />
 
@@ -626,18 +638,43 @@
               </button>
             </div>
           </div>
+        </div>
+      </div>
 
+      <div class="container">
+        <h2 class="section-title" id="espaguetes">Massas espaguetes</h2>
+
+        <div class="itens-cardapio">
           <div class="item-cardapio">
             <img src="./img/sem-imagem.png" alt="Espaguete ao Molho Branco" />
 
             <div class="item-info">
               <h3>Espaguete ao Molho Branco</h3>
+
               <p>Acompanha queijo ralado. Serve 1 pessoa.</p>
+
               <span>R$ 34,90</span>
 
+              <div class="adicionais">
+                <p>Adicionais:</p>
+
+                <label>
+                  <input type="checkbox" value="Camarão" data-preco="10" />
+                  Camarão + R$ 10,00
+                </label>
+
+                <label>
+                  <input type="checkbox" value="Contrafilé" data-preco="10" />
+                  Contrafilé + R$ 10,00
+                </label>
+              </div>
+
               <button
+                type="button"
                 class="btn-add"
-                onclick="adicionarAoCarrinho('Espaguete ao Molho Branco', 34.9)"
+                onclick="
+                  adicionarLanche(this, 'Espaguete ao Molho Branco', 34.9)
+                "
               >
                 Adicionar
               </button>
@@ -649,12 +686,29 @@
 
             <div class="item-info">
               <h3>Espaguete ao Molho Rosé</h3>
+
               <p>Acompanha queijo ralado. Serve 1 pessoa.</p>
+
               <span>R$ 34,90</span>
 
+              <div class="adicionais">
+                <p>Adicionais:</p>
+
+                <label>
+                  <input type="checkbox" value="Camarão" data-preco="10" />
+                  Camarão + R$ 10,00
+                </label>
+
+                <label>
+                  <input type="checkbox" value="Contrafilé" data-preco="10" />
+                  Contrafilé + R$ 10,00
+                </label>
+              </div>
+
               <button
+                type="button"
                 class="btn-add"
-                onclick="adicionarAoCarrinho('Espaguete ao Molho Rosé', 34.9)"
+                onclick="adicionarLanche(this, 'Espaguete ao Molho Rosé', 34.9)"
               >
                 Adicionar
               </button>
@@ -666,20 +720,42 @@
 
             <div class="item-info">
               <h3>Espaguete ao Molho Vermelho</h3>
+
               <p>Molho com bacon e calabresa, acompanha queijo ralado.</p>
+
               <span>R$ 34,90</span>
 
+              <div class="adicionais">
+                <p>Adicionais:</p>
+
+                <label>
+                  <input type="checkbox" value="Camarão" data-preco="10" />
+                  Camarão + R$ 10,00
+                </label>
+
+                <label>
+                  <input type="checkbox" value="Contrafilé" data-preco="10" />
+                  Contrafilé + R$ 10,00
+                </label>
+              </div>
+
               <button
+                type="button"
                 class="btn-add"
                 onclick="
-                  adicionarAoCarrinho('Espaguete ao Molho Vermelho', 34.9)
+                  adicionarLanche(this, 'Espaguete ao Molho Vermelho', 34.9)
                 "
               >
                 Adicionar
               </button>
             </div>
           </div>
+        </div>
+      </div>
 
+      <div class="container">
+        <h2 class="section-title" id="kids">Kids</h2>
+        <div class="itens-cardapio">
           <div class="item-cardapio">
             <img src="./img/sem-imagem.png" alt="Isca de Contra Filé Kids" />
 
@@ -721,6 +797,7 @@
     <section class="categoria-cardapio" id="pratosexecutivos">
       <div class="container">
         <h2 class="section-title">Pratos Executivos (2 pessoas)</h2>
+        <h2 class="section-title">Carnes</h2>
 
         <div class="itens-cardapio">
           <div class="item-cardapio">
@@ -1381,6 +1458,40 @@
                 </label>
               </details>
 
+              <details class="adicionais">
+                <summary>Opção gratuita (máx. 1)</summary>
+
+                <label>
+                  <input
+                    type="checkbox"
+                    value="Rúcula"
+                    class="opcao-gratis-pizza"
+                    onchange="limitarOpcaoGratuita(this)"
+                  />
+                  Rúcula
+                </label>
+
+                <label>
+                  <input
+                    type="checkbox"
+                    value="Cebola"
+                    class="opcao-gratis-pizza"
+                    onchange="limitarOpcaoGratuita(this)"
+                  />
+                  Cebola
+                </label>
+
+                <label>
+                  <input
+                    type="checkbox"
+                    value="Manjericão"
+                    class="opcao-gratis-pizza"
+                    onchange="limitarOpcaoGratuita(this)"
+                  />
+                  Manjericão
+                </label>
+              </details>
+
               <button class="btn-add" onclick="adicionarPizza(this)">
                 Adicionar
               </button>
@@ -1394,6 +1505,7 @@
     <section class="categoria-cardapio" id="sobremesas">
       <div class="container">
         <h2 class="section-title">Sobremesas</h2>
+        <h2 class="section-title" id="sorvetes">Taças de sorvete</h2>
 
         <div class="itens-cardapio">
           <div class="item-cardapio">
@@ -1508,7 +1620,13 @@
               </button>
             </div>
           </div>
+        </div>
+      </div>
 
+      <div class="container">
+        <h2 class="section-title" id="brownie">Brownie</h2>
+
+        <div class="itens-cardapio">
           <div class="item-cardapio">
             <img src="./img/sem-imagem.png" alt="Brownie com Sorvete" />
 
@@ -1611,7 +1729,7 @@
             <div class="item-info">
               <h3>Caipirinha Sabores</h3>
 
-              <p>Cachaça ou vodka.</p>
+              <p>Escolha o sabor e entre cachaça ou vodka.</p>
 
               <span>R$ 29,90</span>
 
@@ -1623,7 +1741,7 @@
                     type="radio"
                     name="caipirinha-sabor"
                     value="Morango"
-                    class="sabor-sobremesa"
+                    class="sabor-caipirinha"
                   />
                   Morango
                 </label>
@@ -1633,7 +1751,7 @@
                     type="radio"
                     name="caipirinha-sabor"
                     value="Maracujá"
-                    class="sabor-sobremesa"
+                    class="sabor-caipirinha"
                   />
                   Maracujá
                 </label>
@@ -1643,13 +1761,41 @@
                     type="radio"
                     name="caipirinha-sabor"
                     value="Abacaxi"
-                    class="sabor-sobremesa"
+                    class="sabor-caipirinha"
                   />
                   Abacaxi
                 </label>
               </details>
 
-              <button class="btn-add" onclick="adicionarSobremesa(this)">
+              <details class="adicionais">
+                <summary>Escolher bebida</summary>
+
+                <label>
+                  <input
+                    type="radio"
+                    name="caipirinha-bebida"
+                    value="Cachaça"
+                    class="bebida-caipirinha"
+                  />
+                  Cachaça
+                </label>
+
+                <label>
+                  <input
+                    type="radio"
+                    name="caipirinha-bebida"
+                    value="Vodka"
+                    class="bebida-caipirinha"
+                  />
+                  Vodka
+                </label>
+              </details>
+
+              <button
+                type="button"
+                class="btn-add"
+                onclick="adicionarCaipirinha(this)"
+              >
                 Adicionar
               </button>
             </div>
@@ -2437,6 +2583,14 @@
       <div id="cart-items"></div>
 
       <div class="cart-total">Total: <span id="cart-total">R$ 0,00</span></div>
+
+      <button
+        type="button"
+        class="btn-limpar-carrinho"
+        onclick="limparCarrinho()"
+      >
+        Limpar carrinho
+      </button>
 
       <input type="text" id="cliente" placeholder="Seu nome*" />
 

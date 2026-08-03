@@ -291,6 +291,22 @@
   color: #111;
 }
 
+.btn-limpar-carrinho {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #c0392b;
+  border-radius: 6px;
+  background: transparent;
+  color: #c0392b;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-limpar-carrinho:hover {
+  background: #c0392b;
+  color: #fff;
+}
+
 /* =========================
    RESPONSIVO
 ========================= */

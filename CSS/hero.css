@@ -140,9 +140,10 @@
   }
 
   .hero-content h1 {
-    font-size: 3rem;
+    font-size: clamp(2.1rem, 10vw, 3rem);
     line-height: 1.1;
     margin-bottom: 15px;
+    overflow-wrap: break-word;
   }
 
   .hero-content p {

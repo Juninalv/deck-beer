@@ -34,12 +34,28 @@ function adicionarLanche(botao, nome, preco) {
   adicionarAoCarrinho(nomeFinal, precoFinal);
 }
 
+function limitarOpcaoGratuita(opcaoSelecionada) {
+  const itemInfo = opcaoSelecionada.closest(".item-info");
+
+  const opcoes = itemInfo.querySelectorAll(".opcao-gratis-pizza");
+
+  if (!opcaoSelecionada.checked) return;
+
+  opcoes.forEach((opcao) => {
+    if (opcao !== opcaoSelecionada) {
+      opcao.checked = false;
+    }
+  });
+}
+
 function adicionarPizza(botao) {
   const itemInfo = botao.closest(".item-info");
 
   const sabores = itemInfo.querySelectorAll(".sabor-pizza:checked");
 
   const extra = itemInfo.querySelector(".extra-pizza:checked");
+
+  const opcaoGratuita = itemInfo.querySelector(".opcao-gratis-pizza:checked");
 
   const limite = extra ? 4 : 3;
 
@@ -66,7 +82,11 @@ function adicionarPizza(botao) {
 
   if (extra) {
     preco += 5;
-    nome += " + Opção Extra";
+    nome += " + 1 sabor extra";
+  }
+
+  if (opcaoGratuita) {
+    nome += ` + ${opcaoGratuita.value}`;
   }
 
   adicionarAoCarrinho(nome, preco);
@@ -123,6 +143,24 @@ function alterarQtd(nome, valor) {
   if (item.qtd <= 0) {
     carrinho = carrinho.filter((p) => p.nome !== nome);
   }
+
+  atualizarCarrinho();
+}
+
+function limparCarrinho() {
+  if (carrinho.length === 0) {
+    alert("O carrinho já está vazio.");
+    return;
+  }
+
+  const confirmarLimpeza = confirm(
+    "Tem certeza que deseja remover todos os itens do carrinho?",
+  );
+
+  if (!confirmarLimpeza) return;
+
+  carrinho = [];
+  localStorage.removeItem("carrinho");
 
   atualizarCarrinho();
 }
@@ -337,6 +375,34 @@ function enviarPedido() {
 
   document.getElementById("cartSidebar").classList.remove("active");
 }
+
+function adicionarCaipirinha(botao) {
+  const itemInfo = botao.closest(".item-info");
+
+  const saborSelecionado = itemInfo.querySelector(".sabor-caipirinha:checked");
+
+  const bebidaSelecionada = itemInfo.querySelector(
+    ".bebida-caipirinha:checked",
+  );
+
+  if (!saborSelecionado) {
+    alert("Escolha o sabor da caipirinha.");
+    return;
+  }
+
+  if (!bebidaSelecionada) {
+    alert("Escolha entre cachaça ou vodka.");
+    return;
+  }
+
+  const nome = `Caipirinha ${saborSelecionado.value} com ${bebidaSelecionada.value}`;
+  const preco = 29.9;
+
+  adicionarAoCarrinho(nome, preco);
+}
+
+atualizarCarrinho();
+alterarTipoPedido();
 
 atualizarCarrinho();
 alterarTipoPedido();

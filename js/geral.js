@@ -6,23 +6,24 @@ window.addEventListener("scroll", () => {
 });
 
 /* SOBRE */
-
 const btnHistoria = document.getElementById("btnHistoria");
 const historia = document.querySelector(".historia-completa");
 
-btnHistoria.addEventListener("click", () => {
-  historia.classList.toggle("ativo");
+if (btnHistoria && historia) {
+  btnHistoria.addEventListener("click", () => {
+    const historiaAberta = historia.classList.toggle("ativo");
 
-  if (historia.classList.contains("ativo")) {
-    btnHistoria.textContent = "Ler menos";
-  } else {
-    btnHistoria.textContent = "Ler história completa";
-  }
-});
+    btnHistoria.textContent = historiaAberta
+      ? "Ler menos"
+      : "Ler história completa";
 
-/* EVENTO */
+    btnHistoria.setAttribute("aria-expanded", historiaAberta);
+    historia.setAttribute("aria-hidden", !historiaAberta);
+  });
+}
+
+/* EVENTOS */
 const slides = document.querySelectorAll(".slide");
-
 const nextBtn = document.querySelector(".next");
 const prevBtn = document.querySelector(".prev");
 
@@ -30,8 +31,12 @@ let current = 0;
 
 function showSlide(index) {
   slides.forEach((slide) => slide.classList.remove("active"));
-
   slides[index].classList.add("active");
+}
+
+if (slides.length <= 1 && nextBtn && prevBtn) {
+  nextBtn.style.display = "none";
+  prevBtn.style.display = "none";
 }
 
 nextBtn.addEventListener("click", () => {

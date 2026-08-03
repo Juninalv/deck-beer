@@ -11,7 +11,12 @@
       content="Deck Beer Bar Rústico em Lagoinha-SP. Drinks, porções, hambúrgueres artesanais, música ao vivo e ambiente aconchegante."
     />
 
+    <link rel="canonical" href="https://deckbeerlagoinha.com.br/" />
+
     <!-- Open Graph -->
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Deck Beer Bar Rústico" />
     <meta property="og:title" content="Deck Beer Bar Rústico" />
 
     <meta
@@ -19,284 +24,393 @@
       content="Drinks, porções, hambúrgueres artesanais e música ao vivo em Lagoinha-SP."
     />
 
-    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://deckbeerlagoinha.com.br/" />
 
     <meta
       property="og:image"
       content="https://deckbeerlagoinha.com.br/img/sobre.jpg"
     />
 
-    <meta property="og:url" content="https://deckbeerlagoinha.com.br/" />
+    <meta
+      property="og:image:alt"
+      content="Ambiente do Deck Beer Bar Rústico em Lagoinha-SP"
+    />
 
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
 
-    <link rel="icon" href="favicon.png" />
-    <link rel="stylesheet" href="./CSS/style.css" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./favicon.png" />
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./CSS/style.css" />
   </head>
-  <body>
-    <nav id="navbar">
+
+  <header>
+    <nav id="navbar" aria-label="Navegação principal">
       <div class="container nav-content">
         <div class="nav-left">
-          <a href="#">Início</a>
+          <a href="#inicio">Início</a>
           <a href="#sobre">Sobre</a>
         </div>
 
-        <div class="logo">DECK BEER</div>
+        <div class="logo">DECK BEER (Em desenv.)</div>
 
         <div class="nav-right">
-          <a href="cardapio.html">Cardápio</a>
+          <a href="#cardapio">Cardápio</a>
           <a href="#programacao">Programação</a>
         </div>
       </div>
     </nav>
-
-    <section class="hero">
-      <div class="hero-content">
-        <span class="hero-tag">LAGOINHA • SP </span>
-        <h1>Bar Rústico (EM DESENVOLVIMENTO)</h1>
-
-        <p>
-          Cerveja gelada, boa música, gastronomia de qualidade e momentos
-          inesquecíveis.
-        </p>
-
-        <a href="cardapio.html" class="btn"> Ver Cardápio </a>
-      </div>
-    </section>
-
-    <section class="sobre" id="sobre">
-      <div class="container sobre-content">
-        <img src="./img/sobre.jpg" alt="Faixada do Deck Beer" />
-
-        <div>
-          <h2 class="section-title">Nossa História</h2>
+  </header>
+  <body>
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-content">
+          <span class="hero-tag">LAGOINHA • SP </span>
+          <h1>Bar Rústico</h1>
 
           <p>
-            Em 1973, quando José Cursino e sua esposa Maria Aparecida (Maria
-            Freira) decidiram vir de São Luiz do Paraitinga para fundar em
-            Lagoinha o Bazar Cursino, o empresário, que apresentou ao público
-            tantas novidades, corria o município com seus tecidos no lombo do
-            seu cavalo.
+            Cerveja gelada, boa música, gastronomia de qualidade e momentos
+            inesquecíveis.
           </p>
 
-          <div class="historia-completa">
-            <p>
-              Também não sabia que seus tecidos e miudezas passariam a fazer
-              parte da rotina nos lares de Lagoinha, nem que o seu espírito
-              empreendedor fizesse com que o povo de Lagoinha reconhecesse em
-              sua loja o centro da evolução do comércio da cidade. Foi ali que
-              criou seus filhos.
-            </p>
+          <a href="cardapio.html" class="btn"> Ver Cardápio </a>
+        </div>
+      </section>
+
+      <section class="sobre" id="sobre">
+        <div class="container sobre-content">
+          <img
+            src="./img/sobre.jpg"
+            alt="Fachada do Deck Beer"
+            loading="lazy"
+            decoding="async"
+          />
+
+          <div>
+            <h2 class="section-title">Nossa História</h2>
 
             <p>
-              Um dia veio a pandemia, e o casal, que já beirava os oitenta anos,
-              teve que fechar o comércio para cuidar um do outro no sítio que
-              possuíam na localidade.
+              Em 1973, quando José Cursino e sua esposa Maria Aparecida (Maria
+              Freira) decidiram vir de São Luiz do Paraitinga para fundar em
+              Lagoinha o Bazar Cursino, o empresário, que apresentou ao público
+              tantas novidades, corria o município com seus tecidos no lombo do
+              seu cavalo.
             </p>
 
-            <p>
-              A pandemia acabou, e eles queriam que sua filha mais nova
-              continuasse tocando o bazar, pois era um negócio muito antigo.
-              Mas, ao ver que seus produtos estavam desatualizados, resolveram
-              fechar o comércio.
-            </p>
+            <div
+              class="historia-completa"
+              id="historiaCompleta"
+              aria-hidden="true"
+            >
+              <p>
+                Também não sabia que seus tecidos e miudezas passariam a fazer
+                parte da rotina nos lares de Lagoinha, nem que o seu espírito
+                empreendedor fizesse com que o povo de Lagoinha reconhecesse em
+                sua loja o centro da evolução do comércio da cidade. Foi ali que
+                criou seus filhos.
+              </p>
 
-            <p>
-              Foi quando sua filha e seu genro decidiram fazer algo que não
-              havia na cidade e que a cidade, sem dúvida, precisava e
-              agradeceria: um "Bar Rústico".
-            </p>
+              <p>
+                Um dia veio a pandemia, e o casal, que já beirava os oitenta
+                anos, teve que fechar o comércio para cuidar um do outro no
+                sítio que possuíam na localidade.
+              </p>
 
-            <p>
-              Esse bar é o Deck Beer porque, como o nome indica, construiu-se um
-              deck na calçada em frente à casa, onde os clientes têm uma visão
-              geral da praça.
-            </p>
+              <p>
+                A pandemia acabou, e eles queriam que sua filha mais nova
+                continuasse tocando o bazar, pois era um negócio muito antigo.
+                Mas, ao ver que seus produtos estavam desatualizados, resolveram
+                fechar o comércio.
+              </p>
 
-            <p>Por isso veio a ideia: cerveja no deck.</p>
+              <p>
+                Foi quando sua filha e seu genro decidiram fazer algo que não
+                havia na cidade e que a cidade, sem dúvida, precisava e
+                agradeceria: um “Bar Rústico”.
+              </p>
 
-            <p>
-              Hoje, há mais de 50 anos mantendo o espírito de inovação no
-              comércio e para atender às novas demandas do mercado, a Casa
-              Cursino preserva sua tradição de pioneirismo, com a família
-              conduzindo um negócio que faz da oferta gastronômica o principal
-              atrativo para quem busca maior qualidade em seus momentos de
-              descontração e para o incansável apetite do turista que procura
-              desfrutar das coisas boas que cada lugar do planeta tem para lhe
-              oferecer.
-            </p>
+              <p>
+                Esse bar é o Deck Beer porque, como o nome indica, construiu-se
+                um deck na calçada em frente à casa, onde os clientes têm uma
+                visão geral da praça.
+              </p>
+
+              <p>Por isso veio a ideia: cerveja no deck.</p>
+
+              <p>
+                Hoje, há mais de 50 anos mantendo o espírito de inovação no
+                comércio e para atender às novas demandas do mercado, a Casa
+                Cursino preserva sua tradição de pioneirismo, com a família
+                conduzindo um negócio que faz da oferta gastronômica o principal
+                atrativo para quem busca maior qualidade em seus momentos de
+                descontração e para o incansável apetite do turista que procura
+                desfrutar das coisas boas que cada lugar do planeta tem para lhe
+                oferecer.
+              </p>
+            </div>
+
+            <button
+              class="btn-historia"
+              id="btnHistoria"
+              type="button"
+              aria-expanded="false"
+              aria-controls="historiaCompleta"
+            >
+              Ler história completa
+            </button>
           </div>
-
-          <button class="btn-historia" id="btnHistoria">
-            Ler história completa
-          </button>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="cardapio" id="cardapio">
-      <div class="container">
-        <h2 class="section-title">Cardápio</h2>
+      <section class="cardapio" id="cardapio">
+        <div class="container">
+          <h2 class="section-title">Cardápio</h2>
 
-        <p class="cardapio-subtitle">
-          Drinks especiais, hambúrgueres artesanais e porções preparadas para
-          acompanhar os melhores momentos.
-        </p>
-
-        <div class="cards">
-          <a href="cardapio.html#drinks" class="card">
-            <img src="./img/drink.jpg" alt="Drinks" />
-
-            <div class="card-content">
-              <h3>Drinks</h3>
-            </div>
-          </a>
-
-          <a href="cardapio.html#lanchesartesanais" class="card">
-            <img src="./img/lanche.jpg" alt="Lanches" />
-
-            <div class="card-content">
-              <h3>Lanches</h3>
-            </div>
-          </a>
-
-          <a href="cardapio.html#porcoes" class="card">
-            <img src="./img/porcao.jpg" alt="Porções" />
-
-            <div class="card-content">
-              <h3>Porções</h3>
-            </div>
-          </a>
-
-          <a href="cardapio.html#pratosindividuais" class="card">
-            <img src="./img/sem-imagem.png" alt="Pratos" />
-
-            <div class="card-content">
-              <h3>Pratos</h3>
-            </div>
-          </a>
-
-          <a href="cardapio.html#pizza" class="card">
-            <img src="./img/sem-imagem.png" alt="Pizza Rap 10" />
-
-            <div class="card-content">
-              <h3>Pizza Rap 10</h3>
-            </div>
-          </a>
-
-          <a href="cardapio.html#sobremesa" class="card">
-            <img src="./img/sem-imagem.png" alt="Sobremesas" />
-
-            <div class="card-content">
-              <h3>Sobremesa</h3>
-            </div>
-          </a>
-        </div>
-
-        <div class="cardapio-cta">
-          <a href="cardapio.html" class="btn-cardapio">
-            Conheça nosso cardápio completo
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="eventos" id="eventos">
-      <div class="container">
-        <h2 class="section-title">Próximos Eventos</h2>
-
-        <div class="slider">
-          <button class="slider-btn prev">&#10094;</button>
-
-          <div class="slides">
-            <div class="slide active">
-              <img src="./img/evento1.jpg" alt="Dia dos Namorados" />
-            </div>
-
-            <div class="slide">
-              <img src="./img/evento2.jpg" alt="Evento futuro" />
-            </div>
-          </div>
-
-          <button class="slider-btn next">&#10095;</button>
-        </div>
-
-        <!-- INFO FIXA (NÃO MUDA NUNCA) -->
-        <div class="evento-info">
-          <div class="evento-tag">Próximo evento</div>
-
-          <h3>Dia dos Namorados</h3>
-
-          <div class="evento-data">12 de Junho</div>
-
-          <p>
-            Dia dos Namorados no Deck Beer, uma noite feita para celebrar o
-            amor.
+          <p class="cardapio-subtitle">
+            Drinks especiais, hambúrgueres artesanais e porções preparadas para
+            acompanhar os melhores momentos.
           </p>
+
+          <div class="cards">
+            <a href="cardapio.html#drinks" class="card">
+              <img
+                src="./img/drink.jpg"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+
+              <div class="card-content">
+                <h3>Drinks</h3>
+              </div>
+            </a>
+
+            <a href="cardapio.html#lanchesartesanais" class="card">
+              <img
+                src="./img/lanche.jpg"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+
+              <div class="card-content">
+                <h3>Lanches</h3>
+              </div>
+            </a>
+
+            <a href="cardapio.html#porcoes" class="card">
+              <img
+                src="./img/porcao.jpg"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+
+              <div class="card-content">
+                <h3>Porções</h3>
+              </div>
+            </a>
+
+            <a href="cardapio.html#pratosindividuais" class="card">
+              <img
+                src="./img/sem-imagem.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+
+              <div class="card-content">
+                <h3>Pratos</h3>
+              </div>
+            </a>
+
+            <a href="cardapio.html#pizza" class="card">
+              <img
+                src="./img/sem-imagem.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+
+              <div class="card-content">
+                <h3>Pizza Rap 10</h3>
+              </div>
+            </a>
+
+            <a href="cardapio.html#sobremesas" class="card">
+              <img
+                src="./img/sem-imagem.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+
+              <div class="card-content">
+                <h3>Sobremesa</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="cardapio-cta">
+            <a href="cardapio.html" class="btn-cardapio">
+              Conheça nosso cardápio completo
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="eventos" id="programacao">
+        <div class="container">
+          <h2 class="section-title">Programação</h2>
+
+          <div
+            class="slider"
+            role="region"
+            aria-label="Imagens dos próximos eventos"
+          >
+            <button
+              class="slider-btn prev"
+              type="button"
+              aria-label="Ver evento anterior"
+            >
+              &#10094;
+            </button>
+
+            <div class="slides" aria-live="polite">
+              <div class="slide active" aria-hidden="false">
+                <img
+                  src="./img/local-1.jpg"
+                  alt="Divulgação do evento de Dia dos Namorados no Deck Beer"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </div>
+
+            <button
+              class="slider-btn next"
+              type="button"
+              aria-label="Ver próximo evento"
+            >
+              &#10095;
+            </button>
+          </div>
+
+          <div class="evento-info">
+            <!-- <div class="evento-tag">Próximo evento</div> -->
+
+            <h3>Horário de funcionamento</h3>
+
+            <!--  <div class="evento-data">12 de junho</div> -->
+
+            <p>Quinta-feira: 17:00 às 23:00</p>
+            <p>Sexta-feira: 17:00 às 01:00</p>
+            <p>Sábado: 17:00 às 01:00</p>
+            <p>Domingo: 17:00 às 23:00</p>
+
+            <a
+              class="btn-reservar"
+              href="https://wa.me/5512974038736"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Reservar mesa
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="galeria">
+        <div class="container">
+          <h2 class="section-title">Conheça o Deck</h2>
+
+          <div class="gallery-grid">
+            <img
+              src="./img/local-1.jpg"
+              alt="Área externa do Deck Beer"
+              loading="lazy"
+              decoding="async"
+            />
+
+            <img
+              src="./img/local-2.jpg"
+              alt="Área interna do Deck Beer"
+              loading="lazy"
+              decoding="async"
+            />
+
+            <img
+              src="./img/local-3.jpg"
+              alt="Outro ângulo da área interna do Deck Beer"
+              loading="lazy"
+              decoding="async"
+            />
+
+            <img
+              src="./img/local-4.jpg"
+              alt="Entrada do Deck Beer"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="localizacao">
+        <div class="container">
+          <h2 class="section-title">Onde Estamos</h2>
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d545.5790928930354!2d-45.19037795192847!3d-23.089625903711312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cd25d99258d981%3A0xc126ef6b6737c485!2sDeck%20Beer%20Bar%20R%C3%BAstico%20Lagoinha%20SP!5e0!3m2!1spt-BR!2sbr!4v1780427307039!5m2!1spt-BR!2sbr"
+            title="Localização do Deck Beer Bar Rústico no Google Maps"
+            width="600"
+            height="450"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div class="container">
+          <h2>Reserve sua mesa agora</h2>
+
+          <p>Viva uma experiência única no Deck Beer Bar Rústico.</p>
 
           <a
-            class="btn-reservar"
-            href="https://wa.me/5512997314471?text=Olá!%20Quero%20reservar%20uma%20mesa%20para%20o%20evento."
+            href="https://wa.me/5512974038736?text=Olá!%20Quero%20reservar%20uma%20mesa%20para%20o%20evento."
+            class="btn"
             target="_blank"
+            rel="noopener noreferrer"
           >
-            Reservar mesa
+            Falar no WhatsApp
           </a>
         </div>
-      </div>
-    </section>
-
-    <section class="galeria">
-      <div class="container">
-        <h2 class="section-title">Conheça o Deck</h2>
-
-        <div class="gallery-grid">
-          <img src="./img/local-1.jpg" alt="Externa do Deck Beer" />
-          <img src="./img/local-2.jpg" alt="Interna do Deck Beer" />
-          <img src="./img/local-3.jpg" alt="Interna do Deck Beer" />
-          <img src="./img/local-4.jpg" alt="Entrada do Deck Beer" />
-        </div>
-      </div>
-    </section>
-
-    <section class="localizacao">
-      <div class="container">
-        <h2 class="section-title">Onde Estamos</h2>
-
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d545.5790928930354!2d-45.19037795192847!3d-23.089625903711312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cd25d99258d981%3A0xc126ef6b6737c485!2sDeck%20Beer%20Bar%20R%C3%BAstico%20Lagoinha%20SP!5e0!3m2!1spt-BR!2sbr!4v1780427307039!5m2!1spt-BR!2sbr"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
-    </section>
-
-    <section class="cta">
-      <div class="container">
-        <h2>Reserve sua mesa agora</h2>
-
-        <p>Viva uma experiência única no Deck Beer Bar Rústico.</p>
-
-        <a href="https://wa.me/5512974038736" class="btn" target="_blank">
-          Falar no WhatsApp
-        </a>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <footer id="programacao">
       <div class="container footer-grid">
         <div class="footer-item">
           <div class="footer-icon">
-            <img src="./img/horario.png" alt="Horários" />
+            <img
+              src="./img/horario.png"
+              alt=""
+              loading="lazy"
+              decoding="async"
+            />
           </div>
 
           <h3>Programação</h3>
@@ -309,18 +423,24 @@
 
         <div class="footer-item">
           <div class="footer-icon">
-            <img src="./img/contato.png" alt="Contato" />
+            <img
+              src="./img/contato.png"
+              alt=""
+              loading="lazy"
+              decoding="async"
+            />
           </div>
 
           <h3>Contato</h3>
 
-          <p>(12) 97403-8736</p>
-          <p>(reservas)</p>
+          <p>
+            <a href="tel:+5512974038736">(12) 97403-8736</a>
+          </p>
         </div>
 
         <div class="footer-item">
           <div class="footer-icon">
-            <img src="./img/local.png" alt="Endereço" />
+            <img src="./img/local.png" alt="" loading="lazy" decoding="async" />
           </div>
 
           <h3>Endereço</h3>
@@ -332,12 +452,21 @@
 
         <div class="footer-item">
           <div class="footer-icon">
-            <img src="./img/trabalhe.png" alt="Trabalhe conosco" />
+            <img
+              src="./img/trabalhe.png"
+              alt=""
+              loading="lazy"
+              decoding="async"
+            />
           </div>
 
           <h3>Trabalhe Conosco</h3>
 
-          <p>deckber@gmail.com</p>
+          <p>
+            <a href="mailto:deckbeerlagoinha@gmail.com"
+              >deckbeerlagoinha@gmail.com</a
+            >
+          </p>
         </div>
       </div>
 
