@@ -320,6 +320,11 @@
   color: #fff;
 }
 
+.categoria-cardapio,
+.categoria-bebidas {
+  scroll-margin-top: var(--altura-menus, 130px);
+}
+
 /* =========================
    RESPONSIVO
 ========================= */
@@ -357,11 +362,38 @@
     grid-template-columns: 1fr;
   }
 
+  nav {
+    padding: 10px 0;
+  }
+
+  nav.scrolled {
+    padding: 8px 0;
+  }
+
+  .nav-content {
+    min-height: 34px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .menu-hamburguer {
+    width: 36px;
+    height: 36px;
+    padding: 7px;
+  }
+
+  .menu-categorias {
+    padding: 8px 0;
+  }
+
   .menu-categorias .container {
-    gap: 15px;
+    gap: 16px;
   }
 
   .menu-categorias a {
-    font-size: 14px;
+    font-size: 13px;
+    white-space: nowrap;
   }
 }

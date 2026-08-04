@@ -2627,7 +2627,16 @@
       function atualizarTop() {
         if (!menuCategorias || !navbarCardapio) return;
 
-        menuCategorias.style.top = navbarCardapio.offsetHeight + "px";
+        const alturaNavbar = navbarCardapio.offsetHeight;
+        const alturaCategorias = menuCategorias.offsetHeight;
+        const espacoExtra = 12;
+
+        menuCategorias.style.top = `${alturaNavbar}px`;
+
+        document.documentElement.style.setProperty(
+          "--altura-menus",
+          `${alturaNavbar + alturaCategorias + espacoExtra}px`,
+        );
       }
 
       window.addEventListener("load", atualizarTop);
