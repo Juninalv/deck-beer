@@ -86,15 +86,28 @@
 
 .menu-categorias .container {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
 
   gap: 30px;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.menu-categorias .container::-webkit-scrollbar {
+  display: none;
 }
 
 .menu-categorias a {
+  flex-shrink: 0;
+
   color: var(--text-secondary);
   font-weight: 600;
+  white-space: nowrap;
 
   transition: color 0.3s ease;
 }
