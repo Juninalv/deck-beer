@@ -2,6 +2,13 @@
    HERO CARDÁPIO
 ========================= */
 
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .hero-cardapio {
   position: relative;
   height: 55vh;
