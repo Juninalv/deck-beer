@@ -73,7 +73,7 @@
           <a href="#porcoes">Porções</a>
           <a href="#pratosindividuais">Pratos Individuais</a>
           <a href="#pratosexecutivos">Pratos Executivos</a>
-          <a href="#lanchesartesanais">Lanches Artesanais</a>
+          <a href="#lanches">Lanches</a>
           <a href="#pizza">Pizza Rap 10</a>
           <a href="#sobremesas">Sobremesas</a>
           <a href="#drinks">Drinks</a>
@@ -87,464 +87,448 @@
         <div class="container">
           <h2 class="section-title">Porções</h2>
 
-          <div class="itens-cardapio">
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Fritas" />
-
-              <div class="item-info">
-                <h3>Fritas</h3>
-
-                <p>Fritas</p>
-
-                <span>R$ 34,90</span>
-
-                <button
-                  class="btn-add"
-                  onclick="adicionarAoCarrinho('Fritas', 34.9)"
-                >
-                  Adicionar
-                </button>
-              </div>
+          <div class="porcoes-lista">
+            <div class="porcoes-destaque">
+              <img src="./img/cardapio/porcoes.jpg" alt="Porções" />
             </div>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Calabresa" />
+            <div class="lista-porcoes">
+              <div class="porcao-item">
+                <div class="porcao-conteudo">
+                  <h3>Fritas</h3>
+                  <p>Fritas</p>
+                </div>
 
-              <div class="item-info">
-                <h3>Calabresa</h3>
+                <div class="porcao-compra">
+                  <span>R$ 34,90</span>
 
-                <p>Calabresa defumada, acebolada e frita</p>
-
-                <span>R$ 38,90</span>
-
-                <button
-                  class="btn-add"
-                  onclick="adicionarAoCarrinho('Calabresa', 38.9)"
-                >
-                  Adicionar
-                </button>
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Fritas', 34.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
-            </div>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Two Fries" />
+              <div class="porcao-item">
+                <div class="porcao-conteudo">
+                  <h3>Calabresa</h3>
+                  <p>Calabresa defumada, acebolada e frita</p>
+                </div>
 
-              <div class="item-info">
-                <h3>Two Fries</h3>
+                <div class="porcao-compra">
+                  <span>R$ 38,90</span>
 
-                <p>Mandioca e polenta frita com molho de mostarda e mel</p>
-
-                <span>R$ 38,90</span>
-
-                <button
-                  class="btn-add"
-                  onclick="adicionarAoCarrinho('Two Fries', 38.9)"
-                >
-                  Adicionar
-                </button>
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Calabresa', 38.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
-            </div>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Isca de Frango Empanado" />
+              <div class="porcao-item">
+                <div class="porcao-conteudo">
+                  <h3>Two Fries</h3>
+                  <p>Mandioca e polenta frita com molho de mostarda e mel</p>
+                </div>
 
-              <div class="item-info">
-                <h3>Isca de Frango Empanado</h3>
+                <div class="porcao-compra">
+                  <span>R$ 38,90</span>
 
-                <p>Peito de frango empanado, acompanha pasta de alho da casa</p>
-
-                <span>R$ 39,90</span>
-
-                <button
-                  class="btn-add"
-                  onclick="adicionarAoCarrinho('Isca de Frango Empanado', 39.9)"
-                >
-                  Adicionar
-                </button>
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Two Fries', 38.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
-            </div>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Pastel Caipira" />
+              <div class="porcao-item">
+                <div class="porcao-conteudo">
+                  <h3>Isca de Frango Empanado</h3>
+                  <p>
+                    Peito de frango empanado, acompanha pasta de alho da casa
+                  </p>
+                </div>
 
-              <div class="item-info">
-                <h3>Pastel Caipira</h3>
+                <div class="porcao-compra">
+                  <span>R$ 39,90</span>
 
-                <p>
-                  Carne moída, queijo, requeijão de prato<br />
-                  Carne seca, costela, camarão
-                </p>
-
-                <span>R$ 44,90</span>
-
-                <button
-                  class="btn-add"
-                  onclick="adicionarAoCarrinho('Pastel Caipira', 44.9)"
-                >
-                  Adicionar
-                </button>
+                  <button
+                    class="btn-add"
+                    onclick="
+                      adicionarAoCarrinho('Isca de Frango Empanado', 39.9)
+                    "
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
-            </div>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Fritas Lagoinhense" />
+              <div class="porcao-item">
+                <div class="porcao-conteudo">
+                  <h3>Pastel Caipira</h3>
+                  <p>
+                    Carne moída, queijo, requeijão de prato<br />
+                    Carne seca, costela, camarão
+                  </p>
+                </div>
 
-              <div class="item-info">
-                <h3>Fritas Lagoinhense</h3>
+                <div class="porcao-compra">
+                  <span>R$ 44,90</span>
 
-                <p>Fritas com requeijão de prato</p>
-
-                <span>R$ 42,90</span>
-
-                <button
-                  class="btn-add"
-                  onclick="adicionarAoCarrinho('Fritas Lagoinhense', 42.9)"
-                >
-                  Adicionar
-                </button>
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Pastel Caipira', 44.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
-            </div>
+              <div class="porcao-item">
+                <div class="porcao-conteudo">
+                  <h3>Fritas Lagoinhense</h3>
+                  <p>Fritas com requeijão de prato</p>
+                </div>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Dadinho de Tapioca" />
+                <div class="porcao-compra">
+                  <span>R$ 42,90</span>
 
-              <div class="item-info">
-                <h3>Dadinho de Tapioca</h3>
-
-                <p>Dadinhos fritos com geleia de pimenta</p>
-
-                <span>R$ 42,90</span>
-
-                <button
-                  class="btn-add"
-                  onclick="adicionarAoCarrinho('Dadinho de Tapioca', 42.9)"
-                >
-                  Adicionar
-                </button>
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Fritas Lagoinhense', 42.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
-            </div>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Fritas Especial" />
+              <div class="porcao-item">
+                <div class="porcao-conteudo">
+                  <h3>Dadinho de Tapioca</h3>
+                  <p>Dadinhos fritos com geleia de pimenta</p>
+                </div>
 
-              <div class="item-info">
-                <h3>Fritas Especial</h3>
+                <div class="porcao-compra">
+                  <span>R$ 42,90</span>
 
-                <p>Com cheddar e catupiry</p>
-
-                <span>R$ 44,90</span>
-
-                <button
-                  class="btn-add"
-                  onclick="adicionarAoCarrinho('Fritas Especial', 44.9)"
-                >
-                  Adicionar
-                </button>
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Dadinho de Tapioca', 42.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
-            </div>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Fritas com Queijo e Bacon" />
+              <div class="porcao-item">
+                <div class="porcao-conteudo">
+                  <h3>Fritas Especial</h3>
+                  <p>Com cheddar e catupiry</p>
+                </div>
 
-              <div class="item-info">
-                <h3>Fritas com Queijo e Bacon</h3>
+                <div class="porcao-compra">
+                  <span>R$ 44,90</span>
 
-                <p>Fritas com queijo e bacon</p>
-
-                <span>R$ 44,90</span>
-
-                <button
-                  class="btn-add"
-                  onclick="
-                    adicionarAoCarrinho('Fritas com Queijo e Bacon', 44.9)
-                  "
-                >
-                  Adicionar
-                </button>
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Fritas Especial', 44.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
-            </div>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Tulipa de Frango" />
+              <div class="porcao-item">
+                <div class="porcao-conteudo">
+                  <h3>Fritas com Queijo e Bacon</h3>
+                  <p>Fritas com queijo e bacon</p>
+                </div>
 
-              <div class="item-info">
-                <h3>Tulipa de Frango</h3>
+                <div class="porcao-compra">
+                  <span>R$ 44,90</span>
 
-                <p>Meio da asa acompanha pasta de alho da casa</p>
-
-                <span>R$ 44,90</span>
-
-                <button
-                  class="btn-add"
-                  onclick="adicionarAoCarrinho('Tulipa de Frango', 44.9)"
-                >
-                  Adicionar
-                </button>
+                  <button
+                    class="btn-add"
+                    onclick="
+                      adicionarAoCarrinho('Fritas com Queijo e Bacon', 44.9)
+                    "
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
-            </div>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Torresmo de Rolo" />
+              <div class="porcao-item">
+                <div class="porcao-conteudo">
+                  <h3>Tulipa de Frango</h3>
+                  <p>Meio da asa acompanha pasta de alho da casa</p>
+                </div>
 
-              <div class="item-info">
-                <h3>Torresmo de Rolo</h3>
+                <div class="porcao-compra">
+                  <span>R$ 44,90</span>
 
-                <p>Pão, vinagrete, pasta de alho da casa e farofa</p>
-
-                <span>R$ 54,90</span>
-
-                <button
-                  class="btn-add"
-                  onclick="adicionarAoCarrinho('Torresmo de Rolo', 54.9)"
-                >
-                  Adicionar
-                </button>
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Tulipa de Frango', 44.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
-            </div>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Linguiça Fina de Pernil" />
+              <div class="porcao-item">
+                <div class="porcao-conteudo">
+                  <h3>Torresmo de Rolo</h3>
+                  <p>Pão, vinagrete, pasta de alho da casa e farofa</p>
+                </div>
 
-              <div class="item-info">
-                <h3>Linguiça Fina de Pernil</h3>
+                <div class="porcao-compra">
+                  <span>R$ 54,90</span>
 
-                <p>Linguiça fininha premiun de pernil na chapa</p>
-
-                <span>R$ 64,90</span>
-
-                <button
-                  class="btn-add"
-                  onclick="adicionarAoCarrinho('Linguiça Fina de Pernil', 64.9)"
-                >
-                  Adicionar
-                </button>
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Torresmo de Rolo', 54.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
-            </div>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Tábua de Frios" />
+              <div class="porcao-item">
+                <div class="porcao-conteudo">
+                  <h3>Linguiça Fina de Pernil</h3>
+                  <p>Linguiça fininha premiun de pernil na chapa</p>
+                </div>
 
-              <div class="item-info">
-                <h3>Tábua de Frios</h3>
+                <div class="porcao-compra">
+                  <span>R$ 64,90</span>
 
-                <p>Salame, azeitona, palmito e queijo</p>
-
-                <span>R$ 68,90</span>
-
-                <button
-                  class="btn-add"
-                  onclick="adicionarAoCarrinho('Tábua de Frios', 68.9)"
-                >
-                  Adicionar
-                </button>
+                  <button
+                    class="btn-add"
+                    onclick="
+                      adicionarAoCarrinho('Linguiça Fina de Pernil', 64.9)
+                    "
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
-            </div>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Filé de Tilápia" />
+              <div class="porcao-item">
+                <div class="porcao-conteudo">
+                  <h3>Tábua de Frios</h3>
+                  <p>Salame, azeitona, palmito e queijo</p>
+                </div>
 
-              <div class="item-info">
-                <h3>Filé de Tilápia</h3>
+                <div class="porcao-compra">
+                  <span>R$ 68,90</span>
 
-                <p>Filé de tilápia sem espinhos</p>
-
-                <span>R$ 74,90</span>
-
-                <button
-                  class="btn-add"
-                  onclick="adicionarAoCarrinho('Filé de Tilápia', 74.9)"
-                >
-                  Adicionar
-                </button>
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Tábua de Frios', 68.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
-            </div>
+              <div class="porcao-item">
+                <div class="porcao-conteudo">
+                  <h3>Filé de Tilápia</h3>
+                  <p>Filé de tilápia sem espinhos</p>
+                </div>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Contra Filé Acebolado" />
+                <div class="porcao-compra">
+                  <span>R$ 74,90</span>
 
-              <div class="item-info">
-                <h3>Contra Filé Acebolado</h3>
-
-                <p>
-                  Contra filé acebolado, acompanha pão e pasta de alho da casa
-                </p>
-
-                <span>R$ 74,90</span>
-
-                <button
-                  class="btn-add"
-                  onclick="adicionarAoCarrinho('Contra Filé Acebolado', 74.9)"
-                >
-                  Adicionar
-                </button>
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Filé de Tilápia', 74.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
-            </div>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Contra Filé com Fritas" />
+              <div class="porcao-item">
+                <div class="porcao-conteudo">
+                  <h3>Contra Filé Acebolado</h3>
+                  <p>
+                    Contra filé acebolado, acompanha pão e pasta de alho da casa
+                  </p>
+                </div>
 
-              <div class="item-info">
-                <h3>Contra Filé com Fritas</h3>
+                <div class="porcao-compra">
+                  <span>R$ 74,90</span>
 
-                <p>
-                  Iscas de contra filé acebolado, acompanha pães e pasta de alho
-                  da casa
-                </p>
-
-                <span>R$ 84,90</span>
-
-                <button
-                  class="btn-add"
-                  onclick="adicionarAoCarrinho('Contra Filé com Fritas', 84.9)"
-                >
-                  Adicionar
-                </button>
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Contra Filé Acebolado', 74.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
-            </div>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Bolinho de Bacalhau" />
+              <div class="porcao-item">
+                <div class="porcao-conteudo">
+                  <h3>Contra Filé com Fritas</h3>
+                  <p>
+                    Iscas de contra filé acebolado, acompanha pães e pasta de
+                    alho da casa
+                  </p>
+                </div>
 
-              <div class="item-info">
-                <h3>Bolinho de Bacalhau</h3>
+                <div class="porcao-compra">
+                  <span>R$ 84,90</span>
 
-                <p>Lombos de bacalhau, acompanham pasta de alho</p>
-
-                <span>R$ 89,90</span>
-
-                <button
-                  class="btn-add"
-                  onclick="adicionarAoCarrinho('Bolinho de Bacalhau', 89.9)"
-                >
-                  Adicionar
-                </button>
+                  <button
+                    class="btn-add"
+                    onclick="
+                      adicionarAoCarrinho('Contra Filé com Fritas', 84.9)
+                    "
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
-            </div>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Contra Filé à Parmegiana" />
+              <div class="porcao-item">
+                <div class="porcao-conteudo">
+                  <h3>Bolinho de Bacalhau</h3>
+                  <p>Lombos de bacalhau, acompanham pasta de alho</p>
+                </div>
 
-              <div class="item-info">
-                <h3>Contra Filé à Parmegiana</h3>
+                <div class="porcao-compra">
+                  <span>R$ 89,90</span>
 
-                <p>
-                  Contra filé, molho vermelho e queijo. Acompanha pão e
-                  vinagrete
-                </p>
-
-                <span>R$ 89,90</span>
-
-                <button
-                  class="btn-add"
-                  onclick="
-                    adicionarAoCarrinho('Contra Filé à Parmegiana', 89.9)
-                  "
-                >
-                  Adicionar
-                </button>
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Bolinho de Bacalhau', 89.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
-            </div>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Camarão" />
+              <div class="porcao-item">
+                <div class="porcao-conteudo">
+                  <h3>Contra Filé à Parmegiana</h3>
+                  <p>
+                    Contra filé, molho vermelho e queijo. Acompanha pão e
+                    vinagrete
+                  </p>
+                </div>
 
-              <div class="item-info">
-                <h3>Camarão</h3>
+                <div class="porcao-compra">
+                  <span>R$ 89,90</span>
 
-                <p>Camarões rosa médios feitos à dorê</p>
-
-                <span>R$ 89,90</span>
-
-                <button
-                  class="btn-add"
-                  onclick="adicionarAoCarrinho('Camarão', 89.9)"
-                >
-                  Adicionar
-                </button>
+                  <button
+                    class="btn-add"
+                    onclick="
+                      adicionarAoCarrinho('Contra Filé à Parmegiana', 89.9)
+                    "
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
-            </div>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Filé Mignon à Parmegiana" />
+              <div class="porcao-item">
+                <div class="porcao-conteudo">
+                  <h3>Camarão</h3>
+                  <p>Camarões rosa médios feitos à dorê</p>
+                </div>
 
-              <div class="item-info">
-                <h3>Filé Mignon à Parmegiana</h3>
+                <div class="porcao-compra">
+                  <span>R$ 89,90</span>
 
-                <p>
-                  Filé mignon ao molho vermelho com queijo. Acompanha vinagrete
-                  e pão
-                </p>
-
-                <span>R$ 119,90</span>
-
-                <button
-                  class="btn-add"
-                  onclick="
-                    adicionarAoCarrinho('Filé Mignon à Parmegiana', 119.9)
-                  "
-                >
-                  Adicionar
-                </button>
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Camarão', 89.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
-            </div>
 
-            <div class="item-cardapio">
-              <img
-                src="./img/sem-imagem.png"
-                alt="Filé Mignon ao Molho Gorgonzola no Pão Italiano"
-              />
+              <div class="porcao-item">
+                <div class="porcao-conteudo">
+                  <h3>Filé Mignon à Parmegiana</h3>
+                  <p>
+                    Filé mignon ao molho vermelho com queijo. Acompanha
+                    vinagrete e pão
+                  </p>
+                </div>
 
-              <div class="item-info">
-                <h3>Filé Mignon ao Molho Gorgonzola no Pão Italiano</h3>
+                <div class="porcao-compra">
+                  <span>R$ 119,90</span>
 
-                <p>
-                  Isca de filé mignon ao molho gorgonzola, acompanha brócolis e
-                  batata frita
-                </p>
-
-                <span>R$ 129,90</span>
-
-                <button
-                  class="btn-add"
-                  onclick="
-                    adicionarAoCarrinho(
-                      'Filé Mignon ao Molho Gorgonzola no Pão Italiano',
-                      129.9,
-                    )
-                  "
-                >
-                  Adicionar
-                </button>
+                  <button
+                    class="btn-add"
+                    onclick="
+                      adicionarAoCarrinho('Filé Mignon à Parmegiana', 119.9)
+                    "
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
-            </div>
 
-            <div class="item-cardapio">
-              <img
-                src="./img/sem-imagem.png"
-                alt="Filé Mignon ao Molho Gorgonzola na Chapa"
-              />
+              <div class="porcao-item">
+                <div class="porcao-conteudo">
+                  <h3>Filé Mignon ao Molho Gorgonzola no Pão Italiano</h3>
+                  <p>
+                    Isca de filé mignon ao molho gorgonzola, acompanha brócolis
+                    e batata frita
+                  </p>
+                </div>
 
-              <div class="item-info">
-                <h3>Filé Mignon ao Molho Gorgonzola na Chapa</h3>
+                <div class="porcao-compra">
+                  <span>R$ 129,90</span>
 
-                <p>
-                  Isca de filé mignon ao molho gorgonzola, acompanha brócolis
-                  branqueados e batata rústica
-                </p>
+                  <button
+                    class="btn-add"
+                    onclick="
+                      adicionarAoCarrinho(
+                        'Filé Mignon ao Molho Gorgonzola no Pão Italiano',
+                        129.9,
+                      )
+                    "
+                  >
+                    Adicionar
+                  </button>
+                </div>
+              </div>
 
-                <span>R$ 129,90</span>
+              <div class="porcao-item">
+                <div class="porcao-conteudo">
+                  <h3>Filé Mignon ao Molho Gorgonzola na Chapa</h3>
+                  <p>
+                    Isca de filé mignon ao molho gorgonzola, acompanha brócolis
+                    branqueados e batata rústica
+                  </p>
+                </div>
 
-                <button
-                  class="btn-add"
-                  onclick="
-                    adicionarAoCarrinho(
-                      'Filé Mignon ao Molho Gorgonzola na Chapa',
-                      129.9,
-                    )
-                  "
-                >
-                  Adicionar
-                </button>
+                <div class="porcao-compra">
+                  <span>R$ 129,90</span>
+
+                  <button
+                    class="btn-add"
+                    onclick="
+                      adicionarAoCarrinho(
+                        'Filé Mignon ao Molho Gorgonzola na Chapa',
+                        129.9,
+                      )
+                    "
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -555,57 +539,66 @@
 
       <section class="categoria-cardapio" id="pratosindividuais">
         <div class="container">
-          <h2 class="section-title">Pratos Individuais</h2>
-          <h2 class="section-title" id="parmegianas">Parmegianas</h2>
-          <div class="itens-cardapio">
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Parmegiana de Carne" />
+          <h2 class="section-title" id="parmegiana">Parmegiana</h2>
 
-              <div class="item-info">
-                <h3>Parmegiana de Carne</h3>
-                <p>Contra filé, arroz e fritas.</p>
-                <span>R$ 48,90</span>
-
-                <button
-                  class="btn-add"
-                  onclick="adicionarAoCarrinho('Parmegiana de Carne', 48.9)"
-                >
-                  Adicionar
-                </button>
-              </div>
+          <div class="porcoes-lista">
+            <div class="porcoes-destaque">
+              <img src="./img/cardapio/parmegiana.jpg" alt="Parmegiana" />
             </div>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Parmegiana de Frango" />
+            <div class="lista-porcoes">
+              <div class="porcao-item">
+                <div class="porcao-conteudo">
+                  <h3>Parmegiana de Carne</h3>
+                  <p>Contra filé, arroz e fritas.</p>
+                </div>
 
-              <div class="item-info">
-                <h3>Parmegiana de Frango</h3>
-                <p>Filé de frango, arroz e fritas.</p>
-                <span>R$ 38,90</span>
+                <div class="porcao-compra">
+                  <span>R$ 48,90</span>
 
-                <button
-                  class="btn-add"
-                  onclick="adicionarAoCarrinho('Parmegiana de Frango', 38.9)"
-                >
-                  Adicionar
-                </button>
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Parmegiana de Carne', 48.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
-            </div>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Parmegiana de Peixe" />
+              <div class="porcao-item">
+                <div class="porcao-conteudo">
+                  <h3>Parmegiana de Frango</h3>
+                  <p>Filé de frango, arroz e fritas.</p>
+                </div>
 
-              <div class="item-info">
-                <h3>Parmegiana de Peixe</h3>
-                <p>Filé de tilápia, arroz e fritas.</p>
-                <span>R$ 48,90</span>
+                <div class="porcao-compra">
+                  <span>R$ 38,90</span>
 
-                <button
-                  class="btn-add"
-                  onclick="adicionarAoCarrinho('Parmegiana de Peixe', 48.9)"
-                >
-                  Adicionar
-                </button>
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Parmegiana de Frango', 38.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+              </div>
+
+              <div class="porcao-item">
+                <div class="porcao-conteudo">
+                  <h3>Parmegiana de Peixe</h3>
+                  <p>Filé de tilápia, arroz e fritas.</p>
+                </div>
+
+                <div class="porcao-compra">
+                  <span>R$ 48,90</span>
+
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Parmegiana de Peixe', 48.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -613,57 +606,67 @@
 
         <div class="container">
           <h2 class="section-title" id="carnes">Carnes e frango</h2>
-          <div class="itens-cardapio">
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Contra Filé Acebolado" />
 
-              <div class="item-info">
-                <h3>Contra Filé Acebolado</h3>
-                <p>Contra filé acebolado, arroz e fritas.</p>
-                <span>R$ 38,90</span>
-
-                <button
-                  class="btn-add"
-                  onclick="adicionarAoCarrinho('Contra Filé Acebolado', 38.9)"
-                >
-                  Adicionar
-                </button>
-              </div>
+          <div class="porcoes-lista">
+            <div class="porcoes-destaque">
+              <img src="./img/cardapio/carnes.jpg" alt="Carnes e frango" />
             </div>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Filé de Frango Acebolado" />
+            <div class="lista-porcoes">
+              <div class="porcao-item">
+                <div class="porcao-conteudo">
+                  <h3>Contra Filé Acebolado</h3>
+                  <p>Contra filé acebolado, arroz e fritas.</p>
+                </div>
 
-              <div class="item-info">
-                <h3>Filé de Frango Acebolado</h3>
-                <p>Filé de frango, arroz e fritas.</p>
-                <span>R$ 34,90</span>
+                <div class="porcao-compra">
+                  <span>R$ 38,90</span>
 
-                <button
-                  class="btn-add"
-                  onclick="
-                    adicionarAoCarrinho('Filé de Frango Acebolado', 34.9)
-                  "
-                >
-                  Adicionar
-                </button>
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Contra Filé Acebolado', 38.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
-            </div>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Bife a Cavalo" />
+              <div class="porcao-item">
+                <div class="porcao-conteudo">
+                  <h3>Filé de Frango Acebolado</h3>
+                  <p>Filé de frango, arroz e fritas.</p>
+                </div>
 
-              <div class="item-info">
-                <h3>Bife a Cavalo</h3>
-                <p>Bife de contra filé, ovo, arroz e fritas.</p>
-                <span>R$ 45,90</span>
+                <div class="porcao-compra">
+                  <span>R$ 34,90</span>
 
-                <button
-                  class="btn-add"
-                  onclick="adicionarAoCarrinho('Bife a Cavalo', 45.9)"
-                >
-                  Adicionar
-                </button>
+                  <button
+                    class="btn-add"
+                    onclick="
+                      adicionarAoCarrinho('Filé de Frango Acebolado', 34.9)
+                    "
+                  >
+                    Adicionar
+                  </button>
+                </div>
+              </div>
+
+              <div class="porcao-item">
+                <div class="porcao-conteudo">
+                  <h3>Bife a Cavalo</h3>
+                  <p>Bife de contra filé, ovo, arroz e fritas.</p>
+                </div>
+
+                <div class="porcao-compra">
+                  <span>R$ 45,90</span>
+
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Bife a Cavalo', 45.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -672,156 +675,182 @@
         <div class="container">
           <h2 class="section-title" id="espaguetes">Massas espaguetes</h2>
 
-          <div class="itens-cardapio">
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Espaguete ao Molho Branco" />
-
-              <div class="item-info">
-                <h3>Espaguete ao Molho Branco</h3>
-
-                <p>Acompanha queijo ralado. Serve 1 pessoa.</p>
-
-                <span>R$ 34,90</span>
-
-                <div class="adicionais">
-                  <p>Adicionais:</p>
-
-                  <label>
-                    <input type="checkbox" value="Camarão" data-preco="10" />
-                    Camarão + R$ 10,00
-                  </label>
-
-                  <label>
-                    <input type="checkbox" value="Contrafilé" data-preco="10" />
-                    Contrafilé + R$ 10,00
-                  </label>
-                </div>
-
-                <button
-                  type="button"
-                  class="btn-add"
-                  onclick="
-                    adicionarLanche(this, 'Espaguete ao Molho Branco', 34.9)
-                  "
-                >
-                  Adicionar
-                </button>
-              </div>
-            </div>
-
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Espaguete ao Molho Rosé" />
-
-              <div class="item-info">
-                <h3>Espaguete ao Molho Rosé</h3>
-
-                <p>Acompanha queijo ralado. Serve 1 pessoa.</p>
-
-                <span>R$ 34,90</span>
-
-                <div class="adicionais">
-                  <p>Adicionais:</p>
-
-                  <label>
-                    <input type="checkbox" value="Camarão" data-preco="10" />
-                    Camarão + R$ 10,00
-                  </label>
-
-                  <label>
-                    <input type="checkbox" value="Contrafilé" data-preco="10" />
-                    Contrafilé + R$ 10,00
-                  </label>
-                </div>
-
-                <button
-                  type="button"
-                  class="btn-add"
-                  onclick="
-                    adicionarLanche(this, 'Espaguete ao Molho Rosé', 34.9)
-                  "
-                >
-                  Adicionar
-                </button>
-              </div>
-            </div>
-
-            <div class="item-cardapio">
+          <div class="porcoes-lista">
+            <div class="porcoes-destaque">
               <img
-                src="./img/sem-imagem.png"
-                alt="Espaguete ao Molho Vermelho"
+                src="./img/cardapio/espaguetes.jpg"
+                alt="Massas espaguetes"
               />
+            </div>
 
-              <div class="item-info">
-                <h3>Espaguete ao Molho Vermelho</h3>
+            <div class="lista-porcoes">
+              <div class="porcao-item item-info">
+                <div class="porcao-conteudo">
+                  <h3>Espaguete ao Molho Branco</h3>
 
-                <p>Molho com bacon e calabresa, acompanha queijo ralado.</p>
+                  <p>Acompanha queijo ralado. Serve 1 pessoa.</p>
 
-                <span>R$ 34,90</span>
+                  <div class="adicionais">
+                    <p>Adicionais:</p>
 
-                <div class="adicionais">
-                  <p>Adicionais:</p>
+                    <label>
+                      <input type="checkbox" value="Camarão" data-preco="10" />
+                      Camarão + R$ 10,00
+                    </label>
 
-                  <label>
-                    <input type="checkbox" value="Camarão" data-preco="10" />
-                    Camarão + R$ 10,00
-                  </label>
-
-                  <label>
-                    <input type="checkbox" value="Contrafilé" data-preco="10" />
-                    Contrafilé + R$ 10,00
-                  </label>
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Contrafilé"
+                        data-preco="10"
+                      />
+                      Contrafilé + R$ 10,00
+                    </label>
+                  </div>
                 </div>
 
-                <button
-                  type="button"
-                  class="btn-add"
-                  onclick="
-                    adicionarLanche(this, 'Espaguete ao Molho Vermelho', 34.9)
-                  "
-                >
-                  Adicionar
-                </button>
+                <div class="porcao-compra">
+                  <span>R$ 34,90</span>
+
+                  <button
+                    type="button"
+                    class="btn-add"
+                    onclick="
+                      adicionarLanche(this, 'Espaguete ao Molho Branco', 34.9)
+                    "
+                  >
+                    Adicionar
+                  </button>
+                </div>
+              </div>
+
+              <div class="porcao-item item-info">
+                <div class="porcao-conteudo">
+                  <h3>Espaguete ao Molho Rosé</h3>
+
+                  <p>Acompanha queijo ralado. Serve 1 pessoa.</p>
+
+                  <div class="adicionais">
+                    <p>Adicionais:</p>
+
+                    <label>
+                      <input type="checkbox" value="Camarão" data-preco="10" />
+                      Camarão + R$ 10,00
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Contrafilé"
+                        data-preco="10"
+                      />
+                      Contrafilé + R$ 10,00
+                    </label>
+                  </div>
+                </div>
+
+                <div class="porcao-compra">
+                  <span>R$ 34,90</span>
+
+                  <button
+                    type="button"
+                    class="btn-add"
+                    onclick="
+                      adicionarLanche(this, 'Espaguete ao Molho Rosé', 34.9)
+                    "
+                  >
+                    Adicionar
+                  </button>
+                </div>
+              </div>
+
+              <div class="porcao-item item-info">
+                <div class="porcao-conteudo">
+                  <h3>Espaguete ao Molho Vermelho</h3>
+
+                  <p>Molho com bacon e calabresa, acompanha queijo ralado.</p>
+
+                  <div class="adicionais">
+                    <p>Adicionais:</p>
+
+                    <label>
+                      <input type="checkbox" value="Camarão" data-preco="10" />
+                      Camarão + R$ 10,00
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Contrafilé"
+                        data-preco="10"
+                      />
+                      Contrafilé + R$ 10,00
+                    </label>
+                  </div>
+                </div>
+
+                <div class="porcao-compra">
+                  <span>R$ 34,90</span>
+
+                  <button
+                    type="button"
+                    class="btn-add"
+                    onclick="
+                      adicionarLanche(this, 'Espaguete ao Molho Vermelho', 34.9)
+                    "
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
         <div class="container">
           <h2 class="section-title" id="kids">Kids</h2>
-          <div class="itens-cardapio">
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Isca de Contra Filé Kids" />
 
-              <div class="item-info">
-                <h3>Isca de Contra Filé Kids</h3>
-                <p>Com arroz e fritas.</p>
-                <span>R$ 28,90</span>
+          <div class="porcoes-lista">
+            <div class="lista-porcoes">
+              <div class="porcao-item">
+                <div class="porcao-conteudo">
+                  <h3>Isca de Contra Filé Kids</h3>
 
-                <button
-                  class="btn-add"
-                  onclick="
-                    adicionarAoCarrinho('Isca de Contra Filé Kids', 28.9)
-                  "
-                >
-                  Adicionar
-                </button>
+                  <p>Com arroz e fritas.</p>
+                </div>
+
+                <div class="porcao-compra">
+                  <span>R$ 28,90</span>
+
+                  <button
+                    class="btn-add"
+                    onclick="
+                      adicionarAoCarrinho('Isca de Contra Filé Kids', 28.9)
+                    "
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
-            </div>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Empanado de Frango Kids" />
+              <div class="porcao-item">
+                <div class="porcao-conteudo">
+                  <h3>Empanado de Frango Kids</h3>
 
-              <div class="item-info">
-                <h3>Empanado de Frango Kids</h3>
-                <p>Com arroz e fritas.</p>
-                <span>R$ 28,90</span>
+                  <p>Com arroz e fritas.</p>
+                </div>
 
-                <button
-                  class="btn-add"
-                  onclick="adicionarAoCarrinho('Empanado de Frango Kids', 28.9)"
-                >
-                  Adicionar
-                </button>
+                <div class="porcao-compra">
+                  <span>R$ 28,90</span>
+
+                  <button
+                    class="btn-add"
+                    onclick="
+                      adicionarAoCarrinho('Empanado de Frango Kids', 28.9)
+                    "
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -831,139 +860,151 @@
       <!-- PRATOS EXECUTIVOS -->
       <section class="categoria-cardapio" id="pratosexecutivos">
         <div class="container">
-          <h2 class="section-title">Pratos Executivos (2 pessoas)</h2>
-          <h2 class="section-title">Carnes</h2>
+          <h2 class="section-title">Pratos Executivos</h2>
 
-          <div class="itens-cardapio">
-            <div class="item-cardapio">
-              <img
-                src="./img/sem-imagem.png"
-                alt="Filé de Frango à Parmegiana"
-              />
-
-              <div class="item-info">
-                <h3>Filé de Frango à Parmegiana</h3>
-                <p>Arroz, fritas e salada.</p>
-                <span>R$ 89,90</span>
-
-                <button
-                  class="btn-add"
-                  onclick="
-                    adicionarAoCarrinho('Filé de Frango à Parmegiana', 89.9)
-                  "
-                >
-                  Adicionar
-                </button>
-              </div>
+          <div class="porcoes-lista">
+            <div class="porcoes-destaque">
+              <img src="./img/cardapio/executivo.jpg" alt="Pratos Executivos" />
             </div>
 
-            <div class="item-cardapio">
-              <img
-                src="./img/sem-imagem.png"
-                alt="Filé Mignon ao Molho Requeijão de Prato"
-              />
+            <div class="lista-porcoes">
+              <div class="porcao-item">
+                <div class="porcao-conteudo">
+                  <h3>Filé de Frango à Parmegiana</h3>
 
-              <div class="item-info">
-                <h3>Filé Mignon ao Molho Requeijão de Prato</h3>
-                <p>Arroz, fritas e salada.</p>
-                <span>R$ 129,90</span>
+                  <p>Arroz, fritas e salada.</p>
+                </div>
 
-                <button
-                  class="btn-add"
-                  onclick="
-                    adicionarAoCarrinho(
-                      'Filé Mignon ao Molho Requeijão de Prato',
-                      129.9,
-                    )
-                  "
-                >
-                  Adicionar
-                </button>
+                <div class="porcao-compra">
+                  <span>R$ 89,90</span>
+
+                  <button
+                    class="btn-add"
+                    onclick="
+                      adicionarAoCarrinho('Filé de Frango à Parmegiana', 89.9)
+                    "
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
-            </div>
 
-            <div class="item-cardapio">
-              <img
-                src="./img/sem-imagem.png"
-                alt="Filé Mignon ao Molho Gorgonzola"
-              />
+              <div class="porcao-item">
+                <div class="porcao-conteudo">
+                  <h3>Filé Mignon ao Molho Requeijão de Prato</h3>
 
-              <div class="item-info">
-                <h3>Filé Mignon ao Molho Gorgonzola</h3>
-                <p>Arroz, fritas e salada.</p>
-                <span>R$ 149,90</span>
+                  <p>Arroz, fritas e salada.</p>
+                </div>
 
-                <button
-                  class="btn-add"
-                  onclick="
-                    adicionarAoCarrinho(
-                      'Filé Mignon ao Molho Gorgonzola',
-                      149.9,
-                    )
-                  "
-                >
-                  Adicionar
-                </button>
+                <div class="porcao-compra">
+                  <span>R$ 129,90</span>
+
+                  <button
+                    class="btn-add"
+                    onclick="
+                      adicionarAoCarrinho(
+                        'Filé Mignon ao Molho Requeijão de Prato',
+                        129.9,
+                      )
+                    "
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
-            </div>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Filé Mignon à Parmegiana" />
+              <div class="porcao-item">
+                <div class="porcao-conteudo">
+                  <h3>Filé Mignon ao Molho Gorgonzola</h3>
 
-              <div class="item-info">
-                <h3>Filé Mignon à Parmegiana</h3>
-                <p>Arroz, fritas e salada.</p>
-                <span>R$ 149,90</span>
+                  <p>Arroz, fritas e salada.</p>
+                </div>
 
-                <button
-                  class="btn-add"
-                  onclick="
-                    adicionarAoCarrinho('Filé Mignon à Parmegiana', 149.9)
-                  "
-                >
-                  Adicionar
-                </button>
+                <div class="porcao-compra">
+                  <span>R$ 149,90</span>
+
+                  <button
+                    class="btn-add"
+                    onclick="
+                      adicionarAoCarrinho(
+                        'Filé Mignon ao Molho Gorgonzola',
+                        149.9,
+                      )
+                    "
+                  >
+                    Adicionar
+                  </button>
+                </div>
+              </div>
+
+              <div class="porcao-item">
+                <div class="porcao-conteudo">
+                  <h3>Filé Mignon à Parmegiana</h3>
+
+                  <p>Arroz, fritas e salada.</p>
+                </div>
+
+                <div class="porcao-compra">
+                  <span>R$ 149,90</span>
+
+                  <button
+                    class="btn-add"
+                    onclick="
+                      adicionarAoCarrinho('Filé Mignon à Parmegiana', 149.9)
+                    "
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
             </div>
           </div>
+        </div>
 
+        <div class="container">
           <h2 class="section-title">Saladas</h2>
 
-          <div class="itens-cardapio">
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Salada Simples" />
+          <div class="porcoes-lista">
+            <div class="lista-porcoes">
+              <div class="porcao-item">
+                <div class="porcao-conteudo">
+                  <h3>Salada Simples</h3>
 
-              <div class="item-info">
-                <h3>Salada Simples</h3>
-                <p>Alface, tomate e cebola.</p>
-                <span>R$ 14,90</span>
+                  <p>Alface, tomate e cebola.</p>
+                </div>
 
-                <button
-                  class="btn-add"
-                  onclick="adicionarAoCarrinho('Salada Simples', 14.9)"
-                >
-                  Adicionar
-                </button>
+                <div class="porcao-compra">
+                  <span>R$ 14,90</span>
+
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Salada Simples', 14.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
-            </div>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Salada Especial" />
+              <div class="porcao-item">
+                <div class="porcao-conteudo">
+                  <h3>Salada Especial</h3>
 
-              <div class="item-info">
-                <h3>Salada Especial</h3>
-                <p>
-                  Alface, tomate, cebola, brócolis, palmito, tomate seco, ovos
-                  de codorna e queijo gorgonzola.
-                </p>
-                <span>R$ 64,90</span>
+                  <p>
+                    Alface, tomate, cebola, brócolis, palmito, tomate seco, ovos
+                    de codorna e queijo gorgonzola.
+                  </p>
+                </div>
 
-                <button
-                  class="btn-add"
-                  onclick="adicionarAoCarrinho('Salada Especial', 64.9)"
-                >
-                  Adicionar
-                </button>
+                <div class="porcao-compra">
+                  <span>R$ 64,90</span>
+
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Salada Especial', 64.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -971,589 +1012,667 @@
       </section>
       <!-- BURGUERS -->
 
-      <section class="categoria-cardapio" id="lanchesartesanais">
+      <section class="categoria-cardapio" id="lanches">
         <div class="container">
           <h2 class="section-title">Lanches Artesanais</h2>
 
-          <div class="itens-cardapio">
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Deck Burguer Salada" />
-
-              <div class="item-info">
-                <h3>Deck Burguer Salada</h3>
-                <p>
-                  Pão de brioche, carne 180g, queijo prato, tomate, alface e
-                  cebola. Acompanha fritas.
-                </p>
-
-                <span>R$ 39,90</span>
-
-                <details class="adicionais">
-                  <summary>Adicionar complementos</summary>
-
-                  <label
-                    ><input type="checkbox" value="Cheddar" data-preco="5" />
-                    Cheddar (+R$5)</label
-                  >
-                  <label
-                    ><input type="checkbox" value="Catupiry" data-preco="5" />
-                    Catupiry (+R$5)</label
-                  >
-                  <label
-                    ><input
-                      type="checkbox"
-                      value="Requeijão de Prato"
-                      data-preco="5"
-                    />
-                    Requeijão de Prato (+R$5)</label
-                  >
-                  <label
-                    ><input type="checkbox" value="Bacon" data-preco="5" />
-                    Bacon (+R$5)</label
-                  >
-                  <label
-                    ><input type="checkbox" value="Ovo" data-preco="5" /> Ovo
-                    (+R$5)</label
-                  >
-                  <label
-                    ><input type="checkbox" value="Fritas" data-preco="5" />
-                    Fritas (+R$5)</label
-                  >
-                </details>
-
-                <button
-                  class="btn-add"
-                  onclick="adicionarLanche(this, 'Deck Burguer Salada', 39.9)"
-                >
-                  Adicionar
-                </button>
-              </div>
+          <div class="porcoes-lista">
+            <div class="porcoes-destaque">
+              <img
+                src="./img/cardapio/artesanal.jpg"
+                alt="Lanches Artesanais"
+              />
             </div>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Deck Burguer Bacon" />
+            <div class="lista-porcoes">
+              <div class="porcao-item item-info">
+                <div class="porcao-conteudo">
+                  <h3>Deck Burguer Salada</h3>
 
-              <div class="item-info">
-                <h3>Deck Burguer Bacon</h3>
-                <p>
-                  Pão de brioche, carne 180g, queijo prato, tomate, alface,
-                  cebola e bacon. Acompanha fritas.
-                </p>
+                  <p>
+                    Pão de brioche, carne 180g, queijo prato, tomate, alface e
+                    cebola. Acompanha fritas.
+                  </p>
 
-                <span>R$ 44,90</span>
+                  <details class="adicionais">
+                    <summary>Adicionar complementos</summary>
 
-                <details class="adicionais">
-                  <summary>Adicionar complementos</summary>
+                    <label>
+                      <input type="checkbox" value="Cheddar" data-preco="5" />
+                      Cheddar (+R$5)
+                    </label>
 
-                  <label
-                    ><input type="checkbox" value="Cheddar" data-preco="5" />
-                    Cheddar (+R$5)</label
-                  >
-                  <label
-                    ><input type="checkbox" value="Catupiry" data-preco="5" />
-                    Catupiry (+R$5)</label
-                  >
-                  <label
-                    ><input
-                      type="checkbox"
-                      value="Requeijão de Prato"
-                      data-preco="5"
-                    />
-                    Requeijão de Prato (+R$5)</label
-                  >
-                  <label
-                    ><input type="checkbox" value="Bacon" data-preco="5" />
-                    Bacon (+R$5)</label
-                  >
-                  <label
-                    ><input type="checkbox" value="Ovo" data-preco="5" /> Ovo
-                    (+R$5)</label
-                  >
-                  <label
-                    ><input type="checkbox" value="Fritas" data-preco="5" />
-                    Fritas (+R$5)</label
-                  >
-                </details>
+                    <label>
+                      <input type="checkbox" value="Catupiry" data-preco="5" />
+                      Catupiry (+R$5)
+                    </label>
 
-                <button
-                  class="btn-add"
-                  onclick="adicionarLanche(this, 'Deck Burguer Bacon', 44.9)"
-                >
-                  Adicionar
-                </button>
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Requeijão de Prato"
+                        data-preco="5"
+                      />
+                      Requeijão de Prato (+R$5)
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Bacon" data-preco="5" />
+                      Bacon (+R$5)
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Ovo" data-preco="5" />
+                      Ovo (+R$5)
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Fritas" data-preco="5" />
+                      Fritas (+R$5)
+                    </label>
+                  </details>
+                </div>
+
+                <div class="porcao-compra">
+                  <span>R$ 39,90</span>
+
+                  <button
+                    class="btn-add"
+                    onclick="adicionarLanche(this, 'Deck Burguer Salada', 39.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
-            </div>
+              <div class="porcao-item item-info">
+                <div class="porcao-conteudo">
+                  <h3>Deck Burguer Bacon</h3>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Deck Burguer Egg" />
+                  <p>
+                    Pão de brioche, carne 180g, queijo prato, tomate, alface,
+                    cebola e bacon. Acompanha fritas.
+                  </p>
 
-              <div class="item-info">
-                <h3>Deck Burguer Egg</h3>
-                <p>
-                  Pão de brioche, carne 180g, queijo prato, tomate, alface,
-                  cebola e ovo. Acompanha fritas.
-                </p>
+                  <details class="adicionais">
+                    <summary>Adicionar complementos</summary>
 
-                <span>R$ 44,90</span>
+                    <label>
+                      <input type="checkbox" value="Cheddar" data-preco="5" />
+                      Cheddar (+R$5)
+                    </label>
 
-                <details class="adicionais">
-                  <summary>Adicionar complementos</summary>
+                    <label>
+                      <input type="checkbox" value="Catupiry" data-preco="5" />
+                      Catupiry (+R$5)
+                    </label>
 
-                  <label
-                    ><input type="checkbox" value="Cheddar" data-preco="5" />
-                    Cheddar (+R$5)</label
-                  >
-                  <label
-                    ><input type="checkbox" value="Catupiry" data-preco="5" />
-                    Catupiry (+R$5)</label
-                  >
-                  <label
-                    ><input
-                      type="checkbox"
-                      value="Requeijão de Prato"
-                      data-preco="5"
-                    />
-                    Requeijão de Prato (+R$5)</label
-                  >
-                  <label
-                    ><input type="checkbox" value="Bacon" data-preco="5" />
-                    Bacon (+R$5)</label
-                  >
-                  <label
-                    ><input type="checkbox" value="Ovo" data-preco="5" /> Ovo
-                    (+R$5)</label
-                  >
-                  <label
-                    ><input type="checkbox" value="Fritas" data-preco="5" />
-                    Fritas (+R$5)</label
-                  >
-                </details>
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Requeijão de Prato"
+                        data-preco="5"
+                      />
+                      Requeijão de Prato (+R$5)
+                    </label>
 
-                <button
-                  class="btn-add"
-                  onclick="adicionarLanche(this, 'Deck Burguer Egg', 44.9)"
-                >
-                  Adicionar
-                </button>
+                    <label>
+                      <input type="checkbox" value="Bacon" data-preco="5" />
+                      Bacon (+R$5)
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Ovo" data-preco="5" />
+                      Ovo (+R$5)
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Fritas" data-preco="5" />
+                      Fritas (+R$5)
+                    </label>
+                  </details>
+                </div>
+
+                <div class="porcao-compra">
+                  <span>R$ 44,90</span>
+
+                  <button
+                    class="btn-add"
+                    onclick="adicionarLanche(this, 'Deck Burguer Bacon', 44.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
-            </div>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Deck Burguer Tudo" />
+              <div class="porcao-item item-info">
+                <div class="porcao-conteudo">
+                  <h3>Deck Burguer Egg</h3>
 
-              <div class="item-info">
-                <h3>Deck Burguer Tudo</h3>
-                <p>
-                  Pão de brioche, carne 180g, queijo prato, tomate, alface,
-                  cebola, bacon e ovo. Acompanha fritas.
-                </p>
+                  <p>
+                    Pão de brioche, carne 180g, queijo prato, tomate, alface,
+                    cebola e ovo. Acompanha fritas.
+                  </p>
 
-                <span>R$ 54,90</span>
+                  <details class="adicionais">
+                    <summary>Adicionar complementos</summary>
 
-                <details class="adicionais">
-                  <summary>Adicionar complementos</summary>
+                    <label>
+                      <input type="checkbox" value="Cheddar" data-preco="5" />
+                      Cheddar (+R$5)
+                    </label>
 
-                  <label
-                    ><input type="checkbox" value="Cheddar" data-preco="5" />
-                    Cheddar (+R$5)</label
-                  >
-                  <label
-                    ><input type="checkbox" value="Catupiry" data-preco="5" />
-                    Catupiry (+R$5)</label
-                  >
-                  <label
-                    ><input
-                      type="checkbox"
-                      value="Requeijão de Prato"
-                      data-preco="5"
-                    />
-                    Requeijão de Prato (+R$5)</label
-                  >
-                  <label
-                    ><input type="checkbox" value="Bacon" data-preco="5" />
-                    Bacon (+R$5)</label
-                  >
-                  <label
-                    ><input type="checkbox" value="Ovo" data-preco="5" /> Ovo
-                    (+R$5)</label
-                  >
-                  <label
-                    ><input type="checkbox" value="Fritas" data-preco="5" />
-                    Fritas (+R$5)</label
-                  >
-                </details>
+                    <label>
+                      <input type="checkbox" value="Catupiry" data-preco="5" />
+                      Catupiry (+R$5)
+                    </label>
 
-                <button
-                  class="btn-add"
-                  onclick="adicionarLanche(this, 'Deck Burguer Tudo', 54.9)"
-                >
-                  Adicionar
-                </button>
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Requeijão de Prato"
+                        data-preco="5"
+                      />
+                      Requeijão de Prato (+R$5)
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Bacon" data-preco="5" />
+                      Bacon (+R$5)
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Ovo" data-preco="5" />
+                      Ovo (+R$5)
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Fritas" data-preco="5" />
+                      Fritas (+R$5)
+                    </label>
+                  </details>
+                </div>
+
+                <div class="porcao-compra">
+                  <span>R$ 44,90</span>
+
+                  <button
+                    class="btn-add"
+                    onclick="adicionarLanche(this, 'Deck Burguer Egg', 44.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
-            </div>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Deck Burguer Duplo" />
+              <div class="porcao-item item-info">
+                <div class="porcao-conteudo">
+                  <h3>Deck Burguer Tudo</h3>
 
-              <div class="item-info">
-                <h3>Deck Burguer Duplo</h3>
+                  <p>
+                    Pão de brioche, carne 180g, queijo prato, tomate, alface,
+                    cebola, bacon e ovo. Acompanha fritas.
+                  </p>
 
-                <p>
-                  Pão de brioche, 2 carnes de 180g, queijo prato, tomate, alface
-                  e cebola. Acompanha fritas.
-                </p>
+                  <details class="adicionais">
+                    <summary>Adicionar complementos</summary>
 
-                <span>R$ 58,90</span>
+                    <label>
+                      <input type="checkbox" value="Cheddar" data-preco="5" />
+                      Cheddar (+R$5)
+                    </label>
 
-                <details class="adicionais">
-                  <summary>Adicionar complementos</summary>
+                    <label>
+                      <input type="checkbox" value="Catupiry" data-preco="5" />
+                      Catupiry (+R$5)
+                    </label>
 
-                  <label
-                    ><input type="checkbox" value="Cheddar" data-preco="5" />
-                    Cheddar (+R$5)</label
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Requeijão de Prato"
+                        data-preco="5"
+                      />
+                      Requeijão de Prato (+R$5)
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Bacon" data-preco="5" />
+                      Bacon (+R$5)
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Ovo" data-preco="5" />
+                      Ovo (+R$5)
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Fritas" data-preco="5" />
+                      Fritas (+R$5)
+                    </label>
+                  </details>
+                </div>
+
+                <div class="porcao-compra">
+                  <span>R$ 54,90</span>
+
+                  <button
+                    class="btn-add"
+                    onclick="adicionarLanche(this, 'Deck Burguer Tudo', 54.9)"
                   >
-                  <label
-                    ><input type="checkbox" value="Catupiry" data-preco="5" />
-                    Catupiry (+R$5)</label
-                  >
-                  <label
-                    ><input
-                      type="checkbox"
-                      value="Requeijão de Prato"
-                      data-preco="5"
-                    />
-                    Requeijão de Prato (+R$5)</label
-                  >
-                  <label
-                    ><input type="checkbox" value="Bacon" data-preco="5" />
-                    Bacon (+R$5)</label
-                  >
-                  <label
-                    ><input type="checkbox" value="Ovo" data-preco="5" /> Ovo
-                    (+R$5)</label
-                  >
-                  <label
-                    ><input type="checkbox" value="Fritas" data-preco="5" />
-                    Fritas (+R$5)</label
-                  >
-                </details>
-
-                <button
-                  class="btn-add"
-                  onclick="adicionarLanche(this, 'Deck Burguer Duplo', 58.9)"
-                >
-                  Adicionar
-                </button>
+                    Adicionar
+                  </button>
+                </div>
               </div>
-            </div>
+              <div class="porcao-item item-info">
+                <div class="porcao-conteudo">
+                  <h3>Deck Burguer Duplo</h3>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Deck Burguer Kids" />
+                  <p>
+                    Pão de brioche, 2 carnes de 180g, queijo prato, tomate,
+                    alface e cebola. Acompanha fritas.
+                  </p>
 
-              <div class="item-info">
-                <h3>Deck Burguer Kids</h3>
+                  <details class="adicionais">
+                    <summary>Adicionar complementos</summary>
 
-                <p>Carne, queijo prato e nuggets.</p>
+                    <label>
+                      <input type="checkbox" value="Cheddar" data-preco="5" />
+                      Cheddar (+R$5)
+                    </label>
 
-                <span>R$ 34,90</span>
+                    <label>
+                      <input type="checkbox" value="Catupiry" data-preco="5" />
+                      Catupiry (+R$5)
+                    </label>
 
-                <details class="adicionais">
-                  <summary>Adicionar complementos</summary>
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Requeijão de Prato"
+                        data-preco="5"
+                      />
+                      Requeijão de Prato (+R$5)
+                    </label>
 
-                  <label
-                    ><input type="checkbox" value="Cheddar" data-preco="5" />
-                    Cheddar (+R$5)</label
+                    <label>
+                      <input type="checkbox" value="Bacon" data-preco="5" />
+                      Bacon (+R$5)
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Ovo" data-preco="5" />
+                      Ovo (+R$5)
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Fritas" data-preco="5" />
+                      Fritas (+R$5)
+                    </label>
+                  </details>
+                </div>
+
+                <div class="porcao-compra">
+                  <span>R$ 58,90</span>
+
+                  <button
+                    class="btn-add"
+                    onclick="adicionarLanche(this, 'Deck Burguer Duplo', 58.9)"
                   >
-                  <label
-                    ><input type="checkbox" value="Catupiry" data-preco="5" />
-                    Catupiry (+R$5)</label
-                  >
-                  <label
-                    ><input
-                      type="checkbox"
-                      value="Requeijão de Prato"
-                      data-preco="5"
-                    />
-                    Requeijão de Prato (+R$5)</label
-                  >
-                  <label
-                    ><input type="checkbox" value="Bacon" data-preco="5" />
-                    Bacon (+R$5)</label
-                  >
-                  <label
-                    ><input type="checkbox" value="Ovo" data-preco="5" /> Ovo
-                    (+R$5)</label
-                  >
-                  <label
-                    ><input type="checkbox" value="Fritas" data-preco="5" />
-                    Fritas (+R$5)</label
-                  >
-                </details>
+                    Adicionar
+                  </button>
+                </div>
+              </div>
 
-                <button
-                  class="btn-add"
-                  onclick="adicionarLanche(this, 'Deck Burguer Kids', 34.9)"
-                >
-                  Adicionar
-                </button>
+              <div class="porcao-item item-info">
+                <div class="porcao-conteudo">
+                  <h3>Deck Burguer Kids</h3>
+
+                  <p>Carne, queijo prato e nuggets.</p>
+
+                  <details class="adicionais">
+                    <summary>Adicionar complementos</summary>
+
+                    <label>
+                      <input type="checkbox" value="Cheddar" data-preco="5" />
+                      Cheddar (+R$5)
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Catupiry" data-preco="5" />
+                      Catupiry (+R$5)
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Requeijão de Prato"
+                        data-preco="5"
+                      />
+                      Requeijão de Prato (+R$5)
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Bacon" data-preco="5" />
+                      Bacon (+R$5)
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Ovo" data-preco="5" />
+                      Ovo (+R$5)
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Fritas" data-preco="5" />
+                      Fritas (+R$5)
+                    </label>
+                  </details>
+                </div>
+
+                <div class="porcao-compra">
+                  <span>R$ 34,90</span>
+
+                  <button
+                    class="btn-add"
+                    onclick="adicionarLanche(this, 'Deck Burguer Kids', 34.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
             </div>
           </div>
+        </div>
 
+        <div class="container">
           <h2 class="section-title">Tradicionais</h2>
 
-          <div class="itens-cardapio">
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Hambúrguer" />
-
-              <div class="item-info">
-                <h3>Hambúrguer</h3>
-
-                <p>
-                  Pão francês, carne de hambúrguer 90g, queijo prato, tomate e
-                  alface.
-                </p>
-
-                <span>R$ 24,90</span>
-
-                <details class="adicionais">
-                  <summary>Adicionar complementos</summary>
-
-                  <label
-                    ><input type="checkbox" value="Cheddar" data-preco="5" />
-                    Cheddar (+R$5)</label
-                  >
-                  <label
-                    ><input type="checkbox" value="Catupiry" data-preco="5" />
-                    Catupiry (+R$5)</label
-                  >
-                  <label
-                    ><input
-                      type="checkbox"
-                      value="Requeijão de Prato"
-                      data-preco="5"
-                    />
-                    Requeijão de Prato (+R$5)</label
-                  >
-                  <label
-                    ><input type="checkbox" value="Bacon" data-preco="5" />
-                    Bacon (+R$5)</label
-                  >
-                  <label
-                    ><input type="checkbox" value="Ovo" data-preco="5" /> Ovo
-                    (+R$5)</label
-                  >
-                  <label
-                    ><input type="checkbox" value="Fritas" data-preco="5" />
-                    Fritas (+R$5)</label
-                  >
-                </details>
-
-                <button
-                  class="btn-add"
-                  onclick="adicionarLanche(this, 'Hambúrguer', 24.9)"
-                >
-                  Adicionar
-                </button>
-              </div>
+          <div class="porcoes-lista">
+            <div class="porcoes-destaque">
+              <img
+                src="./img/cardapio/tradicional.jpg"
+                alt="Lanches Tradicionais"
+              />
             </div>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Contra Filé" />
+            <div class="lista-porcoes">
+              <div class="porcao-item item-info">
+                <div class="porcao-conteudo">
+                  <h3>Hambúrguer</h3>
 
-              <div class="item-info">
-                <h3>Contra Filé</h3>
+                  <p>
+                    Pão francês, carne de hambúrguer 90g, queijo prato, tomate e
+                    alface.
+                  </p>
 
-                <p>Pão francês, contra filé, queijo prato, tomate e alface.</p>
+                  <details class="adicionais">
+                    <summary>Adicionar complementos</summary>
 
-                <span>R$ 29,90</span>
+                    <label>
+                      <input type="checkbox" value="Cheddar" data-preco="5" />
+                      Cheddar (+R$5)
+                    </label>
 
-                <details class="adicionais">
-                  <summary>Adicionar complementos</summary>
+                    <label>
+                      <input type="checkbox" value="Catupiry" data-preco="5" />
+                      Catupiry (+R$5)
+                    </label>
 
-                  <label
-                    ><input type="checkbox" value="Cheddar" data-preco="5" />
-                    Cheddar (+R$5)</label
-                  >
-                  <label
-                    ><input type="checkbox" value="Catupiry" data-preco="5" />
-                    Catupiry (+R$5)</label
-                  >
-                  <label
-                    ><input
-                      type="checkbox"
-                      value="Requeijão de Prato"
-                      data-preco="5"
-                    />
-                    Requeijão de Prato (+R$5)</label
-                  >
-                  <label
-                    ><input type="checkbox" value="Bacon" data-preco="5" />
-                    Bacon (+R$5)</label
-                  >
-                  <label
-                    ><input type="checkbox" value="Ovo" data-preco="5" /> Ovo
-                    (+R$5)</label
-                  >
-                  <label
-                    ><input type="checkbox" value="Fritas" data-preco="5" />
-                    Fritas (+R$5)</label
-                  >
-                </details>
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Requeijão de Prato"
+                        data-preco="5"
+                      />
+                      Requeijão de Prato (+R$5)
+                    </label>
 
-                <button
-                  class="btn-add"
-                  onclick="adicionarLanche(this, 'Contra Filé', 29.9)"
-                >
-                  Adicionar
-                </button>
+                    <label>
+                      <input type="checkbox" value="Bacon" data-preco="5" />
+                      Bacon (+R$5)
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Ovo" data-preco="5" />
+                      Ovo (+R$5)
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Fritas" data-preco="5" />
+                      Fritas (+R$5)
+                    </label>
+                  </details>
+                </div>
+
+                <div class="porcao-compra">
+                  <span>R$ 24,90</span>
+
+                  <button
+                    class="btn-add"
+                    onclick="adicionarLanche(this, 'Hambúrguer', 24.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+              </div>
+
+              <div class="porcao-item item-info">
+                <div class="porcao-conteudo">
+                  <h3>Contra Filé</h3>
+
+                  <p>
+                    Pão francês, contra filé, queijo prato, tomate e alface.
+                  </p>
+
+                  <details class="adicionais">
+                    <summary>Adicionar complementos</summary>
+
+                    <label>
+                      <input type="checkbox" value="Cheddar" data-preco="5" />
+                      Cheddar (+R$5)
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Catupiry" data-preco="5" />
+                      Catupiry (+R$5)
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Requeijão de Prato"
+                        data-preco="5"
+                      />
+                      Requeijão de Prato (+R$5)
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Bacon" data-preco="5" />
+                      Bacon (+R$5)
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Ovo" data-preco="5" />
+                      Ovo (+R$5)
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Fritas" data-preco="5" />
+                      Fritas (+R$5)
+                    </label>
+                  </details>
+                </div>
+
+                <div class="porcao-compra">
+                  <span>R$ 29,90</span>
+
+                  <button
+                    class="btn-add"
+                    onclick="adicionarLanche(this, 'Contra Filé', 29.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-
       <!--  PIZZA RAP 10  -->
       <section class="categoria-cardapio" id="pizza">
         <div class="container">
           <h2 class="section-title">Pizza Rap 10</h2>
-          <div class="itens-cardapio">
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Pizza Rap 10" />
 
-              <div class="item-info">
-                <h3>Monte sua Pizza Rap 10</h3>
+          <div class="porcoes-lista">
+            <div class="porcoes-destaque">
+              <img src="./img/cardapio/pizza.jpg" alt="Pizza Rap 10" />
+            </div>
 
-                <p>
-                  Escolha até 3 sabores: Mussarela, Presunto, Calabresa,
-                  Catupiry, Cheddar, Palmito, Bacon ou Tomate Seco.
-                </p>
+            <div class="lista-porcoes">
+              <div class="porcao-item item-info">
+                <div class="porcao-conteudo">
+                  <h3>Monte sua Pizza Rap 10</h3>
 
-                <span>R$ 25,00</span>
+                  <p>
+                    Escolha até 3 sabores: Mussarela, Presunto, Calabresa,
+                    Catupiry, Cheddar, Palmito, Bacon ou Tomate Seco.
+                  </p>
 
-                <details class="adicionais">
-                  <summary>Escolher sabores (máx. 3)</summary>
+                  <details class="adicionais">
+                    <summary>Escolher sabores (máx. 3)</summary>
 
-                  <label>
-                    <input
-                      type="checkbox"
-                      value="Mussarela"
-                      class="sabor-pizza"
-                    />
-                    Mussarela
-                  </label>
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Mussarela"
+                        class="sabor-pizza"
+                      />
+                      Mussarela
+                    </label>
 
-                  <label>
-                    <input
-                      type="checkbox"
-                      value="Presunto"
-                      class="sabor-pizza"
-                    />
-                    Presunto
-                  </label>
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Presunto"
+                        class="sabor-pizza"
+                      />
+                      Presunto
+                    </label>
 
-                  <label>
-                    <input
-                      type="checkbox"
-                      value="Calabresa"
-                      class="sabor-pizza"
-                    />
-                    Calabresa
-                  </label>
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Calabresa"
+                        class="sabor-pizza"
+                      />
+                      Calabresa
+                    </label>
 
-                  <label>
-                    <input
-                      type="checkbox"
-                      value="Catupiry"
-                      class="sabor-pizza"
-                    />
-                    Catupiry
-                  </label>
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Catupiry"
+                        class="sabor-pizza"
+                      />
+                      Catupiry
+                    </label>
 
-                  <label>
-                    <input
-                      type="checkbox"
-                      value="Cheddar"
-                      class="sabor-pizza"
-                    />
-                    Cheddar
-                  </label>
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Cheddar"
+                        class="sabor-pizza"
+                      />
+                      Cheddar
+                    </label>
 
-                  <label>
-                    <input
-                      type="checkbox"
-                      value="Palmito"
-                      class="sabor-pizza"
-                    />
-                    Palmito
-                  </label>
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Palmito"
+                        class="sabor-pizza"
+                      />
+                      Palmito
+                    </label>
 
-                  <label>
-                    <input type="checkbox" value="Bacon" class="sabor-pizza" />
-                    Bacon
-                  </label>
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Bacon"
+                        class="sabor-pizza"
+                      />
+                      Bacon
+                    </label>
 
-                  <label>
-                    <input
-                      type="checkbox"
-                      value="Tomate Seco"
-                      class="sabor-pizza"
-                    />
-                    Tomate Seco
-                  </label>
-                </details>
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Tomate Seco"
+                        class="sabor-pizza"
+                      />
+                      Tomate Seco
+                    </label>
+                  </details>
 
-                <details class="adicionais">
-                  <summary>Opção extra (+R$ 5,00)</summary>
+                  <details class="adicionais">
+                    <summary>Opção extra (+R$ 5,00)</summary>
 
-                  <label>
-                    <input
-                      type="checkbox"
-                      value="Opção Extra"
-                      data-preco="5"
-                      class="extra-pizza"
-                    />
-                    Adicionar 1 sabor extra (+R$ 5,00)
-                  </label>
-                </details>
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Opção Extra"
+                        data-preco="5"
+                        class="extra-pizza"
+                      />
 
-                <details class="adicionais">
-                  <summary>Opção gratuita (máx. 1)</summary>
+                      Adicionar 1 sabor extra (+R$ 5,00)
+                    </label>
+                  </details>
 
-                  <label>
-                    <input
-                      type="checkbox"
-                      value="Rúcula"
-                      class="opcao-gratis-pizza"
-                      onchange="limitarOpcaoGratuita(this)"
-                    />
-                    Rúcula
-                  </label>
+                  <details class="adicionais">
+                    <summary>Opção gratuita (máx. 1)</summary>
 
-                  <label>
-                    <input
-                      type="checkbox"
-                      value="Cebola"
-                      class="opcao-gratis-pizza"
-                      onchange="limitarOpcaoGratuita(this)"
-                    />
-                    Cebola
-                  </label>
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Rúcula"
+                        class="opcao-gratis-pizza"
+                        onchange="limitarOpcaoGratuita(this)"
+                      />
 
-                  <label>
-                    <input
-                      type="checkbox"
-                      value="Manjericão"
-                      class="opcao-gratis-pizza"
-                      onchange="limitarOpcaoGratuita(this)"
-                    />
-                    Manjericão
-                  </label>
-                </details>
+                      Rúcula
+                    </label>
 
-                <button class="btn-add" onclick="adicionarPizza(this)">
-                  Adicionar
-                </button>
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Cebola"
+                        class="opcao-gratis-pizza"
+                        onchange="limitarOpcaoGratuita(this)"
+                      />
+
+                      Cebola
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Manjericão"
+                        class="opcao-gratis-pizza"
+                        onchange="limitarOpcaoGratuita(this)"
+                      />
+
+                      Manjericão
+                    </label>
+                  </details>
+                </div>
+
+                <div class="porcao-compra">
+                  <span>R$ 25,00</span>
+
+                  <button class="btn-add" onclick="adicionarPizza(this)">
+                    Adicionar
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -1564,119 +1683,126 @@
       <section class="categoria-cardapio" id="sobremesas">
         <div class="container">
           <h2 class="section-title">Sobremesas</h2>
-          <h2 class="section-title" id="sorvetes">Taças de sorvete</h2>
 
-          <div class="itens-cardapio">
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Ninho Trufado" />
-
-              <div class="item-info">
-                <h3>Ninho Trufado</h3>
-
-                <p>Sorvete de ninho trufado com creme de avelã e leite ninho</p>
-
-                <span>R$ 64,90</span>
-
-                <button
-                  class="btn-add"
-                  onclick="adicionarAoCarrinho('Ninho Trufado', 64.9)"
-                >
-                  Adicionar
-                </button>
-              </div>
+          <div class="porcoes-lista">
+            <div class="porcoes-destaque">
+              <img src="./img/cardapio/sobremesa.png" alt="Sobremesas" />
             </div>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Kit Kat" />
+            <div class="lista-porcoes">
+              <div class="porcao-item item-info">
+                <div class="porcao-conteudo">
+                  <h3>Ninho Trufado</h3>
 
-              <div class="item-info">
-                <h3>Kit Kat</h3>
+                  <p>
+                    Sorvete de ninho trufado com creme de avelã e leite ninho.
+                  </p>
+                </div>
 
-                <p>
-                  Sorvete de creme com creme de avelã, calda de chocolate e Kit
-                  Kat
-                </p>
+                <div class="porcao-compra">
+                  <span>R$ 64,90</span>
 
-                <span>R$ 64,90</span>
-
-                <button
-                  class="btn-add"
-                  onclick="adicionarAoCarrinho('Kit Kat', 64.9)"
-                >
-                  Adicionar
-                </button>
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Ninho Trufado', 64.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
-            </div>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Kinder Ovo" />
+              <div class="porcao-item item-info">
+                <div class="porcao-conteudo">
+                  <h3>Kit Kat</h3>
 
-              <div class="item-info">
-                <h3>Kinder Ovo</h3>
+                  <p>
+                    Sorvete de creme com creme de avelã, calda de chocolate e
+                    Kit Kat.
+                  </p>
+                </div>
 
-                <p>
-                  Sorvete de creme com creme de avelã, calda de chocolate e Kit
-                  Kat
-                </p>
+                <div class="porcao-compra">
+                  <span>R$ 64,90</span>
 
-                <span>R$ 78,90</span>
-
-                <button
-                  class="btn-add"
-                  onclick="adicionarAoCarrinho('Kinder Ovo', 78.9)"
-                >
-                  Adicionar
-                </button>
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Kit Kat', 64.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
-            </div>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Nutela" />
+              <div class="porcao-item item-info">
+                <div class="porcao-conteudo">
+                  <h3>Kinder Ovo</h3>
 
-              <div class="item-info">
-                <h3>Nutela</h3>
+                  <p>
+                    Sorvete de creme com creme de avelã, calda de chocolate e
+                    Kit Kat.
+                  </p>
+                </div>
 
-                <p>Sorvete com Nutela, calda de chocolate e ninho.</p>
+                <div class="porcao-compra">
+                  <span>R$ 78,90</span>
 
-                <span>R$ 78,90</span>
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Kinder Ovo', 78.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+              </div>
 
-                <details class="adicionais">
-                  <summary>Escolher sabor</summary>
+              <div class="porcao-item item-info">
+                <div class="porcao-conteudo">
+                  <h3>Nutela</h3>
 
-                  <label>
-                    <input
-                      type="radio"
-                      name="sabor-nutela"
-                      value="Creme"
-                      class="sabor-sobremesa"
-                    />
-                    Creme
-                  </label>
+                  <p>Sorvete com Nutela, calda de chocolate e ninho.</p>
 
-                  <label>
-                    <input
-                      type="radio"
-                      name="sabor-nutela"
-                      value="Ninho Trufado"
-                      class="sabor-sobremesa"
-                    />
-                    Ninho Trufado
-                  </label>
+                  <details class="adicionais">
+                    <summary>Escolher sabor</summary>
 
-                  <label>
-                    <input
-                      type="radio"
-                      name="sabor-nutela"
-                      value="Kinder Ovo"
-                      class="sabor-sobremesa"
-                    />
-                    Kinder Ovo
-                  </label>
-                </details>
+                    <label>
+                      <input
+                        type="radio"
+                        name="sabor-nutela"
+                        value="Creme"
+                        class="sabor-sobremesa"
+                      />
+                      Creme
+                    </label>
 
-                <button class="btn-add" onclick="adicionarSobremesa(this)">
-                  Adicionar
-                </button>
+                    <label>
+                      <input
+                        type="radio"
+                        name="sabor-nutela"
+                        value="Ninho Trufado"
+                        class="sabor-sobremesa"
+                      />
+                      Ninho Trufado
+                    </label>
+
+                    <label>
+                      <input
+                        type="radio"
+                        name="sabor-nutela"
+                        value="Kinder Ovo"
+                        class="sabor-sobremesa"
+                      />
+                      Kinder Ovo
+                    </label>
+                  </details>
+                </div>
+
+                <div class="porcao-compra">
+                  <span>R$ 78,90</span>
+
+                  <button class="btn-add" onclick="adicionarSobremesa(this)">
+                    Adicionar
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -1685,54 +1811,56 @@
         <div class="container">
           <h2 class="section-title" id="brownie">Brownie</h2>
 
-          <div class="itens-cardapio">
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Brownie com Sorvete" />
+          <div class="porcoes-lista">
+            <div class="lista-porcoes">
+              <div class="porcao-item item-info">
+                <div class="porcao-conteudo">
+                  <h3>Brownie com Sorvete</h3>
 
-              <div class="item-info">
-                <h3>Brownie com Sorvete</h3>
+                  <p>Brownie com sorvete.</p>
 
-                <p>Brownie com sorvete.</p>
+                  <details class="adicionais">
+                    <summary>Escolher sabor</summary>
 
-                <span>R$ 42,90</span>
+                    <label>
+                      <input
+                        type="radio"
+                        name="sabor-brownie"
+                        value="Creme de Avelã"
+                        class="sabor-sobremesa"
+                      />
+                      Creme de Avelã
+                    </label>
 
-                <details class="adicionais">
-                  <summary>Escolher sabor</summary>
+                    <label>
+                      <input
+                        type="radio"
+                        name="sabor-brownie"
+                        value="Leite Ninho"
+                        class="sabor-sobremesa"
+                      />
+                      Leite Ninho
+                    </label>
 
-                  <label>
-                    <input
-                      type="radio"
-                      name="sabor-brownie"
-                      value="Creme de Avelã"
-                      class="sabor-sobremesa"
-                    />
-                    Creme de Avelã
-                  </label>
+                    <label>
+                      <input
+                        type="radio"
+                        name="sabor-brownie"
+                        value="Brigadeiro"
+                        class="sabor-sobremesa"
+                      />
+                      Brigadeiro
+                    </label>
+                  </details>
+                </div>
 
-                  <label>
-                    <input
-                      type="radio"
-                      name="sabor-brownie"
-                      value="Leite Ninho"
-                      class="sabor-sobremesa"
-                    />
-                    Leite Ninho
-                  </label>
+                <div class="porcao-compra">
+                  <span>R$ 42,90</span>
 
-                  <label>
-                    <input
-                      type="radio"
-                      name="sabor-brownie"
-                      value="Brigadeiro"
-                      class="sabor-sobremesa"
-                    />
-                    Brigadeiro
-                  </label>
-                </details>
-
-                <button class="btn-add" onclick="adicionarSobremesa(this)">
-                  Adicionar
-                </button>
+                  <button class="btn-add" onclick="adicionarSobremesa(this)">
+                    Adicionar
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -1743,365 +1871,368 @@
         <div class="container">
           <h2 class="section-title">Drinks</h2>
 
-          <div class="itens-cardapio">
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Caipirinha de Cachaça" />
-
-              <div class="item-info">
-                <h3>Caipirinha de Cachaça</h3>
-
-                <p>Cachaça, limão, açúcar e gelo.</p>
-
-                <span>R$ 24,90</span>
-
-                <button
-                  class="btn-add"
-                  onclick="adicionarAoCarrinho('Caipirinha de Cachaça', 24.9)"
-                >
-                  Adicionar
-                </button>
-              </div>
+          <div class="porcoes-lista">
+            <div class="porcoes-destaque">
+              <img src="./img/cardapio/drinks.jpg" alt="Drinks" />
             </div>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Caipirinha de Vodka" />
+            <div class="lista-porcoes">
+              <div class="porcao-item item-info">
+                <div class="porcao-conteudo">
+                  <h3>Caipirinha de Cachaça</h3>
 
-              <div class="item-info">
-                <h3>Caipirinha de Vodka</h3>
+                  <p>Cachaça, limão, açúcar e gelo.</p>
+                </div>
 
-                <p>Vodka, limão, açúcar e gelo.</p>
+                <div class="porcao-compra">
+                  <span>R$ 24,90</span>
 
-                <span>R$ 27,90</span>
-
-                <button
-                  class="btn-add"
-                  onclick="adicionarAoCarrinho('Caipirinha de Vodka', 27.9)"
-                >
-                  Adicionar
-                </button>
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Caipirinha de Cachaça', 24.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
-            </div>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Caipirinha Sabores" />
+              <div class="porcao-item item-info">
+                <div class="porcao-conteudo">
+                  <h3>Caipirinha de Vodka</h3>
 
-              <div class="item-info">
-                <h3>Caipirinha Sabores</h3>
+                  <p>Vodka, limão, açúcar e gelo.</p>
+                </div>
 
-                <p>Escolha o sabor e entre cachaça ou vodka.</p>
+                <div class="porcao-compra">
+                  <span>R$ 27,90</span>
 
-                <span>R$ 29,90</span>
-
-                <details class="adicionais">
-                  <summary>Escolher sabor</summary>
-
-                  <label>
-                    <input
-                      type="radio"
-                      name="caipirinha-sabor"
-                      value="Morango"
-                      class="sabor-caipirinha"
-                    />
-                    Morango
-                  </label>
-
-                  <label>
-                    <input
-                      type="radio"
-                      name="caipirinha-sabor"
-                      value="Maracujá"
-                      class="sabor-caipirinha"
-                    />
-                    Maracujá
-                  </label>
-
-                  <label>
-                    <input
-                      type="radio"
-                      name="caipirinha-sabor"
-                      value="Abacaxi"
-                      class="sabor-caipirinha"
-                    />
-                    Abacaxi
-                  </label>
-                </details>
-
-                <details class="adicionais">
-                  <summary>Escolher bebida</summary>
-
-                  <label>
-                    <input
-                      type="radio"
-                      name="caipirinha-bebida"
-                      value="Cachaça"
-                      class="bebida-caipirinha"
-                    />
-                    Cachaça
-                  </label>
-
-                  <label>
-                    <input
-                      type="radio"
-                      name="caipirinha-bebida"
-                      value="Vodka"
-                      class="bebida-caipirinha"
-                    />
-                    Vodka
-                  </label>
-                </details>
-
-                <button
-                  type="button"
-                  class="btn-add"
-                  onclick="adicionarCaipirinha(this)"
-                >
-                  Adicionar
-                </button>
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Caipirinha de Vodka', 27.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
-            </div>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Brasileirinha" />
+              <div class="porcao-item item-info">
+                <div class="porcao-conteudo">
+                  <h3>Caipirinha Sabores</h3>
 
-              <div class="item-info">
-                <h3>Brasileirinha</h3>
+                  <p>Escolha o sabor e entre cachaça ou vodka.</p>
 
-                <p>Vodka, limão e maracujá.</p>
+                  <details class="adicionais">
+                    <summary>Escolher sabor</summary>
 
-                <span>R$ 29,90</span>
+                    <label>
+                      <input
+                        type="radio"
+                        name="caipirinha-sabor"
+                        value="Morango"
+                        class="sabor-caipirinha"
+                      />
+                      Morango
+                    </label>
 
-                <button
-                  class="btn-add"
-                  onclick="adicionarAoCarrinho('Brasileirinha', 29.9)"
-                >
-                  Adicionar
-                </button>
+                    <label>
+                      <input
+                        type="radio"
+                        name="caipirinha-sabor"
+                        value="Maracujá"
+                        class="sabor-caipirinha"
+                      />
+                      Maracujá
+                    </label>
+
+                    <label>
+                      <input
+                        type="radio"
+                        name="caipirinha-sabor"
+                        value="Abacaxi"
+                        class="sabor-caipirinha"
+                      />
+                      Abacaxi
+                    </label>
+                  </details>
+
+                  <details class="adicionais">
+                    <summary>Escolher bebida</summary>
+
+                    <label>
+                      <input
+                        type="radio"
+                        name="caipirinha-bebida"
+                        value="Cachaça"
+                        class="bebida-caipirinha"
+                      />
+                      Cachaça
+                    </label>
+
+                    <label>
+                      <input
+                        type="radio"
+                        name="caipirinha-bebida"
+                        value="Vodka"
+                        class="bebida-caipirinha"
+                      />
+                      Vodka
+                    </label>
+                  </details>
+                </div>
+
+                <div class="porcao-compra">
+                  <span>R$ 29,90</span>
+
+                  <button
+                    type="button"
+                    class="btn-add"
+                    onclick="adicionarCaipirinha(this)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
-            </div>
+              <div class="porcao-item item-info">
+                <div class="porcao-conteudo">
+                  <h3>Brasileirinha</h3>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Caipirinha Deck Beer" />
+                  <p>Vodka, limão e maracujá.</p>
+                </div>
 
-              <div class="item-info">
-                <h3>Caipirinha Deck Beer</h3>
+                <div class="porcao-compra">
+                  <span>R$ 29,90</span>
 
-                <p>Vodka, maracujá e hortelã.</p>
-
-                <span>R$ 29,90</span>
-
-                <button
-                  class="btn-add"
-                  onclick="adicionarAoCarrinho('Caipirinha Deck Beer', 29.9)"
-                >
-                  Adicionar
-                </button>
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Brasileirinha', 29.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
-            </div>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Dry Martini" />
+              <div class="porcao-item item-info">
+                <div class="porcao-conteudo">
+                  <h3>Caipirinha Deck Beer</h3>
 
-              <div class="item-info">
-                <h3>Dry Martini</h3>
+                  <p>Vodka, maracujá e hortelã.</p>
+                </div>
 
-                <p>Gin, vermute seco e gelo.</p>
+                <div class="porcao-compra">
+                  <span>R$ 29,90</span>
 
-                <span>R$ 34,90</span>
-
-                <button
-                  class="btn-add"
-                  onclick="adicionarAoCarrinho('Dry Martini', 34.9)"
-                >
-                  Adicionar
-                </button>
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Caipirinha Deck Beer', 29.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
-            </div>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Mint Julep" />
+              <div class="porcao-item item-info">
+                <div class="porcao-conteudo">
+                  <h3>Dry Martini</h3>
 
-              <div class="item-info">
-                <h3>Mint Julep</h3>
+                  <p>Gin, vermute seco e gelo.</p>
+                </div>
 
-                <p>Whisky, açúcar, gelo e hortelã.</p>
+                <div class="porcao-compra">
+                  <span>R$ 34,90</span>
 
-                <span>R$ 38,90</span>
-
-                <button
-                  class="btn-add"
-                  onclick="adicionarAoCarrinho('Mint Julep', 38.9)"
-                >
-                  Adicionar
-                </button>
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Dry Martini', 34.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
-            </div>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Sex on the Beach" />
+              <div class="porcao-item item-info">
+                <div class="porcao-conteudo">
+                  <h3>Mint Julep</h3>
 
-              <div class="item-info">
-                <h3>Sex on the Beach</h3>
+                  <p>Whisky, açúcar, gelo e hortelã.</p>
+                </div>
 
-                <p>
-                  Vodka, suco de laranja, licor de pêssego, xarope de groselha e
-                  gelo.
-                </p>
+                <div class="porcao-compra">
+                  <span>R$ 38,90</span>
 
-                <span>R$ 34,90</span>
-
-                <button
-                  class="btn-add"
-                  onclick="adicionarAoCarrinho('Sex on the Beach', 34.9)"
-                >
-                  Adicionar
-                </button>
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Mint Julep', 38.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
-            </div>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Lagoa Azul" />
+              <div class="porcao-item item-info">
+                <div class="porcao-conteudo">
+                  <h3>Sex on the Beach</h3>
 
-              <div class="item-info">
-                <h3>Lagoa Azul</h3>
+                  <p>
+                    Vodka, suco de laranja, licor de pêssego, xarope de groselha
+                    e gelo.
+                  </p>
+                </div>
 
-                <p>Gin, curaçau blue, limão, pimenta rosa e alecrim.</p>
+                <div class="porcao-compra">
+                  <span>R$ 34,90</span>
 
-                <span>R$ 34,90</span>
-
-                <button
-                  class="btn-add"
-                  onclick="adicionarAoCarrinho('Lagoa Azul', 34.9)"
-                >
-                  Adicionar
-                </button>
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Sex on the Beach', 34.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
-            </div>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Russian Kiss" />
+              <div class="porcao-item item-info">
+                <div class="porcao-conteudo">
+                  <h3>Lagoa Azul</h3>
 
-              <div class="item-info">
-                <h3>Russian Kiss</h3>
+                  <p>Gin, curaçau blue, limão, pimenta rosa e alecrim.</p>
+                </div>
 
-                <p>Vodka, cereja, água com gás e grenadine.</p>
+                <div class="porcao-compra">
+                  <span>R$ 34,90</span>
 
-                <span>R$ 32,90</span>
-
-                <button
-                  class="btn-add"
-                  onclick="adicionarAoCarrinho('Russian Kiss', 32.9)"
-                >
-                  Adicionar
-                </button>
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Lagoa Azul', 34.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
-            </div>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Mojito" />
+              <div class="porcao-item item-info">
+                <div class="porcao-conteudo">
+                  <h3>Russian Kiss</h3>
 
-              <div class="item-info">
-                <h3>Mojito</h3>
+                  <p>Vodka, cereja, água com gás e grenadine.</p>
+                </div>
 
-                <p>Rum branco, açúcar, hortelã e gelo.</p>
+                <div class="porcao-compra">
+                  <span>R$ 32,90</span>
 
-                <span>R$ 32,90</span>
-
-                <button
-                  class="btn-add"
-                  onclick="adicionarAoCarrinho('Mojito', 32.9)"
-                >
-                  Adicionar
-                </button>
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Russian Kiss', 32.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
-            </div>
+              <div class="porcao-item item-info">
+                <div class="porcao-conteudo">
+                  <h3>Mojito</h3>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Deck Drink Morango" />
+                  <p>Rum branco, açúcar, hortelã e gelo.</p>
+                </div>
 
-              <div class="item-info">
-                <h3>Deck Drink Morango</h3>
+                <div class="porcao-compra">
+                  <span>R$ 32,90</span>
 
-                <p>
-                  Morango, leite condensado, leite de coco, groselha, gin e
-                  gelo.
-                </p>
-
-                <span>R$ 38,90</span>
-
-                <button
-                  class="btn-add"
-                  onclick="adicionarAoCarrinho('Deck Drink Morango', 38.9)"
-                >
-                  Adicionar
-                </button>
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Mojito', 32.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
-            </div>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Deck Drink Abacaxi" />
+              <div class="porcao-item item-info">
+                <div class="porcao-conteudo">
+                  <h3>Deck Drink Morango</h3>
 
-              <div class="item-info">
-                <h3>Deck Drink Abacaxi</h3>
+                  <p>
+                    Morango, leite condensado, leite de coco, groselha, gin e
+                    gelo.
+                  </p>
+                </div>
 
-                <p>
-                  Abacaxi, leite condensado, leite de coco, groselha, gin e
-                  gelo.
-                </p>
+                <div class="porcao-compra">
+                  <span>R$ 38,90</span>
 
-                <span>R$ 38,90</span>
-
-                <button
-                  class="btn-add"
-                  onclick="adicionarAoCarrinho('Deck Drink Abacaxi', 38.9)"
-                >
-                  Adicionar
-                </button>
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Deck Drink Morango', 38.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
-            </div>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Deck Coco" />
+              <div class="porcao-item item-info">
+                <div class="porcao-conteudo">
+                  <h3>Deck Drink Abacaxi</h3>
 
-              <div class="item-info">
-                <h3>Deck Coco</h3>
+                  <p>
+                    Abacaxi, leite condensado, leite de coco, groselha, gin e
+                    gelo.
+                  </p>
+                </div>
 
-                <p>
-                  Coco, leite condensado, leite de coco, groselha, gin e gelo.
-                </p>
+                <div class="porcao-compra">
+                  <span>R$ 38,90</span>
 
-                <span>R$ 38,90</span>
-
-                <button
-                  class="btn-add"
-                  onclick="adicionarAoCarrinho('Deck Coco', 38.9)"
-                >
-                  Adicionar
-                </button>
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Deck Drink Abacaxi', 38.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
-            </div>
 
-            <div class="item-cardapio">
-              <img src="./img/sem-imagem.png" alt="Jorge Amado" />
+              <div class="porcao-item item-info">
+                <div class="porcao-conteudo">
+                  <h3>Deck Coco</h3>
 
-              <div class="item-info">
-                <h3>Jorge Amado</h3>
+                  <p>
+                    Coco, leite condensado, leite de coco, groselha, gin e gelo.
+                  </p>
+                </div>
 
-                <p>Cachaça Gabriela, maracujá, limão e gelo.</p>
+                <div class="porcao-compra">
+                  <span>R$ 38,90</span>
 
-                <span>R$ 38,90</span>
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Deck Coco', 38.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+              </div>
 
-                <button
-                  class="btn-add"
-                  onclick="adicionarAoCarrinho('Jorge Amado', 38.9)"
-                >
-                  Adicionar
-                </button>
+              <div class="porcao-item item-info">
+                <div class="porcao-conteudo">
+                  <h3>Jorge Amado</h3>
+
+                  <p>Cachaça Gabriela, maracujá, limão e gelo.</p>
+                </div>
+
+                <div class="porcao-compra">
+                  <span>R$ 38,90</span>
+
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Jorge Amado', 38.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-
       <!-- BEBIDAS -->
       <section class="categoria-bebidas" id="bebidas">
         <div class="container">
