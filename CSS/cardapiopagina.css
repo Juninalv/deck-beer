@@ -6,6 +6,9 @@ html,
 body {
   width: 100%;
   max-width: 100%;
+}
+
+body {
   overflow-x: hidden;
 }
 
@@ -84,6 +87,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 50;
+  overflow-x: auto;
 
   padding: 20px 0;
 
