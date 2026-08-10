@@ -77,6 +77,7 @@
           <a href="#pizza">Pizza Rap 10</a>
           <a href="#sobremesas">Sobremesas</a>
           <a href="#drinks">Drinks</a>
+          <a href="#sucos">Sucos</a>
           <a href="#bebidas">Bebidas</a>
           <a href="#doses">Doses</a>
         </div>
@@ -869,7 +870,7 @@
 
           <div class="porcoes-lista">
             <div class="porcoes-destaque">
-              <img src="./img/cardapio/executivo.jpg" alt="Pratos Executivos" />
+              <img src="./img/sem-imagem.png" alt="Pratos Executivos" />
             </div>
 
             <div class="lista-porcoes">
@@ -1024,7 +1025,7 @@
           <div class="porcoes-lista">
             <div class="porcoes-destaque">
               <img
-                src="./img/cardapio/artesanal.jpg"
+                src="./img/cardapio/artesanal.png"
                 alt="Lanches Artesanais"
               />
             </div>
@@ -1694,7 +1695,7 @@
 
           <div class="porcoes-lista">
             <div class="porcoes-destaque">
-              <img src="./img/cardapio/sobremesa.png" alt="Sobremesas" />
+              <img src="./img/sem-imagem.png" alt="Sobremesas" />
             </div>
 
             <div class="lista-porcoes">
@@ -1881,7 +1882,7 @@
 
           <div class="porcoes-lista">
             <div class="porcoes-destaque">
-              <img src="./img/cardapio/drinks.jpg" alt="Drinks" />
+              <img src="./img/cardapio/drinks.jpeg" alt="Drinks" />
             </div>
 
             <div class="lista-porcoes">
@@ -2241,6 +2242,230 @@
           </div>
         </div>
       </section>
+
+      <!-- SUCOS NATURAIS -->
+      <section class="categoria-cardapio" id="sucos">
+        <div class="container">
+          <h2 class="section-title">Sucos</h2>
+
+          <div class="porcoes-lista">
+            <div class="porcoes-destaque">
+              <img src="./img/cardapio/sucos.jpg" alt="Sucos Naturais" />
+            </div>
+
+            <div class="lista-porcoes">
+              <div class="porcao-item item-info">
+                <div class="porcao-conteudo">
+                  <h3>Suco Natural - Morango</h3>
+
+                  <p>Suco natural preparado com morango.</p>
+                </div>
+
+                <div class="porcao-compra">
+                  <span>R$ 13,00</span>
+
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Suco Natural - Morango', 13)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+              </div>
+
+              <div class="porcao-item item-info">
+                <div class="porcao-conteudo">
+                  <h3>Suco Natural - Laranja</h3>
+
+                  <p>Suco natural preparado com laranja.</p>
+                </div>
+
+                <div class="porcao-compra">
+                  <span>R$ 13,00</span>
+
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Suco Natural - Laranja', 13)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+              </div>
+
+              <div class="porcao-item item-info">
+                <div class="porcao-conteudo">
+                  <h3>Suco Natural - Abacaxi com Hortelã</h3>
+
+                  <p>Suco natural de abacaxi com hortelã.</p>
+                </div>
+
+                <div class="porcao-compra">
+                  <span>R$ 13,00</span>
+
+                  <button
+                    class="btn-add"
+                    onclick="
+                      adicionarAoCarrinho(
+                        'Suco Natural - Abacaxi com Hortelã',
+                        13,
+                      )
+                    "
+                  >
+                    Adicionar
+                  </button>
+                </div>
+              </div>
+
+              <div class="porcao-item item-info">
+                <div class="porcao-conteudo">
+                  <h3>Suco Natural - Maracujá</h3>
+
+                  <p>Suco natural preparado com maracujá.</p>
+                </div>
+
+                <div class="porcao-compra">
+                  <span>R$ 13,00</span>
+
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Suco Natural - Maracujá', 13)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+              </div>
+
+              <div class="porcao-item item-info">
+                <div class="porcao-conteudo">
+                  <h3>Suco Natural - Limão</h3>
+
+                  <p>Suco natural preparado com limão.</p>
+                </div>
+
+                <div class="porcao-compra">
+                  <span>R$ 13,00</span>
+
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Suco Natural - Limão', 13)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+              </div>
+
+              <div class="porcao-item item-info">
+                <div class="porcao-conteudo">
+                  <h3>Suco Misto</h3>
+
+                  <p>Escolha os sabores do seu suco misto.</p>
+
+                  <details class="adicionais">
+                    <summary>Escolher sabores (máx. 2)</summary>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Morango"
+                        class="sabor-suco-misto"
+                      />
+                      Morango
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Laranja"
+                        class="sabor-suco-misto"
+                      />
+                      Laranja
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Abacaxi com Hortelã"
+                        class="sabor-suco-misto"
+                      />
+                      Abacaxi com Hortelã
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Maracujá"
+                        class="sabor-suco-misto"
+                      />
+                      Maracujá
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Limão"
+                        class="sabor-suco-misto"
+                      />
+                      Limão
+                    </label>
+                  </details>
+                </div>
+
+                <div class="porcao-compra">
+                  <span>R$ 15,00</span>
+
+                  <button
+                    type="button"
+                    class="btn-add"
+                    onclick="adicionarSucoMisto(this)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+              </div>
+
+              <div class="porcao-item item-info">
+                <div class="porcao-conteudo">
+                  <h3>Limonada Suíça</h3>
+
+                  <p>Limão batido com casca, açúcar e gelo.</p>
+                </div>
+
+                <div class="porcao-compra">
+                  <span>R$ 16,00</span>
+
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Limonada Suíça', 16)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+              </div>
+
+              <div class="porcao-item item-info">
+                <div class="porcao-conteudo">
+                  <h3>Limonada com Água de Coco</h3>
+
+                  <p>Limão, água de coco e gelo.</p>
+                </div>
+
+                <div class="porcao-compra">
+                  <span>R$ 16,00</span>
+
+                  <button
+                    class="btn-add"
+                    onclick="
+                      adicionarAoCarrinho('Limonada com Água de Coco', 16)
+                    "
+                  >
+                    Adicionar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- BEBIDAS -->
       <section class="categoria-bebidas" id="bebidas">
         <div class="container">
@@ -2300,78 +2525,6 @@
           </div>
 
           <div class="bloco-bebidas">
-            <h3>Sucos Naturais</h3>
-
-            <div class="bebida-item">
-              <span>Morango</span>
-              <button
-                onclick="adicionarAoCarrinho('Suco Natural - Morango', 13)"
-              >
-                R$ 13,00
-              </button>
-            </div>
-
-            <div class="bebida-item">
-              <span>Laranja</span>
-              <button
-                onclick="adicionarAoCarrinho('Suco Natural - Laranja', 13)"
-              >
-                R$ 13,00
-              </button>
-            </div>
-
-            <div class="bebida-item">
-              <span>Abacaxi com Hortelã</span>
-              <button
-                onclick="
-                  adicionarAoCarrinho('Suco Natural - Abacaxi com Hortelã', 13)
-                "
-              >
-                R$ 13,00
-              </button>
-            </div>
-
-            <div class="bebida-item">
-              <span>Maracujá</span>
-              <button
-                onclick="adicionarAoCarrinho('Suco Natural - Maracujá', 13)"
-              >
-                R$ 13,00
-              </button>
-            </div>
-
-            <div class="bebida-item">
-              <span>Limão</span>
-              <button onclick="adicionarAoCarrinho('Suco Natural - Limão', 13)">
-                R$ 13,00
-              </button>
-            </div>
-
-            <div class="bebida-item">
-              <span>Suco Misto</span>
-              <button onclick="adicionarAoCarrinho('Suco Misto', 15)">
-                R$ 15,00
-              </button>
-            </div>
-
-            <div class="bebida-item">
-              <span>Limonada Suíça</span>
-              <button onclick="adicionarAoCarrinho('Limonada Suíça', 16)">
-                R$ 16,00
-              </button>
-            </div>
-
-            <div class="bebida-item">
-              <span>Limonada com Água de Coco</span>
-              <button
-                onclick="adicionarAoCarrinho('Limonada com Água de Coco', 16)"
-              >
-                R$ 16,00
-              </button>
-            </div>
-          </div>
-
-          <div class="bloco-bebidas">
             <h3>Cerveja 600ml</h3>
 
             <div class="bebida-item">
@@ -2382,16 +2535,16 @@
             </div>
 
             <div class="bebida-item">
-              <span>Amstel</span>
-              <button onclick="adicionarAoCarrinho('Amstel 600ml', 14.9)">
-                R$ 14,90
+              <span>Skol</span>
+              <button onclick="adicionarAoCarrinho('Skol 600ml', 13.9)">
+                R$ 13,90
               </button>
             </div>
 
             <div class="bebida-item">
-              <span>Skol</span>
-              <button onclick="adicionarAoCarrinho('Skol 600ml', 13.9)">
-                R$ 13,90
+              <span>Amstel</span>
+              <button onclick="adicionarAoCarrinho('Amstel 600ml', 14.9)">
+                R$ 14,90
               </button>
             </div>
 
@@ -2558,7 +2711,7 @@
             <h3>Chopp de Vinho</h3>
 
             <div class="bebida-item">
-              <span>Taça</span>
+              <span>600ml</span>
               <button onclick="adicionarAoCarrinho('Chopp de Vinho', 20)">
                 R$ 20,00
               </button>
@@ -2605,51 +2758,12 @@
               <button onclick="adicionarAoCarrinho('TNT', 10)">R$ 10,00</button>
             </div>
           </div>
-
-          <div class="bloco-bebidas">
-            <h3>Whisky</h3>
-
-            <div class="bebida-item">
-              <span>Ballantines</span>
-              <button onclick="adicionarAoCarrinho('Ballantines', 25)">
-                R$ 25,00
-              </button>
-            </div>
-
-            <div class="bebida-item">
-              <span>Passport</span>
-              <button onclick="adicionarAoCarrinho('Passport', 20)">
-                R$ 20,00
-              </button>
-            </div>
-
-            <div class="bebida-item">
-              <span>Red Label</span>
-              <button onclick="adicionarAoCarrinho('Red Label', 30)">
-                R$ 30,00
-              </button>
-            </div>
-
-            <div class="bebida-item">
-              <span>Jack Daniel's</span>
-              <button onclick="adicionarAoCarrinho(`Jack Daniel's`, 35)">
-                R$ 35,00
-              </button>
-            </div>
-
-            <div class="bebida-item">
-              <span>Black Label</span>
-              <button onclick="adicionarAoCarrinho('Black Label', 35)">
-                R$ 35,00
-              </button>
-            </div>
-          </div>
         </div>
       </section>
 
       <!-- DOSES -->
 
-      <section class="categoria-doses" id="doses">
+      <section class="categoria-doses">
         <div class="container">
           <h2 class="section-title">Doses</h2>
 
@@ -2750,6 +2864,46 @@
               <span class="dose-nome">Gin</span>
               <span class="dose-linha"></span>
               <button onclick="adicionarAoCarrinho('Gin', 20)">R$ 20,00</button>
+            </div>
+
+            <div class="dose-item">
+              <span class="dose-nome">Passport</span>
+              <span class="dose-linha"></span>
+              <button onclick="adicionarAoCarrinho('Passport', 20)">
+                R$ 20,00
+              </button>
+            </div>
+
+            <div class="dose-item">
+              <span class="dose-nome">Ballantines</span>
+              <span class="dose-linha"></span>
+              <button onclick="adicionarAoCarrinho('Ballantines', 25)">
+                R$ 25,00
+              </button>
+            </div>
+
+            <div class="dose-item">
+              <span class="dose-nome">Red Label</span>
+              <span class="dose-linha"></span>
+              <button onclick="adicionarAoCarrinho('Red Label', 30)">
+                R$ 30,00
+              </button>
+            </div>
+
+            <div class="dose-item">
+              <span class="dose-nome">Jack Daniel's</span>
+              <span class="dose-linha"></span>
+              <button onclick="adicionarAoCarrinho(`Jack Daniel's`, 35)">
+                R$ 35,00
+              </button>
+            </div>
+
+            <div class="dose-item">
+              <span class="dose-nome">Black Label</span>
+              <span class="dose-linha"></span>
+              <button onclick="adicionarAoCarrinho('Black Label', 35)">
+                R$ 35,00
+              </button>
             </div>
           </div>
         </div>

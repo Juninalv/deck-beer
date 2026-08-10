@@ -10,18 +10,18 @@ function permitirSomenteNumeros(id) {
   campo.addEventListener("input", () => {
     campo.value = campo.value.replace(/\D/g, "");
   });
+}
 
-  function permitirValorMonetario(id) {
-    const campo = document.getElementById(id);
+function permitirValorMonetario(id) {
+  const campo = document.getElementById(id);
 
-    if (!campo) return;
+  if (!campo) return;
 
-    campo.addEventListener("input", () => {
-      campo.value = campo.value
-        .replace(/[^0-9,.]/g, "")
-        .replace(/([,.].*)[,.]/g, "$1");
-    });
-  }
+  campo.addEventListener("input", () => {
+    campo.value = campo.value
+      .replace(/[^0-9,.]/g, "")
+      .replace(/([,.].*)[,.]/g, "$1");
+  });
 }
 
 function toggleCarrinho() {
@@ -490,6 +490,21 @@ function adicionarCaipirinha(botao) {
   const preco = 29.9;
 
   adicionarAoCarrinho(nome, preco);
+}
+
+function adicionarSucoMisto(botao) {
+  const item = botao.closest(".porcao-item");
+
+  const sabores = [...item.querySelectorAll(".sabor-suco-misto:checked")].map(
+    (input) => input.value,
+  );
+
+  if (sabores.length !== 2) {
+    alert("Escolha exatamente 2 sabores para o suco misto.");
+    return;
+  }
+
+  adicionarAoCarrinho(`Suco Misto (${sabores.join(" + ")})`, 15);
 }
 
 atualizarCarrinho();
