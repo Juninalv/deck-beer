@@ -2,6 +2,28 @@ let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
 
 let localizacaoCliente = "";
 
+function permitirSomenteNumeros(id) {
+  const campo = document.getElementById(id);
+
+  if (!campo) return;
+
+  campo.addEventListener("input", () => {
+    campo.value = campo.value.replace(/\D/g, "");
+  });
+
+  function permitirValorMonetario(id) {
+    const campo = document.getElementById(id);
+
+    if (!campo) return;
+
+    campo.addEventListener("input", () => {
+      campo.value = campo.value
+        .replace(/[^0-9,.]/g, "")
+        .replace(/([,.].*)[,.]/g, "$1");
+    });
+  }
+}
+
 function toggleCarrinho() {
   document.getElementById("cartSidebar").classList.toggle("active");
 }
@@ -221,6 +243,20 @@ function alterarPagamento() {
     pagamento === "Dinheiro" ? "block" : "none";
 }
 
+const semTroco = document.getElementById("semTroco");
+const campoTrocoInput = document.getElementById("troco");
+
+if (semTroco && campoTrocoInput) {
+  semTroco.addEventListener("change", () => {
+    if (semTroco.checked) {
+      campoTrocoInput.value = "";
+      campoTrocoInput.disabled = true;
+    } else {
+      campoTrocoInput.disabled = false;
+    }
+  });
+}
+
 function capturarLocalizacao() {
   if (!navigator.geolocation) {
     alert("Seu navegador não suporta localização.");
@@ -265,9 +301,26 @@ function enviarPedido() {
 
   const troco = document.getElementById("troco")?.value.trim() || "";
 
+  const semTroco = document.getElementById("semTroco")?.checked || false;
+
+  /* CALCULA TOTAL DO PEDIDO */
+
+  let total = 0;
+
+  carrinho.forEach((item) => {
+    total += item.preco * item.qtd;
+  });
+
+  /* VALIDAÇÕES */
+
   if (tipo === "local") {
     if (!cliente || !mesa) {
       alert("Preencha todos os campos obrigatórios.");
+      return;
+    }
+
+    if (!/^\d+$/.test(mesa)) {
+      alert("Informe apenas números no campo Mesa.");
       return;
     }
   }
@@ -285,13 +338,43 @@ function enviarPedido() {
       return;
     }
 
-    if (formaPagamento === "Dinheiro" && !troco) {
-      alert("Informe o valor para troco.");
+    if (!/^\d+$/.test(numero)) {
+      alert("Informe apenas números no campo Número.");
       return;
+    }
+    if (formaPagamento === "Dinheiro") {
+      if (!semTroco && !troco) {
+        alert("Informe o valor para troco ou marque 'Não preciso de troco'.");
+        return;
+      }
+
+      if (!semTroco) {
+        const valorTroco = Number(
+          troco
+            .replace("R$", "")
+            .replace(/\s/g, "")
+            .replace(/\./g, "")
+            .replace(",", "."),
+        );
+
+        if (isNaN(valorTroco)) {
+          alert("Informe um valor válido para o troco.");
+          return;
+        }
+
+        if (valorTroco < total) {
+          alert(
+            `O valor para troco não pode ser menor que o total do pedido (R$ ${total
+              .toFixed(2)
+              .replace(".", ",")}).`,
+          );
+          return;
+        }
+      }
     }
   }
 
-  let total = 0;
+  /* MONTA MENSAGEM */
 
   let msg = "*PEDIDO DECK BEER*\n\n";
 
@@ -318,7 +401,11 @@ function enviarPedido() {
     msg += `Forma de Pagamento: ${formaPagamento}\n`;
 
     if (formaPagamento === "Dinheiro") {
-      msg += `Troco para: ${troco}\n`;
+      if (semTroco) {
+        msg += "Troco: Não precisa de troco\n";
+      } else {
+        msg += `Troco para: R$ ${troco}\n`;
+      }
     }
 
     if (localizacaoCliente) {
@@ -330,8 +417,6 @@ function enviarPedido() {
 
   carrinho.forEach((item) => {
     const subtotal = item.preco * item.qtd;
-
-    total += subtotal;
 
     msg += `${item.qtd}x ${item.nome}\n`;
     msg += `R$ ${subtotal.toFixed(2).replace(".", ",")}\n\n`;
@@ -368,8 +453,14 @@ function enviarPedido() {
   if (document.getElementById("complemento"))
     document.getElementById("complemento").value = "";
 
-  if (document.getElementById("troco"))
+  if (document.getElementById("troco")) {
     document.getElementById("troco").value = "";
+    document.getElementById("troco").disabled = false;
+  }
+
+  if (document.getElementById("semTroco")) {
+    document.getElementById("semTroco").checked = false;
+  }
 
   localizacaoCliente = "";
 
@@ -404,5 +495,6 @@ function adicionarCaipirinha(botao) {
 atualizarCarrinho();
 alterarTipoPedido();
 
-atualizarCarrinho();
-alterarTipoPedido();
+permitirSomenteNumeros("mesa");
+permitirSomenteNumeros("numero");
+permitirValorMonetario("troco");

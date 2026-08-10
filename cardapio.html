@@ -2855,7 +2855,23 @@
         </select>
 
         <div id="campoTroco" style="display: none">
-          <input type="text" id="troco" placeholder="Troco para quanto?*" />
+          <label for="troco">Troco para:</label>
+          <input
+            type="text"
+            id="troco"
+            placeholder="Ex: 100,00"
+            inputmode="decimal"
+            oninput="
+              this.value = this.value
+                .replace(/[^0-9,.]/g, '')
+                .replace(/([,.].*)[,.]/g, '$1')
+            "
+          />
+
+          <label>
+            <input type="checkbox" id="semTroco" />
+            Não preciso de troco
+          </label>
         </div>
       </div>
 
