@@ -427,7 +427,7 @@ function enviarPedido() {
   msg += `\nObservações:\n${observacao}`;
 
   window.open(
-    `https://wa.me/5512974038736?text=${encodeURIComponent(msg)}`,
+    `https://wa.me/5512991325490?text=${encodeURIComponent(msg)}`,
     "_blank",
   );
 

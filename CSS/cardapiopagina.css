@@ -127,6 +127,13 @@ body {
   color: var(--text-primary);
 }
 
+.aviso-cardapio {
+  text-align: center;
+  font-size: 0.7rem;
+  color: #aaa;
+  font-style: italic;
+}
+
 /* =========================
    CATEGORIAS
 ========================= */
