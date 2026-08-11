@@ -1,16 +1,22 @@
 /* =========================
    HERO CARDÁPIO
 ========================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 html,
 body {
   width: 100%;
   max-width: 100%;
-}
-
-body {
   overflow-x: hidden;
 }
+
+/* body {
+  overflow-x: hidden;
+} */
 
 .hero-cardapio {
   position: relative;
