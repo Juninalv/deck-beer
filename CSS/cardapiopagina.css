@@ -11,7 +11,7 @@ html,
 body {
   width: 100%;
   max-width: 100%;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 /* body {
@@ -92,8 +92,10 @@ body {
 .menu-categorias {
   position: sticky;
   top: 0;
-  z-index: 50;
-  overflow-x: auto;
+  z-index: 1000;
+
+  width: 100%;
+  max-width: 100%;
 
   padding: 20px 0;
 
