@@ -33,15 +33,22 @@
 .cart-sidebar {
   position: fixed;
   top: 0;
-  right: 0px;
+  right: 0;
+
   width: 380px;
   height: 100vh;
+
   background: #121212;
+
   transform: translateX(100%);
   transition: transform 0.3s ease;
+
   z-index: 9998;
+
   padding: 20px;
+
   overflow-y: auto;
+  overscroll-behavior: contain;
 }
 
 .cart-sidebar.active {
@@ -207,6 +214,7 @@
   .cart-sidebar {
     width: 100%;
   }
+
   .adicional-select {
     font-size: 0.9rem;
   }
