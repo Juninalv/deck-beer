@@ -283,8 +283,8 @@ body {
 }
 
 /* =========================
-   DOSES
-========================= */
+    DOSES
+  ========================= */
 
 .lista-doses {
   max-width: 1000px;
@@ -302,14 +302,17 @@ body {
   color: var(--text-primary);
   text-transform: uppercase;
   white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .dose-linha {
   flex: 1;
+  min-width: 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .dose-item button {
+  flex-shrink: 0;
   min-width: 110px;
   padding: 8px 18px;
 
@@ -581,6 +584,46 @@ RESPONSIVO
     font-size: 13px;
   }
 
+  .dose-item {
+    gap: 12px;
+  }
+
+  .dose-nome {
+    white-space: normal;
+    flex: 0 1 auto;
+    max-width: 52%;
+    line-height: 1.25;
+  }
+
+  .dose-linha {
+    min-width: 12px;
+  }
+
+  .dose-item button {
+    min-width: 108px;
+    padding: 8px 14px;
+  }
+
+  .btn-limpar-carrinho {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c0392b;
+    border-radius: 6px;
+    background: transparent;
+    color: #c0392b;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .btn-limpar-carrinho:hover {
+    background: #c0392b;
+    color: #fff;
+  }
+
+  .categoria-cardapio,
+  .categoria-bebidas {
+    scroll-margin-top: var(--altura-menus, 130px);
+  }
   /* =========================
      LISTA PORÇÕES / DRINKS
   ========================= */
