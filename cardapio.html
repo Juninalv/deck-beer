@@ -178,26 +178,6 @@
 
               <div class="porcao-item">
                 <div class="porcao-conteudo">
-                  <h3>Pastel Caipira</h3>
-                  <p>
-                    Carne moída, queijo, requeijão de prato Carne seca, costela,
-                    camarão
-                  </p>
-                </div>
-
-                <div class="porcao-compra">
-                  <span>R$ 44,90</span>
-
-                  <button
-                    class="btn-add"
-                    onclick="adicionarAoCarrinho('Pastel Caipira', 44.9)"
-                  >
-                    Adicionar
-                  </button>
-                </div>
-              </div>
-              <div class="porcao-item">
-                <div class="porcao-conteudo">
                   <h3>Fritas Lagoinhense</h3>
                   <p>Fritas com requeijão de prato</p>
                 </div>
@@ -226,6 +206,27 @@
                   <button
                     class="btn-add"
                     onclick="adicionarAoCarrinho('Dadinho de Tapioca', 42.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+              </div>
+
+              <div class="porcao-item">
+                <div class="porcao-conteudo">
+                  <h3>Pastel Caipira</h3>
+                  <p>
+                    Carne moída, queijo, requeijão de prato Carne seca, costela,
+                    camarão
+                  </p>
+                </div>
+
+                <div class="porcao-compra">
+                  <span>R$ 44,90</span>
+
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Pastel Caipira', 44.9)"
                   >
                     Adicionar
                   </button>
@@ -558,24 +559,6 @@
             <div class="lista-porcoes">
               <div class="porcao-item">
                 <div class="porcao-conteudo">
-                  <h3>Parmegiana de Carne</h3>
-                  <p>Contra filé, arroz e fritas.</p>
-                </div>
-
-                <div class="porcao-compra">
-                  <span>R$ 48,90</span>
-
-                  <button
-                    class="btn-add"
-                    onclick="adicionarAoCarrinho('Parmegiana de Carne', 48.9)"
-                  >
-                    Adicionar
-                  </button>
-                </div>
-              </div>
-
-              <div class="porcao-item">
-                <div class="porcao-conteudo">
                   <h3>Parmegiana de Frango</h3>
                   <p>Filé de frango, arroz e fritas.</p>
                 </div>
@@ -586,6 +569,24 @@
                   <button
                     class="btn-add"
                     onclick="adicionarAoCarrinho('Parmegiana de Frango', 38.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+              </div>
+
+              <div class="porcao-item">
+                <div class="porcao-conteudo">
+                  <h3>Parmegiana de Carne</h3>
+                  <p>Contra filé, arroz e fritas.</p>
+                </div>
+
+                <div class="porcao-compra">
+                  <span>R$ 48,90</span>
+
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Parmegiana de Carne', 48.9)"
                   >
                     Adicionar
                   </button>
@@ -624,24 +625,6 @@
             <div class="lista-porcoes">
               <div class="porcao-item">
                 <div class="porcao-conteudo">
-                  <h3>Contra Filé Acebolado</h3>
-                  <p>Contra filé acebolado, arroz e fritas.</p>
-                </div>
-
-                <div class="porcao-compra">
-                  <span>R$ 38,90</span>
-
-                  <button
-                    class="btn-add"
-                    onclick="adicionarAoCarrinho('Contra Filé Acebolado', 38.9)"
-                  >
-                    Adicionar
-                  </button>
-                </div>
-              </div>
-
-              <div class="porcao-item">
-                <div class="porcao-conteudo">
                   <h3>Filé de Frango Acebolado</h3>
                   <p>Filé de frango, arroz e fritas.</p>
                 </div>
@@ -654,6 +637,24 @@
                     onclick="
                       adicionarAoCarrinho('Filé de Frango Acebolado', 34.9)
                     "
+                  >
+                    Adicionar
+                  </button>
+                </div>
+              </div>
+
+              <div class="porcao-item">
+                <div class="porcao-conteudo">
+                  <h3>Contra Filé Acebolado</h3>
+                  <p>Contra filé acebolado, arroz e fritas.</p>
+                </div>
+
+                <div class="porcao-compra">
+                  <span>R$ 38,90</span>
+
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Contra Filé Acebolado', 38.9)"
                   >
                     Adicionar
                   </button>
@@ -1039,6 +1040,63 @@
             <div class="lista-porcoes">
               <div class="porcao-item item-info">
                 <div class="porcao-conteudo">
+                  <h3>Deck Burguer Kids</h3>
+
+                  <p>Carne 180g, queijo prato e nuggets. Acompanha fritas</p>
+
+                  <details class="adicionais">
+                    <summary>Adicionar complementos</summary>
+
+                    <label>
+                      <input type="checkbox" value="Cheddar" data-preco="5" />
+                      Cheddar (+R$5)
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Catupiry" data-preco="5" />
+                      Catupiry (+R$5)
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Requeijão de Prato"
+                        data-preco="5"
+                      />
+                      Requeijão de Prato (+R$5)
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Bacon" data-preco="5" />
+                      Bacon (+R$5)
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Ovo" data-preco="5" />
+                      Ovo (+R$5)
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Fritas" data-preco="5" />
+                      Fritas (+R$5)
+                    </label>
+                  </details>
+                </div>
+
+                <div class="porcao-compra">
+                  <span>R$ 34,90</span>
+
+                  <button
+                    class="btn-add"
+                    onclick="adicionarLanche(this, 'Deck Burguer Kids', 34.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+              </div>
+
+              <div class="porcao-item item-info">
+                <div class="porcao-conteudo">
                   <h3>Deck Burguer Salada</h3>
 
                   <p>
@@ -1329,63 +1387,6 @@
                   <button
                     class="btn-add"
                     onclick="adicionarLanche(this, 'Deck Burguer Duplo', 58.9)"
-                  >
-                    Adicionar
-                  </button>
-                </div>
-              </div>
-
-              <div class="porcao-item item-info">
-                <div class="porcao-conteudo">
-                  <h3>Deck Burguer Kids</h3>
-
-                  <p>Carne 180g, queijo prato e nuggets. Acompanha fritas</p>
-
-                  <details class="adicionais">
-                    <summary>Adicionar complementos</summary>
-
-                    <label>
-                      <input type="checkbox" value="Cheddar" data-preco="5" />
-                      Cheddar (+R$5)
-                    </label>
-
-                    <label>
-                      <input type="checkbox" value="Catupiry" data-preco="5" />
-                      Catupiry (+R$5)
-                    </label>
-
-                    <label>
-                      <input
-                        type="checkbox"
-                        value="Requeijão de Prato"
-                        data-preco="5"
-                      />
-                      Requeijão de Prato (+R$5)
-                    </label>
-
-                    <label>
-                      <input type="checkbox" value="Bacon" data-preco="5" />
-                      Bacon (+R$5)
-                    </label>
-
-                    <label>
-                      <input type="checkbox" value="Ovo" data-preco="5" />
-                      Ovo (+R$5)
-                    </label>
-
-                    <label>
-                      <input type="checkbox" value="Fritas" data-preco="5" />
-                      Fritas (+R$5)
-                    </label>
-                  </details>
-                </div>
-
-                <div class="porcao-compra">
-                  <span>R$ 34,90</span>
-
-                  <button
-                    class="btn-add"
-                    onclick="adicionarLanche(this, 'Deck Burguer Kids', 34.9)"
                   >
                     Adicionar
                   </button>
@@ -2047,6 +2048,43 @@
 
               <div class="porcao-item item-info">
                 <div class="porcao-conteudo">
+                  <h3>Russian Kiss</h3>
+
+                  <p>Vodka, cereja, água com gás e grenadine.</p>
+                </div>
+
+                <div class="porcao-compra">
+                  <span>R$ 32,90</span>
+
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Russian Kiss', 32.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+              </div>
+              <div class="porcao-item item-info">
+                <div class="porcao-conteudo">
+                  <h3>Mojito</h3>
+
+                  <p>Rum branco, açúcar, hortelã e gelo.</p>
+                </div>
+
+                <div class="porcao-compra">
+                  <span>R$ 32,90</span>
+
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Mojito', 32.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+              </div>
+
+              <div class="porcao-item item-info">
+                <div class="porcao-conteudo">
                   <h3>Dry Martini</h3>
 
                   <p>Gin, vermute seco e gelo.</p>
@@ -2058,25 +2096,6 @@
                   <button
                     class="btn-add"
                     onclick="adicionarAoCarrinho('Dry Martini', 34.9)"
-                  >
-                    Adicionar
-                  </button>
-                </div>
-              </div>
-
-              <div class="porcao-item item-info">
-                <div class="porcao-conteudo">
-                  <h3>Mint Julep</h3>
-
-                  <p>Whisky, açúcar, gelo e hortelã.</p>
-                </div>
-
-                <div class="porcao-compra">
-                  <span>R$ 38,90</span>
-
-                  <button
-                    class="btn-add"
-                    onclick="adicionarAoCarrinho('Mint Julep', 38.9)"
                   >
                     Adicionar
                   </button>
@@ -2126,43 +2145,6 @@
 
               <div class="porcao-item item-info">
                 <div class="porcao-conteudo">
-                  <h3>Russian Kiss</h3>
-
-                  <p>Vodka, cereja, água com gás e grenadine.</p>
-                </div>
-
-                <div class="porcao-compra">
-                  <span>R$ 32,90</span>
-
-                  <button
-                    class="btn-add"
-                    onclick="adicionarAoCarrinho('Russian Kiss', 32.9)"
-                  >
-                    Adicionar
-                  </button>
-                </div>
-              </div>
-              <div class="porcao-item item-info">
-                <div class="porcao-conteudo">
-                  <h3>Mojito</h3>
-
-                  <p>Rum branco, açúcar, hortelã e gelo.</p>
-                </div>
-
-                <div class="porcao-compra">
-                  <span>R$ 32,90</span>
-
-                  <button
-                    class="btn-add"
-                    onclick="adicionarAoCarrinho('Mojito', 32.9)"
-                  >
-                    Adicionar
-                  </button>
-                </div>
-              </div>
-
-              <div class="porcao-item item-info">
-                <div class="porcao-conteudo">
                   <h3>Deck Drink Morango</h3>
 
                   <p>
@@ -2177,6 +2159,25 @@
                   <button
                     class="btn-add"
                     onclick="adicionarAoCarrinho('Deck Drink Morango', 38.9)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+              </div>
+
+              <div class="porcao-item item-info">
+                <div class="porcao-conteudo">
+                  <h3>Mint Julep</h3>
+
+                  <p>Whisky, açúcar, gelo e hortelã.</p>
+                </div>
+
+                <div class="porcao-compra">
+                  <span>R$ 38,90</span>
+
+                  <button
+                    class="btn-add"
+                    onclick="adicionarAoCarrinho('Mint Julep', 38.9)"
                   >
                     Adicionar
                   </button>
@@ -2568,15 +2569,6 @@
             </div>
 
             <div class="bebida-item">
-              <span>Suco Del Valle (Lata)</span>
-              <button
-                onclick="adicionarAoCarrinho('Suco Del Valle (Lata)', 10)"
-              >
-                R$ 10,00
-              </button>
-            </div>
-
-            <div class="bebida-item">
               <span>Refrigerante (Lata)</span>
               <button onclick="adicionarAoCarrinho('Refrigerante (Lata)', 8)">
                 R$ 8,00
@@ -2598,6 +2590,15 @@
             <div class="bebida-item">
               <span>Refrigerante 600ml</span>
               <button onclick="adicionarAoCarrinho('Refrigerante 600ml', 10)">
+                R$ 10,00
+              </button>
+            </div>
+
+            <div class="bebida-item">
+              <span>Suco Del Valle (Lata)</span>
+              <button
+                onclick="adicionarAoCarrinho('Suco Del Valle (Lata)', 10)"
+              >
                 R$ 10,00
               </button>
             </div>
@@ -2776,16 +2777,16 @@
             <h3>Long Drinks</h3>
 
             <div class="bebida-item">
-              <span>Skol Beats</span>
-              <button onclick="adicionarAoCarrinho('Skol Beats', 15)">
-                R$ 15,00
+              <span>Ice 51</span>
+              <button onclick="adicionarAoCarrinho('Ice 51', 10)">
+                R$ 10,00
               </button>
             </div>
 
             <div class="bebida-item">
-              <span>Ice 51</span>
-              <button onclick="adicionarAoCarrinho('Ice 51', 10)">
-                R$ 10,00
+              <span>Skol Beats</span>
+              <button onclick="adicionarAoCarrinho('Skol Beats', 15)">
+                R$ 15,00
               </button>
             </div>
 
@@ -2801,15 +2802,15 @@
             <h3>Energéticos</h3>
 
             <div class="bebida-item">
+              <span>TNT</span>
+              <button onclick="adicionarAoCarrinho('TNT', 10)">R$ 10,00</button>
+            </div>
+
+            <div class="bebida-item">
               <span>Red Bull</span>
               <button onclick="adicionarAoCarrinho('Red Bull', 15)">
                 R$ 15,00
               </button>
-            </div>
-
-            <div class="bebida-item">
-              <span>TNT</span>
-              <button onclick="adicionarAoCarrinho('TNT', 10)">R$ 10,00</button>
             </div>
           </div>
         </div>
@@ -2827,24 +2828,6 @@
               <span class="dose-linha"></span>
               <button onclick="adicionarAoCarrinho('Cachaça', 5)">
                 R$ 5,00
-              </button>
-            </div>
-
-            <div class="dose-item">
-              <span class="dose-nome">Cachaça Chocolate</span>
-              <span class="dose-linha"></span>
-              <button onclick="adicionarAoCarrinho('Cachaça Chocolate', 15)">
-                R$ 15,00
-              </button>
-            </div>
-
-            <div class="dose-item">
-              <span class="dose-nome">Cachaça Engenho de Ouro</span>
-              <span class="dose-linha"></span>
-              <button
-                onclick="adicionarAoCarrinho('Cachaça Engenho de Ouro', 20)"
-              >
-                R$ 20,00
               </button>
             </div>
 
@@ -2867,6 +2850,48 @@
             </div>
 
             <div class="dose-item">
+              <span class="dose-nome">Conhaque</span>
+              <span class="dose-linha"></span>
+              <button onclick="adicionarAoCarrinho('Conhaque', 10)">
+                R$ 10,00
+              </button>
+            </div>
+
+            <div class="dose-item">
+              <span class="dose-nome">Vodka Smirnoff</span>
+              <span class="dose-linha"></span>
+              <button onclick="adicionarAoCarrinho('Vodka Smirnoff', 10)">
+                R$ 10,00
+              </button>
+            </div>
+
+            <div class="dose-item">
+              <span class="dose-nome">Cachaça Chocolate</span>
+              <span class="dose-linha"></span>
+              <button onclick="adicionarAoCarrinho('Cachaça Chocolate', 15)">
+                R$ 15,00
+              </button>
+            </div>
+
+            <div class="dose-item">
+              <span class="dose-nome">Vodka Absolut</span>
+              <span class="dose-linha"></span>
+              <button onclick="adicionarAoCarrinho('Vodka Absolut', 15)">
+                R$ 15,00
+              </button>
+            </div>
+
+            <div class="dose-item">
+              <span class="dose-nome">Cachaça Engenho de Ouro</span>
+              <span class="dose-linha"></span>
+              <button
+                onclick="adicionarAoCarrinho('Cachaça Engenho de Ouro', 20)"
+              >
+                R$ 20,00
+              </button>
+            </div>
+
+            <div class="dose-item">
               <span class="dose-nome">Campari</span>
               <span class="dose-linha"></span>
               <button onclick="adicionarAoCarrinho('Campari', 20)">
@@ -2883,38 +2908,6 @@
             </div>
 
             <div class="dose-item">
-              <span class="dose-nome">Conhaque</span>
-              <span class="dose-linha"></span>
-              <button onclick="adicionarAoCarrinho('Conhaque', 10)">
-                R$ 10,00
-              </button>
-            </div>
-
-            <div class="dose-item">
-              <span class="dose-nome">Vodka Absolut</span>
-              <span class="dose-linha"></span>
-              <button onclick="adicionarAoCarrinho('Vodka Absolut', 15)">
-                R$ 15,00
-              </button>
-            </div>
-
-            <div class="dose-item">
-              <span class="dose-nome">Vodka Smirnoff</span>
-              <span class="dose-linha"></span>
-              <button onclick="adicionarAoCarrinho('Vodka Smirnoff', 10)">
-                R$ 10,00
-              </button>
-            </div>
-
-            <div class="dose-item">
-              <span class="dose-nome">Amarula</span>
-              <span class="dose-linha"></span>
-              <button onclick="adicionarAoCarrinho('Amarula', 25)">
-                R$ 25,00
-              </button>
-            </div>
-
-            <div class="dose-item">
               <span class="dose-nome">Gin</span>
               <span class="dose-linha"></span>
               <button onclick="adicionarAoCarrinho('Gin', 20)">R$ 20,00</button>
@@ -2925,6 +2918,14 @@
               <span class="dose-linha"></span>
               <button onclick="adicionarAoCarrinho('Passport', 20)">
                 R$ 20,00
+              </button>
+            </div>
+
+            <div class="dose-item">
+              <span class="dose-nome">Amarula</span>
+              <span class="dose-linha"></span>
+              <button onclick="adicionarAoCarrinho('Amarula', 25)">
+                R$ 25,00
               </button>
             </div>
 
