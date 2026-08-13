@@ -78,6 +78,19 @@ function limitarOpcaoGratuita(opcaoSelecionada) {
   });
 }
 
+function adicionarPastelCaipira() {
+  const sabor = document.querySelector(
+    'input[name="sabor-pastel-caipira"]:checked',
+  );
+
+  if (!sabor) {
+    alert("Escolha o sabor do pastel.");
+    return;
+  }
+
+  adicionarAoCarrinho(`Pastel Caipira - ${sabor.value}`, 44.9);
+}
+
 function adicionarPizza(botao) {
   const itemInfo = botao.closest(".item-info");
 
