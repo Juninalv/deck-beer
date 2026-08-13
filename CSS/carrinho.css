@@ -47,11 +47,9 @@
 
   padding: 20px;
 
-  display: flex;
-  flex-direction: column;
-
-  overflow: hidden;
+  overflow-y: auto;
   overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
 }
 
 .cart-sidebar.active {
@@ -62,13 +60,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-#cart-items {
-  overflow-y: auto;
-  flex: 1;
-  padding-right: 5px;
-  margin-top: 10px;
 }
 
 .cart-header h3 {
@@ -109,6 +100,7 @@
   padding: 12px;
   border-radius: 8px;
   border: none;
+  font-size: 16px;
 }
 
 .btn-whatsapp {

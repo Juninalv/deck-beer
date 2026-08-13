@@ -25,7 +25,15 @@ function permitirValorMonetario(id) {
 }
 
 function toggleCarrinho() {
-  document.getElementById("cartSidebar").classList.toggle("active");
+  const carrinho = document.getElementById("cartSidebar");
+
+  carrinho.classList.toggle("active");
+
+  if (carrinho.classList.contains("active")) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "";
+  }
 }
 
 function salvarCarrinho() {
