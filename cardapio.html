@@ -3172,6 +3172,20 @@
           placeholder="Complemento (Opcional)"
         />
 
+        <div class="campo-frete">
+          <label for="frete">Frete*</label>
+
+          <select id="frete" onchange="atualizarCarrinho()">
+            <option value="">Selecione o frete*</option>
+            <option value="3">Zona urbana - R$ 3,00</option>
+            <option value="5">Zona rural - R$ 5,00</option>
+          </select>
+
+          <small class="frete-observacao">
+            Obs.: A cada 5 km é cobrada uma taxa extra de R$ 5,00.
+          </small>
+        </div>
+
         <button
           type="button"
           onclick="capturarLocalizacao()"

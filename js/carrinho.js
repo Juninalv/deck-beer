@@ -241,6 +241,13 @@ function atualizarCarrinho() {
     `;
   });
 
+  const tipoPedido = document.getElementById("tipoPedido")?.value;
+  const freteSelecionado = document.getElementById("frete")?.value;
+
+  if (tipoPedido === "delivery" && freteSelecionado) {
+    total += Number(freteSelecionado);
+  }
+
   contador.innerText = quantidade;
   totalElemento.innerText = `R$ ${total.toFixed(2).replace(".", ",")}`;
 
@@ -255,6 +262,8 @@ function alterarTipoPedido() {
 
   document.getElementById("camposDelivery").style.display =
     tipo === "delivery" ? "block" : "none";
+
+  atualizarCarrinho();
 }
 
 function alterarPagamento() {
@@ -305,6 +314,8 @@ function enviarPedido() {
     return;
   }
 
+  const frete = document.getElementById("frete")?.value || "";
+
   const cliente = document.getElementById("cliente").value.trim();
   const tipo = document.getElementById("tipoPedido").value;
   const observacao = document.getElementById("observacao").value.trim();
@@ -332,6 +343,10 @@ function enviarPedido() {
     total += item.preco * item.qtd;
   });
 
+  if (tipo === "delivery" && frete) {
+    total += Number(frete);
+  }
+
   /* VALIDAÇÕES */
 
   if (tipo === "local") {
@@ -354,7 +369,7 @@ function enviarPedido() {
   }
 
   if (tipo === "delivery") {
-    if (!cliente || !endereco || !numero || !formaPagamento) {
+    if (!cliente || !endereco || !numero || !frete || !formaPagamento) {
       alert("Preencha todos os campos obrigatórios.");
       return;
     }
@@ -419,6 +434,14 @@ function enviarPedido() {
       msg += `Complemento: ${complemento}\n`;
     }
 
+    if (frete === "3") {
+      msg += "Frete: Zona urbana - R$ 3,00\n";
+    }
+
+    if (frete === "5") {
+      msg += "Frete: Zona rural - R$ 5,00\n";
+    }
+
     msg += `Forma de Pagamento: ${formaPagamento}\n`;
 
     if (formaPagamento === "Dinheiro") {
@@ -481,6 +504,10 @@ function enviarPedido() {
 
   if (document.getElementById("semTroco")) {
     document.getElementById("semTroco").checked = false;
+  }
+
+  if (document.getElementById("frete")) {
+    document.getElementById("frete").value = "";
   }
 
   localizacaoCliente = "";
